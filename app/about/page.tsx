@@ -68,7 +68,7 @@ export default function AboutPage() {
               <div className="aspect-[4/5] bg-[#12121F] border border-[#1E1E30] rounded-sm flex items-center justify-center max-w-md mx-auto lg:ml-auto lg:mr-0">
                 <div className="text-center p-8">
                   <div className="text-6xl mb-3">📸</div>
-                  <p className="text-[#555566] text-sm">Saskia's professional photo</p>
+                  <p className="text-[#555566] text-sm">Saskia&apos;s professional photo</p>
                   <p className="text-[#555566] text-xs mt-1 opacity-60">public/images/saskia-hero.jpg</p>
                 </div>
               </div>

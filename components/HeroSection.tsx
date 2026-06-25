@@ -19,7 +19,7 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0D0D1A] via-[#0D0D1A]/60 to-transparent z-10" />
           <div className="text-[#1E1E30] text-center z-0 p-8">
             <div className="text-7xl mb-4">📸</div>
-            <p className="text-[#555566] text-sm font-medium">Saskia's photo goes here</p>
+            <p className="text-[#555566] text-sm font-medium">Saskia&apos;s photo goes here</p>
             <p className="text-[#555566] text-xs mt-1 opacity-60">public/images/hero-photo.jpg</p>
           </div>
         </div>
