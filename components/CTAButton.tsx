@@ -1,0 +1,39 @@
+'use client'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+
+interface CTAButtonProps {
+  href: string
+  children: React.ReactNode
+  variant?: 'primary' | 'secondary' | 'outline-green'
+  className?: string
+  fullWidth?: boolean
+}
+
+export default function CTAButton({
+  href,
+  children,
+  variant = 'primary',
+  className = '',
+  fullWidth = false,
+}: CTAButtonProps) {
+  const base = `inline-block font-bold tracking-wide text-sm py-4 px-8 transition-all min-h-[44px] flex items-center justify-center ${fullWidth ? 'w-full text-center' : ''} ${className}`
+
+  const styles = {
+    primary:       'bg-[#C8F04A] text-[#0D0D1A] hover:bg-[#C8F04A]/90',
+    secondary:     'border-2 border-[#F0ECE4]/50 text-[#F0ECE4] hover:border-[#C8F04A] hover:text-[#C8F04A]',
+    'outline-green': 'border border-[#C8F04A] text-[#C8F04A] hover:bg-[#C8F04A] hover:text-[#0D0D1A]',
+  }
+
+  return (
+    <motion.div
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.98 }}
+      className={fullWidth ? 'w-full' : 'inline-block'}
+    >
+      <Link href={href} className={`${base} ${styles[variant]}`}>
+        {children}
+      </Link>
+    </motion.div>
+  )
+}
