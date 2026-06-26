@@ -7,7 +7,7 @@ import CalendlyEmbed from '@/components/CalendlyEmbed'
 export const metadata: Metadata = {
   title: 'Book a Free Discovery Call',
   description:
-    '20 minutes. No pressure. Tell me about your sport and goals — I\'ll explain which package fits and what we\'d work on. No commitment required.',
+    '20 minutes. No pressure. Tell me about your sport and goals — I\'ll walk you through exactly how coaching works and what we\'d focus on. No commitment required.',
   openGraph: {
     title: 'Book a Free Discovery Call | The Sas Effect',
     description:
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const expectItems = [
   'Tell me about your sport, your grade, and what\'s been holding you back',
-  "I'll explain which package fits your situation and what we'd work on",
+  "I'll walk you through how coaching works and what we'd focus on together",
   "You'll leave with clarity on next steps — no commitment required",
 ]
 
@@ -130,39 +130,32 @@ export default function BookPage() {
         </div>
       </section>
 
-      {/* ─── PACKAGES REMINDER ─── */}
+      {/* ─── PRICING REMINDER ─── */}
       <section className="bg-[#0D0D1A] border-t border-[#1E1E30] py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <FadeIn className="text-center mb-10">
-            <p className="text-[#555566] text-sm mb-2">Not sure what you need?</p>
+        <div className="max-w-3xl mx-auto text-center">
+          <FadeIn className="mb-8">
+            <p className="text-[#555566] text-sm mb-2">Not sure where to start?</p>
             <h2 className="font-display text-3xl sm:text-4xl text-[#F0ECE4]">
-              REVIEW THE PACKAGES FIRST.
+              REVIEW PRICING FIRST.
             </h2>
           </FadeIn>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
-            {[
-              { name: 'Starter', price: '$400/mo', href: '/coaching' },
-              { name: 'Core', price: '$650/mo', href: '/coaching', highlight: true },
-              { name: 'Elite / D1', price: '$1,000/mo', href: '/coaching' },
-            ].map((p) => (
-              <FadeIn key={p.name}>
-                <Link
-                  href={p.href}
-                  className={`block border p-5 rounded-sm hover:border-[#C8F04A] transition-all group ${
-                    p.highlight
-                      ? 'border-[#C8F04A] bg-[#C8F04A]/8'
-                      : 'border-[#1E1E30] bg-[#12121F]'
-                  }`}
-                >
-                  <p className="text-[#555566] text-xs uppercase tracking-[0.18em] mb-1">{p.name}</p>
-                  <p className="font-display text-2xl text-[#F0ECE4] group-hover:text-[#C8F04A] transition-colors">
-                    {p.price}
-                  </p>
-                </Link>
-              </FadeIn>
-            ))}
-          </div>
+          <FadeIn delay={0.07}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/coaching"
+                className="bg-[#C8F04A] text-[#0D0D1A] font-bold text-sm px-10 py-4 tracking-wide hover:bg-[#C8F04A]/90 transition-all hover:scale-105 inline-block min-h-[52px] flex items-center justify-center"
+              >
+                See Core Offer &amp; Add-Ons
+              </Link>
+              <Link
+                href="/addons"
+                className="border border-[#F0ECE4]/30 text-[#F0ECE4] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C8F04A] hover:text-[#C8F04A] transition-all inline-block min-h-[52px] flex items-center justify-center"
+              >
+                Browse Add-Ons
+              </Link>
+            </div>
+          </FadeIn>
         </div>
       </section>
     </>

@@ -75,7 +75,7 @@ export default function HeroSection() {
               href="/coaching"
               className="border-2 border-[#F0ECE4]/40 text-[#F0ECE4] font-bold text-sm px-8 py-4 tracking-wide hover:border-[#C8F04A] hover:text-[#C8F04A] transition-all text-center min-h-[52px] flex items-center justify-center"
             >
-              See Packages
+              See Pricing
             </Link>
           </motion.div>
 

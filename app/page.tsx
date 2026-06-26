@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Brain, Apple, Dumbbell, BookOpen, GraduationCap, ChevronRight } from 'lucide-react'
+import { Brain, Apple, Dumbbell, BookOpen, GraduationCap, ChevronRight, Check } from 'lucide-react'
 import HeroSection from '@/components/HeroSection'
 import CredibilityBar from '@/components/CredibilityBar'
 import FadeIn from '@/components/FadeIn'
-import PackageCard from '@/components/PackageCard'
 import TestimonialCard from '@/components/TestimonialCard'
-import { packages, testimonials, pillars } from '@/lib/constants'
+import { coreOffer, monthlyAddOns, sessionAddOns, testimonials, pillars } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'The Sas Effect | Mental Performance Coaching for High School Athletes',
@@ -15,11 +14,11 @@ export const metadata: Metadata = {
 }
 
 const pillarIconMap: Record<string, React.ReactNode> = {
-  Brain:         <Brain size={28} className="text-[#C8F04A]" />,
-  Apple:         <Apple size={28} className="text-[#C8F04A]" />,
-  Dumbbell:      <Dumbbell size={28} className="text-[#C8F04A]" />,
-  BookOpen:      <BookOpen size={28} className="text-[#C8F04A]" />,
-  GraduationCap: <GraduationCap size={28} className="text-[#C8F04A]" />,
+  Brain:         <Brain size={28} />,
+  Apple:         <Apple size={28} />,
+  Dumbbell:      <Dumbbell size={28} />,
+  BookOpen:      <BookOpen size={28} />,
+  GraduationCap: <GraduationCap size={28} />,
 }
 
 export default function HomePage() {
@@ -149,13 +148,23 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {pillars.map((pillar, i) => (
               <FadeIn key={pillar.title} delay={i * 0.08}>
-                <div className="bg-[#12121F] border border-[#1E1E30] p-7 rounded-sm hover:border-[#C8F04A]/40 transition-colors group h-full">
-                  <div className="mb-4">{pillarIconMap[pillar.icon]}</div>
+                <div className={`border p-7 rounded-sm transition-colors group h-full ${
+                  pillar.isCore
+                    ? 'bg-[#12121F] border-[#C8F04A]/30 hover:border-[#C8F04A]'
+                    : 'bg-[#12121F] border-[#1E1E30] hover:border-[#1E1E30]'
+                }`}>
+                  <div className={`mb-4 ${pillar.isCore ? 'text-[#C8F04A]' : 'text-[#555566]'}`}>
+                    {pillarIconMap[pillar.icon]}
+                  </div>
                   <h3 className="font-display text-2xl text-[#F0ECE4] mb-2 group-hover:text-[#C8F04A] transition-colors">
                     {pillar.title}
                   </h3>
                   <p className="text-[#555566] text-sm leading-relaxed mb-3">{pillar.description}</p>
-                  <span className="text-[10px] uppercase tracking-[0.15em] text-[#C8F04A]/70 font-semibold">
+                  <span className={`text-[10px] uppercase tracking-[0.15em] font-semibold px-2 py-0.5 rounded-sm ${
+                    pillar.isCore
+                      ? 'bg-[#C8F04A]/15 text-[#C8F04A]'
+                      : 'bg-[#1E1E30] text-[#555566]'
+                  }`}>
                     {pillar.tag}
                   </span>
                 </div>
@@ -172,7 +181,7 @@ export default function HomePage() {
                   href="/coaching"
                   className="inline-flex items-center gap-2 text-[#C8F04A] font-bold text-sm hover:gap-3 transition-all"
                 >
-                  See all packages <ChevronRight size={16} />
+                  See pricing <ChevronRight size={16} />
                 </Link>
               </div>
             </FadeIn>
@@ -180,43 +189,92 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── SECTION 6: PACKAGES PREVIEW ─── */}
+      {/* ─── SECTION 6: CORE OFFER + ADD-ONS ─── */}
       <section className="bg-[#1A1A2E] py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <FadeIn className="text-center mb-14">
+        <div className="max-w-5xl mx-auto">
+          <FadeIn className="text-center mb-12">
             <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
-              Coaching Packages
+              Coaching
             </p>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-4">
-              CHOOSE THE LEVEL THAT FITS WHERE YOU ARE RIGHT NOW.
+              ONE CORE OFFER.<br />CUSTOMIZE FROM THERE.
             </h2>
+            <p className="text-[#555566] text-sm max-w-lg mx-auto">
+              Start with the mental performance foundation. Add what your athlete needs.
+            </p>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            {packages.map((pkg, i) => (
-              <FadeIn key={pkg.name} delay={i * 0.1}>
-                <PackageCard
-                  name={pkg.name}
-                  price={pkg.price}
-                  badge={pkg.badge}
-                  cardDescription={pkg.cardDescription}
-                  features={pkg.features}
-                  href={pkg.href}
-                  highlighted={pkg.highlighted}
-                />
-              </FadeIn>
-            ))}
-          </div>
+          {/* Core offer card */}
+          <FadeIn delay={0.05}>
+            <div className="bg-[#0D0D1A] border-2 border-[#C8F04A] rounded-sm p-8 lg:p-10 mb-8 shadow-[0_0_40px_rgba(200,240,74,0.10)]">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                {/* Left */}
+                <div>
+                  <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-2 font-semibold">
+                    The Core Offer
+                  </p>
+                  <p className="font-display text-5xl lg:text-6xl text-[#C8F04A] mb-1">{coreOffer.price}</p>
+                  <p className="text-[#555566] text-xs uppercase tracking-[0.15em] mb-6">{coreOffer.priceNote}</p>
+                  <p className="text-[#F0ECE4]/80 text-sm leading-relaxed mb-6">{coreOffer.plainDescription}</p>
+                  <div className="border-l-2 border-[#C8F04A] pl-4">
+                    <p className="text-[#555566] text-xs uppercase tracking-[0.15em] mb-1.5 font-semibold">This is for you if…</p>
+                    <p className="text-[#F0ECE4]/70 text-sm leading-relaxed">{coreOffer.forWho}</p>
+                  </div>
+                </div>
+                {/* Right */}
+                <div>
+                  <p className="text-[#555566] text-xs uppercase tracking-[0.18em] mb-4 font-semibold">
+                    What&apos;s Included
+                  </p>
+                  <ul className="space-y-3 mb-8">
+                    {coreOffer.features.map((f) => (
+                      <li key={f} className="flex items-start gap-2.5 text-sm">
+                        <Check size={15} className="text-[#C8F04A] mt-0.5 shrink-0" />
+                        <span className="text-[#F0ECE4]/80 leading-snug">{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href="/book"
+                    className="block w-full text-center bg-[#C8F04A] text-[#0D0D1A] font-bold text-sm py-4 tracking-wide hover:bg-[#C8F04A]/90 transition-all hover:scale-105 min-h-[52px] flex items-center justify-center"
+                  >
+                    Book a Free Discovery Call
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
 
-          <FadeIn className="text-center">
-            <p className="text-[#555566] text-sm mb-8">
+          {/* Customize with add-ons */}
+          <FadeIn delay={0.1}>
+            <p className="text-[#555566] text-[10px] uppercase tracking-[0.22em] mb-5 font-semibold text-center">
+              Customize with Add-Ons
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+              {monthlyAddOns.map((addon) => (
+                <div key={addon.title} className="bg-[#12121F] border border-[#1E1E30] p-4 rounded-sm flex items-start justify-between gap-3 hover:border-[#C8F04A]/30 transition-colors">
+                  <p className="text-[#F0ECE4]/85 text-sm font-medium">{addon.title}</p>
+                  <span className="text-[#C8F04A] text-xs font-bold whitespace-nowrap shrink-0">{addon.price}</span>
+                </div>
+              ))}
+              {sessionAddOns.map((addon) => (
+                <div key={addon.title} className="bg-[#12121F] border border-[#1E1E30] p-4 rounded-sm flex items-start justify-between gap-3 hover:border-[#C8F04A]/30 transition-colors">
+                  <p className="text-[#F0ECE4]/85 text-sm font-medium">{addon.title}</p>
+                  <span className="text-[#C8F04A] text-xs font-bold whitespace-nowrap shrink-0">{addon.price}</span>
+                </div>
+              ))}
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.15} className="text-center">
+            <p className="text-[#555566] text-sm mb-6">
               Pay monthly or save 10% when you pay 3 months in full.
             </p>
             <Link
-              href="/book"
-              className="bg-[#C8F04A] text-[#0D0D1A] font-bold text-sm px-10 py-4 tracking-wide hover:bg-[#C8F04A]/90 transition-all hover:scale-105 inline-block min-h-[52px]"
+              href="/coaching"
+              className="inline-flex items-center gap-2 text-[#C8F04A] font-semibold text-sm hover:gap-3 transition-all"
             >
-              Book a Free Discovery Call
+              See full pricing details <ChevronRight size={16} />
             </Link>
           </FadeIn>
         </div>
@@ -269,13 +327,13 @@ export default function HomePage() {
               },
               {
                 num: '02',
-                title: 'Choose Your Package',
-                body: "Based on our conversation, I'll tell you exactly which package fits your situation and what we'll work on together.",
+                title: 'Build Your Plan',
+                body: "We start with the mental performance foundation, then figure out which add-ons — if any — fit your athlete's situation right now.",
               },
               {
                 num: '03',
                 title: 'Start Building Your Mental Game',
-                body: 'Weekly calls, daily text support, and a plan built specifically for you. This is where the work — and the results — begin.',
+                body: 'Weekly calls, text support, and a plan built specifically for you. This is where the work — and the results — begin.',
               },
             ].map((step, i) => (
               <FadeIn key={step.num} delay={i * 0.15}>
