@@ -45,11 +45,11 @@ export default function ContactPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative bg-[#0D0D1A] pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#C8F04A]/4 to-transparent pointer-events-none" />
+      <section className="relative bg-[#0a0a0a] pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#C0392B]/4 to-transparent pointer-events-none" />
         <div className="max-w-3xl">
           <FadeIn>
-            <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold ml-4 sm:ml-6 lg:ml-8">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold ml-4 sm:ml-6 lg:ml-8">
               Get in Touch
             </p>
             <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-[#F0ECE4] leading-none mb-6 px-4 sm:px-6 lg:px-8">
@@ -64,28 +64,28 @@ export default function ContactPage() {
       </section>
 
       {/* ─── MAIN CONTENT ─── */}
-      <section className="bg-[#1A1A2E] py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#1a1a1a] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
             {/* Left: contact methods + quick links */}
             <div>
               <FadeIn>
-                <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-8 font-semibold">
+                <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-8 font-semibold">
                   Contact Methods
                 </p>
 
                 <div className="space-y-5 mb-12">
                   {/* Email */}
                   <div className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 bg-[#12121F] border border-[#1E1E30] rounded-sm flex items-center justify-center text-[#555566] group-hover:border-[#C8F04A] group-hover:text-[#C8F04A] transition-all shrink-0">
+                    <div className="w-10 h-10 bg-[#111111] border border-[#2a2a2a] rounded-sm flex items-center justify-center text-[#666666] group-hover:border-[#C0392B] group-hover:text-[#C0392B] transition-all shrink-0">
                       <MailIcon />
                     </div>
                     <div>
-                      <p className="text-[#555566] text-xs uppercase tracking-[0.15em] mb-0.5">Email</p>
+                      <p className="text-[#666666] text-xs uppercase tracking-[0.15em] mb-0.5">Email</p>
                       {/* TODO: Add Saskia's business email address */}
                       <a
                         href="mailto:hello@thesaseffect.com"
-                        className="text-[#F0ECE4] text-sm hover:text-[#C8F04A] transition-colors"
+                        className="text-[#F0ECE4] text-sm hover:text-[#C0392B] transition-colors"
                       >
                         hello@thesaseffect.com
                       </a>
@@ -94,16 +94,16 @@ export default function ContactPage() {
 
                   {/* Instagram */}
                   <div className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 bg-[#12121F] border border-[#1E1E30] rounded-sm flex items-center justify-center text-[#555566] group-hover:border-[#C8F04A] group-hover:text-[#C8F04A] transition-all shrink-0">
+                    <div className="w-10 h-10 bg-[#111111] border border-[#2a2a2a] rounded-sm flex items-center justify-center text-[#666666] group-hover:border-[#C0392B] group-hover:text-[#C0392B] transition-all shrink-0">
                       <InstagramIcon />
                     </div>
                     <div>
-                      <p className="text-[#555566] text-xs uppercase tracking-[0.15em] mb-0.5">Instagram</p>
+                      <p className="text-[#666666] text-xs uppercase tracking-[0.15em] mb-0.5">Instagram</p>
                       <a
                         href="https://instagram.com/thesaseffect"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#F0ECE4] text-sm hover:text-[#C8F04A] transition-colors"
+                        className="text-[#F0ECE4] text-sm hover:text-[#C0392B] transition-colors"
                       >
                         @thesaseffect
                       </a>
@@ -112,16 +112,16 @@ export default function ContactPage() {
 
                   {/* TikTok */}
                   <div className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 bg-[#12121F] border border-[#1E1E30] rounded-sm flex items-center justify-center text-[#555566] group-hover:border-[#C8F04A] group-hover:text-[#C8F04A] transition-all shrink-0">
+                    <div className="w-10 h-10 bg-[#111111] border border-[#2a2a2a] rounded-sm flex items-center justify-center text-[#666666] group-hover:border-[#C0392B] group-hover:text-[#C0392B] transition-all shrink-0">
                       <TikTokIcon />
                     </div>
                     <div>
-                      <p className="text-[#555566] text-xs uppercase tracking-[0.15em] mb-0.5">TikTok</p>
+                      <p className="text-[#666666] text-xs uppercase tracking-[0.15em] mb-0.5">TikTok</p>
                       <a
                         href="https://tiktok.com/@thesaseffect"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#F0ECE4] text-sm hover:text-[#C8F04A] transition-colors"
+                        className="text-[#F0ECE4] text-sm hover:text-[#C0392B] transition-colors"
                       >
                         @thesaseffect
                       </a>
@@ -131,8 +131,8 @@ export default function ContactPage() {
               </FadeIn>
 
               <FadeIn delay={0.08}>
-                <div className="bg-[#12121F] border border-[#1E1E30] p-6 rounded-sm">
-                  <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+                <div className="bg-[#111111] border border-[#2a2a2a] p-6 rounded-sm">
+                  <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
                     Ready to book?
                   </p>
                   <p className="text-[#F0ECE4]/75 text-sm mb-5 leading-relaxed">
@@ -141,7 +141,7 @@ export default function ContactPage() {
                   </p>
                   <Link
                     href="/book"
-                    className="bg-[#C8F04A] text-[#0D0D1A] font-bold text-sm px-6 py-3 tracking-wide hover:bg-[#C8F04A]/90 transition-all hover:scale-105 inline-block min-h-[44px]"
+                    className="bg-[#C0392B] text-white font-bold text-sm px-6 py-3 tracking-wide hover:bg-[#C0392B]/90 transition-all hover:scale-105 inline-block min-h-[44px]"
                   >
                     Book a Free Discovery Call →
                   </Link>
@@ -152,7 +152,7 @@ export default function ContactPage() {
             {/* Right: contact form */}
             <FadeIn delay={0.1}>
               <div>
-                <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-8 font-semibold">
+                <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-8 font-semibold">
                   Send a Message
                 </p>
                 <ContactForm />
@@ -163,13 +163,13 @@ export default function ContactPage() {
       </section>
 
       {/* ─── RESPONSE NOTE ─── */}
-      <section className="bg-[#0D0D1A] border-t border-[#1E1E30] py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#0a0a0a] border-t border-[#2a2a2a] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
             <p className="font-display text-3xl sm:text-4xl text-[#F0ECE4] mb-4">
               I RESPOND TO EVERY MESSAGE PERSONALLY.
             </p>
-            <p className="text-[#555566] text-sm">
+            <p className="text-[#666666] text-sm">
               Typical response time: within 24 hours on weekdays.
               For faster contact, DM on Instagram.
             </p>

@@ -20,9 +20,9 @@ export default function CTAButton({
   const base = `inline-block font-bold tracking-wide text-sm py-4 px-8 transition-all min-h-[44px] flex items-center justify-center ${fullWidth ? 'w-full text-center' : ''} ${className}`
 
   const styles = {
-    primary:       'bg-[#C8F04A] text-[#0D0D1A] hover:bg-[#C8F04A]/90',
-    secondary:     'border-2 border-[#F0ECE4]/50 text-[#F0ECE4] hover:border-[#C8F04A] hover:text-[#C8F04A]',
-    'outline-green': 'border border-[#C8F04A] text-[#C8F04A] hover:bg-[#C8F04A] hover:text-[#0D0D1A]',
+    primary:       'bg-[#C0392B] text-white hover:bg-[#C0392B]/90',
+    secondary:     'border-2 border-[#F0ECE4]/50 text-[#F0ECE4] hover:border-[#C0392B] hover:text-[#C0392B]',
+    'outline-green': 'border border-[#C0392B] text-[#C0392B] hover:bg-[#C0392B] hover:text-[#0a0a0a]',
   }
 
   return (

@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'sas-dark':      '#0D0D1A',
-        'sas-secondary': '#1A1A2E',
-        'sas-green':     '#C8F04A',
+        'sas-dark':      '#0a0a0a',
+        'sas-secondary': '#1a1a1a',
+        'sas-green':     '#C0392B',
         'sas-white':     '#F0ECE4',
-        'sas-muted':     '#555566',
-        'sas-card':      '#12121F',
-        'sas-border':    '#1E1E30',
+        'sas-muted':     '#666666',
+        'sas-card':      '#111111',
+        'sas-border':    '#2a2a2a',
       },
       fontFamily: {
         display: ['var(--font-bebas)', 'Oswald', 'Impact', 'sans-serif'],

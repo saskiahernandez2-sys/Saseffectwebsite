@@ -32,8 +32,8 @@ export default function ContactForm() {
 
   if (state === 'success') {
     return (
-      <div className="bg-[#C8F04A]/10 border border-[#C8F04A] rounded-sm p-8 text-center">
-        <p className="font-display text-3xl text-[#C8F04A] mb-2">MESSAGE SENT!</p>
+      <div className="bg-[#C0392B]/10 border border-[#C0392B] rounded-sm p-8 text-center">
+        <p className="font-display text-3xl text-[#C0392B] mb-2">MESSAGE SENT!</p>
         <p className="text-[#F0ECE4]/80 text-sm">
           Thanks for reaching out. I respond to every message personally — usually within 24 hours.
         </p>
@@ -45,7 +45,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="name" className="block text-xs uppercase tracking-[0.15em] text-[#555566] mb-2">
+          <label htmlFor="name" className="block text-xs uppercase tracking-[0.15em] text-[#666666] mb-2">
             Name *
           </label>
           <input
@@ -56,11 +56,11 @@ export default function ContactForm() {
             value={form.name}
             onChange={handleChange}
             placeholder="Your name"
-            className="w-full bg-[#12121F] border border-[#1E1E30] text-[#F0ECE4] placeholder-[#555566] px-4 py-3 text-sm focus:outline-none focus:border-[#C8F04A] transition-colors min-h-[44px] rounded-sm"
+            className="w-full bg-[#111111] border border-[#2a2a2a] text-[#F0ECE4] placeholder-[#666666] px-4 py-3 text-sm focus:outline-none focus:border-[#C0392B] transition-colors min-h-[44px] rounded-sm"
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-xs uppercase tracking-[0.15em] text-[#555566] mb-2">
+          <label htmlFor="email" className="block text-xs uppercase tracking-[0.15em] text-[#666666] mb-2">
             Email *
           </label>
           <input
@@ -71,14 +71,14 @@ export default function ContactForm() {
             value={form.email}
             onChange={handleChange}
             placeholder="you@example.com"
-            className="w-full bg-[#12121F] border border-[#1E1E30] text-[#F0ECE4] placeholder-[#555566] px-4 py-3 text-sm focus:outline-none focus:border-[#C8F04A] transition-colors min-h-[44px] rounded-sm"
+            className="w-full bg-[#111111] border border-[#2a2a2a] text-[#F0ECE4] placeholder-[#666666] px-4 py-3 text-sm focus:outline-none focus:border-[#C0392B] transition-colors min-h-[44px] rounded-sm"
           />
         </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="sport" className="block text-xs uppercase tracking-[0.15em] text-[#555566] mb-2">
+          <label htmlFor="sport" className="block text-xs uppercase tracking-[0.15em] text-[#666666] mb-2">
             Sport
           </label>
           <select
@@ -86,7 +86,7 @@ export default function ContactForm() {
             name="sport"
             value={form.sport}
             onChange={handleChange}
-            className="w-full bg-[#12121F] border border-[#1E1E30] text-[#F0ECE4] px-4 py-3 text-sm focus:outline-none focus:border-[#C8F04A] transition-colors min-h-[44px] rounded-sm appearance-none"
+            className="w-full bg-[#111111] border border-[#2a2a2a] text-[#F0ECE4] px-4 py-3 text-sm focus:outline-none focus:border-[#C0392B] transition-colors min-h-[44px] rounded-sm appearance-none"
           >
             <option value="">Select your sport</option>
             {sports.map((s) => (
@@ -95,7 +95,7 @@ export default function ContactForm() {
           </select>
         </div>
         <div>
-          <label htmlFor="grade" className="block text-xs uppercase tracking-[0.15em] text-[#555566] mb-2">
+          <label htmlFor="grade" className="block text-xs uppercase tracking-[0.15em] text-[#666666] mb-2">
             Grade
           </label>
           <select
@@ -103,7 +103,7 @@ export default function ContactForm() {
             name="grade"
             value={form.grade}
             onChange={handleChange}
-            className="w-full bg-[#12121F] border border-[#1E1E30] text-[#F0ECE4] px-4 py-3 text-sm focus:outline-none focus:border-[#C8F04A] transition-colors min-h-[44px] rounded-sm appearance-none"
+            className="w-full bg-[#111111] border border-[#2a2a2a] text-[#F0ECE4] px-4 py-3 text-sm focus:outline-none focus:border-[#C0392B] transition-colors min-h-[44px] rounded-sm appearance-none"
           >
             <option value="">Select grade</option>
             {grades.map((g) => (
@@ -114,7 +114,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-xs uppercase tracking-[0.15em] text-[#555566] mb-2">
+        <label htmlFor="message" className="block text-xs uppercase tracking-[0.15em] text-[#666666] mb-2">
           Message *
         </label>
         <textarea
@@ -125,14 +125,14 @@ export default function ContactForm() {
           value={form.message}
           onChange={handleChange}
           placeholder="Tell me about your athlete, their sport, and what you're looking for..."
-          className="w-full bg-[#12121F] border border-[#1E1E30] text-[#F0ECE4] placeholder-[#555566] px-4 py-3 text-sm focus:outline-none focus:border-[#C8F04A] transition-colors resize-none rounded-sm"
+          className="w-full bg-[#111111] border border-[#2a2a2a] text-[#F0ECE4] placeholder-[#666666] px-4 py-3 text-sm focus:outline-none focus:border-[#C0392B] transition-colors resize-none rounded-sm"
         />
       </div>
 
       <button
         type="submit"
         disabled={state === 'submitting'}
-        className="w-full bg-[#C8F04A] text-[#0D0D1A] font-bold text-sm py-4 tracking-wide hover:bg-[#C8F04A]/90 transition-all hover:scale-[1.02] disabled:opacity-60 disabled:cursor-not-allowed min-h-[52px] rounded-sm"
+        className="w-full bg-[#C0392B] text-white font-bold text-sm py-4 tracking-wide hover:bg-[#C0392B]/90 transition-all hover:scale-[1.02] disabled:opacity-60 disabled:cursor-not-allowed min-h-[52px] rounded-sm"
       >
         {state === 'submitting' ? 'Sending...' : 'Send Message'}
       </button>

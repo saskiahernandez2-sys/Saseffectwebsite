@@ -19,11 +19,11 @@ export default function AddOnsPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative bg-[#0D0D1A] pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#C8F04A]/4 to-transparent pointer-events-none" />
+      <section className="relative bg-[#0a0a0a] pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#C0392B]/4 to-transparent pointer-events-none" />
         <div className="max-w-5xl mx-auto text-center">
           <FadeIn>
-            <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Add-On Services
             </p>
             <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-[#F0ECE4] leading-none mb-6">
@@ -33,10 +33,10 @@ export default function AddOnsPage() {
               Add-ons bolt onto your Mental Performance Coaching package. Start with the core
               offer, then customize based on what your athlete needs.
             </p>
-            <div className="inline-block bg-[#12121F] border border-[#1E1E30] px-5 py-3 rounded-sm">
-              <p className="text-[#555566] text-sm">
+            <div className="inline-block bg-[#111111] border border-[#2a2a2a] px-5 py-3 rounded-sm">
+              <p className="text-[#666666] text-sm">
                 Core offer required:{' '}
-                <Link href="/coaching" className="text-[#C8F04A] hover:underline font-semibold">
+                <Link href="/coaching" className="text-[#C0392B] hover:underline font-semibold">
                   Mental Performance Coaching — $250/month
                 </Link>
               </p>
@@ -46,16 +46,16 @@ export default function AddOnsPage() {
       </section>
 
       {/* ─── MONTHLY ADD-ONS ─── */}
-      <section className="bg-[#1A1A2E] py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#1a1a1a] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <FadeIn className="mb-10">
-            <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
               Monthly Add-Ons
             </p>
             <h2 className="font-display text-3xl sm:text-4xl text-[#F0ECE4] leading-none mb-2">
               ONGOING MONTHLY SUPPORT
             </h2>
-            <p className="text-[#555566] text-sm">
+            <p className="text-[#666666] text-sm">
               Added to your monthly coaching bill. Can be added or removed each month.
             </p>
           </FadeIn>
@@ -71,16 +71,16 @@ export default function AddOnsPage() {
       </section>
 
       {/* ─── PER-SESSION ADD-ONS ─── */}
-      <section className="bg-[#0D0D1A] py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#0a0a0a] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <FadeIn className="mb-10">
-            <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
               Per-Session &amp; One-Time
             </p>
             <h2 className="font-display text-3xl sm:text-4xl text-[#F0ECE4] leading-none mb-2">
               TARGETED ONE-OFF SESSIONS
             </h2>
-            <p className="text-[#555566] text-sm">
+            <p className="text-[#666666] text-sm">
               Book when you need them. No ongoing commitment.
             </p>
           </FadeIn>
@@ -96,11 +96,11 @@ export default function AddOnsPage() {
       </section>
 
       {/* ─── HOW IT WORKS ─── */}
-      <section className="bg-[#1A1A2E] py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#1a1a1a] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
-              <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+              <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
                 How It Works
               </p>
               <h2 className="font-display text-4xl sm:text-5xl text-[#F0ECE4] leading-none mb-6">
@@ -124,8 +124,8 @@ export default function AddOnsPage() {
                   { step: '02', text: 'Identify the gaps — recruiting prep, nutrition, conditioning, or specific sessions.' },
                   { step: '03', text: 'Add what you need. Adjust month to month as your athlete progresses.' },
                 ].map((item) => (
-                  <div key={item.step} className="flex items-start gap-4 bg-[#12121F] border border-[#1E1E30] p-5 rounded-sm">
-                    <span className="font-display text-3xl text-[#C8F04A] leading-none shrink-0">{item.step}</span>
+                  <div key={item.step} className="flex items-start gap-4 bg-[#111111] border border-[#2a2a2a] p-5 rounded-sm">
+                    <span className="font-display text-3xl text-[#C0392B] leading-none shrink-0">{item.step}</span>
                     <p className="text-[#F0ECE4]/75 text-sm leading-relaxed pt-1">{item.text}</p>
                   </div>
                 ))}
@@ -136,26 +136,26 @@ export default function AddOnsPage() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="bg-[#0D0D1A] border-t border-[#1E1E30] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#0a0a0a] border-t border-[#2a2a2a] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-6">
               READY TO BUILD YOUR PLAN?
             </h2>
-            <p className="text-[#555566] text-base mb-10">
+            <p className="text-[#666666] text-base mb-10">
               Book a free discovery call and we&apos;ll figure out the right starting point — core offer,
               add-ons, and all.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/book"
-                className="bg-[#C8F04A] text-[#0D0D1A] font-bold text-sm px-10 py-4 tracking-wide hover:bg-[#C8F04A]/90 transition-all hover:scale-105 inline-block min-h-[52px] flex items-center justify-center"
+                className="bg-[#C0392B] text-white font-bold text-sm px-10 py-4 tracking-wide hover:bg-[#C0392B]/90 transition-all hover:scale-105 inline-block min-h-[52px] flex items-center justify-center"
               >
                 Book a Free Discovery Call
               </Link>
               <Link
                 href="/coaching"
-                className="border border-[#F0ECE4]/30 text-[#F0ECE4] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C8F04A] hover:text-[#C8F04A] transition-all inline-block min-h-[52px] flex items-center justify-center"
+                className="border border-[#F0ECE4]/30 text-[#F0ECE4] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all inline-block min-h-[52px] flex items-center justify-center"
               >
                 See Core Offer &amp; Pricing
               </Link>

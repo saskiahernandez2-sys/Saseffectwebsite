@@ -21,28 +21,28 @@ function InstagramIcon() {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1A1A2E] border-t border-[#1E1E30]">
+    <footer className="bg-[#1a1a1a] border-t border-[#2a2a2a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Logo + tagline */}
           <div>
-            <Link href="/" className="font-display text-2xl text-[#C8F04A] tracking-wider inline-block">
+            <Link href="/" className="font-display text-2xl text-[#C0392B] tracking-wider inline-block">
               THE SAS EFFECT
             </Link>
-            <p className="mt-3 text-[#555566] text-sm italic leading-relaxed">
+            <p className="mt-3 text-[#666666] text-sm italic leading-relaxed">
               Train the mind first.<br />Everything else follows.
             </p>
           </div>
 
           {/* Nav links */}
           <div>
-            <p className="text-[#555566] text-xs uppercase tracking-[0.18em] mb-4">Pages</p>
+            <p className="text-[#666666] text-xs uppercase tracking-[0.18em] mb-4">Pages</p>
             <div className="flex flex-col gap-3">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-[#555566] hover:text-[#F0ECE4] text-sm transition-colors"
+                  className="text-[#666666] hover:text-[#F0ECE4] text-sm transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -52,13 +52,13 @@ export default function Footer() {
 
           {/* Social + contact */}
           <div>
-            <p className="text-[#555566] text-xs uppercase tracking-[0.18em] mb-4">Follow Along</p>
+            <p className="text-[#666666] text-xs uppercase tracking-[0.18em] mb-4">Follow Along</p>
             <div className="flex flex-col gap-3">
               <a
                 href="https://instagram.com/thesaseffect"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#555566] hover:text-[#C8F04A] transition-colors flex items-center gap-2.5"
+                className="text-[#666666] hover:text-[#C0392B] transition-colors flex items-center gap-2.5"
               >
                 <InstagramIcon />
                 <span className="text-sm">@thesaseffect</span>
@@ -67,7 +67,7 @@ export default function Footer() {
                 href="https://tiktok.com/@thesaseffect"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#555566] hover:text-[#C8F04A] transition-colors flex items-center gap-2.5"
+                className="text-[#666666] hover:text-[#C0392B] transition-colors flex items-center gap-2.5"
               >
                 <TikTokIcon />
                 <span className="text-sm">@thesaseffect</span>
@@ -76,7 +76,7 @@ export default function Footer() {
             <div className="mt-6">
               <Link
                 href="/book"
-                className="bg-[#C8F04A] text-[#0D0D1A] font-bold text-sm px-5 py-2.5 tracking-wide hover:bg-[#C8F04A]/90 transition-all inline-block"
+                className="bg-[#C0392B] text-white font-bold text-sm px-5 py-2.5 tracking-wide hover:bg-[#C0392B]/90 transition-all inline-block"
               >
                 Book a Free Call →
               </Link>
@@ -84,8 +84,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#1E1E30] pt-6">
-          <p className="text-[#555566] text-sm text-center">
+        <div className="border-t border-[#2a2a2a] pt-6">
+          <p className="text-[#666666] text-sm text-center">
             © 2025 The Sas Effect. All rights reserved.
           </p>
         </div>

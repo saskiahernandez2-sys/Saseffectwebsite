@@ -7,17 +7,17 @@ interface TestimonialCardProps {
 export default function TestimonialCard({ quote, name, sport }: TestimonialCardProps) {
   return (
     // TODO: Add real photos and names once client testimonials are collected
-    <div className="bg-[#12121F] border border-[#1E1E30] p-7 rounded-sm flex flex-col">
+    <div className="bg-[#111111] border border-[#2a2a2a] p-7 rounded-sm flex flex-col">
       <span
-        className="font-display text-6xl text-[#C8F04A] leading-none mb-4 select-none"
+        className="font-display text-6xl text-[#C0392B] leading-none mb-4 select-none"
         aria-hidden="true"
       >
         &ldquo;
       </span>
       <p className="text-[#F0ECE4]/85 text-sm leading-relaxed flex-1 italic">{quote}</p>
-      <div className="mt-6 pt-5 border-t border-[#1E1E30]">
+      <div className="mt-6 pt-5 border-t border-[#2a2a2a]">
         <p className="text-[#F0ECE4] font-semibold text-sm">{name}</p>
-        <p className="text-[#555566] text-xs mt-0.5">{sport}</p>
+        <p className="text-[#666666] text-xs mt-0.5">{sport}</p>
       </div>
     </div>
   )

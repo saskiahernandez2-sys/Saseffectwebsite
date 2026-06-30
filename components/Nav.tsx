@@ -31,7 +31,7 @@ export default function Nav() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled || isOpen
-            ? 'bg-[#0D0D1A]/95 backdrop-blur-md border-b border-[#1E1E30]'
+            ? 'bg-[#0a0a0a]/95 backdrop-blur-md border-b border-[#2a2a2a]'
             : 'bg-transparent'
         }`}
       >
@@ -40,7 +40,7 @@ export default function Nav() {
             {/* Logo */}
             <Link
               href="/"
-              className="font-display text-2xl lg:text-3xl text-[#C8F04A] tracking-wider hover:opacity-80 transition-opacity"
+              className="font-display text-2xl lg:text-3xl text-[#C0392B] tracking-wider hover:opacity-80 transition-opacity"
             >
               THE SAS EFFECT
             </Link>
@@ -51,8 +51,8 @@ export default function Nav() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm font-medium tracking-wide transition-colors hover:text-[#C8F04A] ${
-                    pathname === link.href ? 'text-[#C8F04A]' : 'text-[#F0ECE4]/80'
+                  className={`text-sm font-medium tracking-wide transition-colors hover:text-[#C0392B] ${
+                    pathname === link.href ? 'text-[#C0392B]' : 'text-[#F0ECE4]/80'
                   }`}
                 >
                   {link.label}
@@ -64,7 +64,7 @@ export default function Nav() {
             <div className="hidden lg:block">
               <Link
                 href="/book"
-                className="bg-[#C8F04A] text-[#0D0D1A] font-bold text-sm px-5 py-2.5 tracking-wide hover:bg-[#C8F04A]/90 transition-all hover:scale-105 inline-block"
+                className="bg-[#C0392B] text-white font-bold text-sm px-5 py-2.5 tracking-wide hover:bg-[#C0392B]/90 transition-all hover:scale-105 inline-block"
               >
                 Book a Free Call
               </Link>
@@ -90,7 +90,7 @@ export default function Nav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-[#0D0D1A] lg:hidden flex flex-col items-center justify-center gap-8"
+            className="fixed inset-0 z-40 bg-[#0a0a0a] lg:hidden flex flex-col items-center justify-center gap-8"
           >
             {navLinks.map((link, i) => (
               <motion.div
@@ -102,8 +102,8 @@ export default function Nav() {
               >
                 <Link
                   href={link.href}
-                  className={`font-display text-5xl tracking-wider transition-colors hover:text-[#C8F04A] min-h-[44px] flex items-center ${
-                    pathname === link.href ? 'text-[#C8F04A]' : 'text-[#F0ECE4]'
+                  className={`font-display text-5xl tracking-wider transition-colors hover:text-[#C0392B] min-h-[44px] flex items-center ${
+                    pathname === link.href ? 'text-[#C0392B]' : 'text-[#F0ECE4]'
                   }`}
                 >
                   {link.label.toUpperCase()}
@@ -119,7 +119,7 @@ export default function Nav() {
             >
               <Link
                 href="/book"
-                className="bg-[#C8F04A] text-[#0D0D1A] font-bold text-lg px-10 py-4 tracking-wide inline-block min-h-[44px]"
+                className="bg-[#C0392B] text-white font-bold text-lg px-10 py-4 tracking-wide inline-block min-h-[44px]"
               >
                 Book a Free Call
               </Link>

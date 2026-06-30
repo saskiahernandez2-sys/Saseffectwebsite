@@ -32,11 +32,11 @@ export default function BookPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative bg-[#0D0D1A] pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#C8F04A]/4 to-transparent pointer-events-none" />
+      <section className="relative bg-[#0a0a0a] pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#C0392B]/4 to-transparent pointer-events-none" />
         <div className="max-w-5xl mx-auto text-center">
           <FadeIn>
-            <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Free Call
             </p>
             <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-[#F0ECE4] leading-none mb-6">
@@ -51,20 +51,20 @@ export default function BookPage() {
       </section>
 
       {/* ─── MAIN CONTENT ─── */}
-      <section className="bg-[#1A1A2E] py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#1a1a1a] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14">
             {/* Left sidebar: what to expect + quick facts */}
             <div className="lg:col-span-1 space-y-8">
               <FadeIn>
                 <div>
-                  <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-5 font-semibold">
+                  <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-5 font-semibold">
                     What to Expect
                   </p>
                   <ul className="space-y-4">
                     {expectItems.map((item) => (
                       <li key={item} className="flex items-start gap-3">
-                        <CheckCircle size={16} className="text-[#C8F04A] mt-0.5 shrink-0" />
+                        <CheckCircle size={16} className="text-[#C0392B] mt-0.5 shrink-0" />
                         <span className="text-[#F0ECE4]/75 text-sm leading-relaxed">{item}</span>
                       </li>
                     ))}
@@ -73,14 +73,14 @@ export default function BookPage() {
               </FadeIn>
 
               <FadeIn delay={0.08}>
-                <div className="bg-[#12121F] border border-[#1E1E30] p-6 rounded-sm">
-                  <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+                <div className="bg-[#111111] border border-[#2a2a2a] p-6 rounded-sm">
+                  <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
                     Quick Facts
                   </p>
                   <dl className="space-y-3">
                     {quickFacts.map((f) => (
-                      <div key={f.label} className="flex justify-between items-center text-sm border-b border-[#1E1E30] pb-3 last:border-0 last:pb-0">
-                        <dt className="text-[#555566]">{f.label}</dt>
+                      <div key={f.label} className="flex justify-between items-center text-sm border-b border-[#2a2a2a] pb-3 last:border-0 last:pb-0">
+                        <dt className="text-[#666666]">{f.label}</dt>
                         <dd className="text-[#F0ECE4] font-semibold">{f.value}</dd>
                       </div>
                     ))}
@@ -89,12 +89,12 @@ export default function BookPage() {
               </FadeIn>
 
               <FadeIn delay={0.12}>
-                <div className="border-l-2 border-[#C8F04A] pl-5">
+                <div className="border-l-2 border-[#C0392B] pl-5">
                   <p className="text-[#F0ECE4]/80 text-sm italic leading-relaxed">
                     &ldquo;I built The Sas Effect because I wanted to give athletes the conversation
                     I never had growing up. This call is that conversation.&rdquo;
                   </p>
-                  <p className="text-[#555566] text-xs mt-3">— Saskia</p>
+                  <p className="text-[#666666] text-xs mt-3">— Saskia</p>
                 </div>
               </FadeIn>
             </div>
@@ -109,10 +109,10 @@ export default function BookPage() {
 
           {/* Reassurance line */}
           <FadeIn delay={0.15}>
-            <p className="text-center text-[#555566] text-sm mt-10">
+            <p className="text-center text-[#666666] text-sm mt-10">
               Questions before booking?{' '}
               {/* TODO: Add Saskia's business email address */}
-              <a href="mailto:hello@thesaseffect.com" className="text-[#C8F04A] hover:underline">
+              <a href="mailto:hello@thesaseffect.com" className="text-[#C0392B] hover:underline">
                 hello@thesaseffect.com
               </a>{' '}
               or DM{' '}
@@ -120,7 +120,7 @@ export default function BookPage() {
                 href="https://instagram.com/thesaseffect"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C8F04A] hover:underline"
+                className="text-[#C0392B] hover:underline"
               >
                 @thesaseffect
               </a>{' '}
@@ -131,10 +131,10 @@ export default function BookPage() {
       </section>
 
       {/* ─── PRICING REMINDER ─── */}
-      <section className="bg-[#0D0D1A] border-t border-[#1E1E30] py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#0a0a0a] border-t border-[#2a2a2a] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn className="mb-8">
-            <p className="text-[#555566] text-sm mb-2">Not sure where to start?</p>
+            <p className="text-[#666666] text-sm mb-2">Not sure where to start?</p>
             <h2 className="font-display text-3xl sm:text-4xl text-[#F0ECE4]">
               REVIEW PRICING FIRST.
             </h2>
@@ -144,13 +144,13 @@ export default function BookPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/coaching"
-                className="bg-[#C8F04A] text-[#0D0D1A] font-bold text-sm px-10 py-4 tracking-wide hover:bg-[#C8F04A]/90 transition-all hover:scale-105 inline-block min-h-[52px] flex items-center justify-center"
+                className="bg-[#C0392B] text-white font-bold text-sm px-10 py-4 tracking-wide hover:bg-[#C0392B]/90 transition-all hover:scale-105 inline-block min-h-[52px] flex items-center justify-center"
               >
                 See Core Offer &amp; Add-Ons
               </Link>
               <Link
                 href="/addons"
-                className="border border-[#F0ECE4]/30 text-[#F0ECE4] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C8F04A] hover:text-[#C8F04A] transition-all inline-block min-h-[52px] flex items-center justify-center"
+                className="border border-[#F0ECE4]/30 text-[#F0ECE4] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all inline-block min-h-[52px] flex items-center justify-center"
               >
                 Browse Add-Ons
               </Link>

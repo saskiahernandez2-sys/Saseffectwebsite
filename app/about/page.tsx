@@ -41,21 +41,21 @@ export default function AboutPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative bg-[#0D0D1A] pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#C8F04A]/4 to-transparent pointer-events-none" />
-        <div className="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full bg-[#C8F04A]/5 blur-[100px] pointer-events-none" />
+      <section className="relative bg-[#0a0a0a] pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#C0392B]/4 to-transparent pointer-events-none" />
+        <div className="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full bg-[#C0392B]/5 blur-[100px] pointer-events-none" />
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Text */}
             <div>
               <FadeIn>
-                <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+                <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
                   The Story
                 </p>
                 <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-[#F0ECE4] leading-none mb-6">
                   BUILT BY AN ATHLETE WHO&apos;S LIVED EVERY PART OF IT.
                 </h1>
-                <p className="text-[#555566] text-base leading-relaxed">
+                <p className="text-[#666666] text-base leading-relaxed">
                   D1 athlete. All-Conference. 4.0 GPA. NIL athlete. And someone who figured
                   out the hard way what it actually takes to compete at your highest level.
                 </p>
@@ -65,11 +65,11 @@ export default function AboutPage() {
             {/* Photo */}
             <FadeIn delay={0.1}>
               {/* TODO: Replace with Saskia's professional photo */}
-              <div className="aspect-[4/5] bg-[#12121F] border border-[#1E1E30] rounded-sm flex items-center justify-center max-w-md mx-auto lg:ml-auto lg:mr-0">
+              <div className="aspect-[4/5] bg-[#111111] border border-[#2a2a2a] rounded-sm flex items-center justify-center max-w-md mx-auto lg:ml-auto lg:mr-0">
                 <div className="text-center p-8">
                   <div className="text-6xl mb-3">📸</div>
-                  <p className="text-[#555566] text-sm">Saskia&apos;s professional photo</p>
-                  <p className="text-[#555566] text-xs mt-1 opacity-60">public/images/saskia-hero.jpg</p>
+                  <p className="text-[#666666] text-sm">Saskia&apos;s professional photo</p>
+                  <p className="text-[#666666] text-xs mt-1 opacity-60">public/images/saskia-hero.jpg</p>
                 </div>
               </div>
             </FadeIn>
@@ -78,10 +78,10 @@ export default function AboutPage() {
       </section>
 
       {/* ─── HER STORY ─── */}
-      <section className="bg-[#1A1A2E] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <FadeIn>
-            <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-8 font-semibold">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-8 font-semibold">
               Her Story
             </p>
           </FadeIn>
@@ -124,10 +124,10 @@ export default function AboutPage() {
       </section>
 
       {/* ─── CREDENTIALS ─── */}
-      <section className="bg-[#0D0D1A] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <FadeIn className="mb-12">
-            <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Credentials
             </p>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none">
@@ -135,11 +135,11 @@ export default function AboutPage() {
             </h2>
           </FadeIn>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#1E1E30] border border-[#1E1E30] rounded-sm overflow-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#2a2a2a] border border-[#2a2a2a] rounded-sm overflow-hidden">
             {credentials.map((cred, i) => (
               <FadeIn key={cred.label} delay={i * 0.06}>
-                <div className="bg-[#12121F] p-6 lg:p-8">
-                  <p className="text-[#555566] text-[10px] uppercase tracking-[0.2em] mb-2 font-semibold">
+                <div className="bg-[#111111] p-6 lg:p-8">
+                  <p className="text-[#666666] text-[10px] uppercase tracking-[0.2em] mb-2 font-semibold">
                     {cred.label}
                   </p>
                   <p className="text-[#F0ECE4] font-display text-xl lg:text-2xl tracking-wide">
@@ -153,10 +153,10 @@ export default function AboutPage() {
       </section>
 
       {/* ─── COACHING PHILOSOPHY ─── */}
-      <section className="bg-[#1A1A2E] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <FadeIn className="mb-14">
-            <p className="text-[#C8F04A] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Philosophy
             </p>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none">
@@ -167,12 +167,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {philosophy.map((p, i) => (
               <FadeIn key={i} delay={i * 0.1}>
-                <div className="bg-[#12121F] border border-[#1E1E30] p-8 rounded-sm h-full hover:border-[#C8F04A]/40 transition-colors">
-                  <div className="w-8 h-1 bg-[#C8F04A] mb-6" />
+                <div className="bg-[#111111] border border-[#2a2a2a] p-8 rounded-sm h-full hover:border-[#C0392B]/40 transition-colors">
+                  <div className="w-8 h-1 bg-[#C0392B] mb-6" />
                   <p className="text-[#F0ECE4] font-display text-xl lg:text-2xl mb-4 leading-tight">
                     {p.bold}
                   </p>
-                  <p className="text-[#555566] text-sm leading-relaxed">{p.body}</p>
+                  <p className="text-[#666666] text-sm leading-relaxed">{p.body}</p>
                 </div>
               </FadeIn>
             ))}
@@ -181,26 +181,26 @@ export default function AboutPage() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="bg-[#0D0D1A] border-t border-[#1E1E30] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#0a0a0a] border-t border-[#2a2a2a] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-6">
               READY TO WORK TOGETHER?
             </h2>
-            <p className="text-[#555566] text-base mb-10">
+            <p className="text-[#666666] text-base mb-10">
               Book a free 20-minute discovery call. No pressure — just a conversation about
               your goals and what we&apos;d work on together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/book"
-                className="bg-[#C8F04A] text-[#0D0D1A] font-bold text-sm px-10 py-4 tracking-wide hover:bg-[#C8F04A]/90 transition-all hover:scale-105 inline-block min-h-[52px] flex items-center justify-center"
+                className="bg-[#C0392B] text-white font-bold text-sm px-10 py-4 tracking-wide hover:bg-[#C0392B]/90 transition-all hover:scale-105 inline-block min-h-[52px] flex items-center justify-center"
               >
                 Book a Free Discovery Call
               </Link>
               <Link
                 href="/coaching"
-                className="border border-[#F0ECE4]/30 text-[#F0ECE4] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C8F04A] hover:text-[#C8F04A] transition-all inline-block min-h-[52px] flex items-center justify-center"
+                className="border border-[#F0ECE4]/30 text-[#F0ECE4] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all inline-block min-h-[52px] flex items-center justify-center"
               >
                 See Coaching Packages
               </Link>
