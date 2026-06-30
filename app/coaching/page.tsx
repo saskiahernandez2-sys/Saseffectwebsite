@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Check } from 'lucide-react'
 import FadeIn from '@/components/FadeIn'
-import AddOnCard from '@/components/AddOnCard'
 import { packages, addOns } from '@/lib/constants'
 
 export const metadata: Metadata = {
@@ -49,94 +48,80 @@ export default function CoachingPage() {
             {/* The Foundation */}
             <FadeIn>
               <div className="bg-[#111111] border border-[#2a2a2a] rounded-sm p-8 flex flex-col h-full">
-                <div className="mb-6">
-                  <p className="text-[#666666] text-[10px] uppercase tracking-[0.22em] mb-2 font-semibold">
-                    Package 01
-                  </p>
-                  <h2 className="font-display text-4xl text-[#F0ECE4] mb-1">{foundation.name.toUpperCase()}</h2>
-                  <p className="text-[#666666] text-sm mb-4">{foundation.tagline}</p>
-                  <p className="font-display text-5xl text-[#F0ECE4]">
+                <div className="mb-5">
+                  <h2 className="font-display text-4xl text-[#F0ECE4] mb-2">{foundation.name.toUpperCase()}</h2>
+                  <p className="font-display text-5xl text-[#F0ECE4] leading-none mb-3">
                     {foundation.price}
-                    <span className="text-[#666666] text-lg font-sans font-normal">{foundation.period}</span>
+                    <span className="text-[#666666] text-xl font-sans font-normal"> / month</span>
                   </p>
+                  <p className="text-[#666666] text-sm leading-relaxed">{foundation.tagline}</p>
                 </div>
 
-                <p className="text-[#F0ECE4]/70 text-sm leading-relaxed mb-7">
-                  {foundation.description}
-                </p>
+                <div className="w-full h-px bg-[#2a2a2a] mb-6" />
 
-                <div className="mb-7">
-                  <p className="text-[#666666] text-[10px] uppercase tracking-[0.18em] mb-4 font-semibold">
-                    What You Get
-                  </p>
-                  <ul className="space-y-3">
-                    {foundation.includes.map((item) => (
-                      <li key={item} className="flex items-start gap-3 text-sm">
-                        <Check size={15} className="text-[#C0392B] mt-0.5 shrink-0" />
-                        <span className="text-[#F0ECE4]/80 leading-snug">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <ul className="space-y-4 mb-8 flex-1">
+                  {foundation.includes.map((item) => (
+                    <li key={item.main} className="flex items-start gap-3">
+                      <Check size={15} className="text-[#C0392B] mt-0.5 shrink-0" />
+                      <span>
+                        <span className="text-[#F0ECE4]/90 text-sm leading-snug block">{item.main}</span>
+                        {item.sub && (
+                          <span className="text-[#666666] text-xs leading-snug block mt-0.5">{item.sub}</span>
+                        )}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
 
-                <div className="mt-auto">
-                  <Link
-                    href="/book"
-                    className="block w-full text-center border-2 border-[#C0392B] text-[#C0392B] font-bold text-sm py-4 tracking-wide hover:bg-[#C0392B] hover:text-white transition-all min-h-[52px] flex items-center justify-center"
-                  >
-                    Start with The Foundation
-                  </Link>
-                </div>
+                <Link
+                  href="/book"
+                  className="block w-full text-center border-2 border-[#C0392B] text-[#C0392B] font-bold text-sm py-4 tracking-wide hover:bg-[#C0392B] hover:text-white transition-all min-h-[52px] flex items-center justify-center"
+                >
+                  Start with The Foundation
+                </Link>
               </div>
             </FadeIn>
 
             {/* The Effect */}
             <FadeIn delay={0.08}>
               <div className="bg-[#0a0a0a] border-2 border-[#C0392B] rounded-sm p-8 flex flex-col h-full shadow-[0_0_50px_rgba(192,57,43,0.12)] relative">
-                <div className="absolute top-4 right-4">
-                  <span className="bg-[#C0392B] text-white text-[9px] uppercase tracking-[0.18em] font-bold px-3 py-1">
+                <div className="absolute top-0 right-0">
+                  <span className="bg-[#C0392B] text-white text-[9px] uppercase tracking-[0.18em] font-bold px-3 py-1.5 block">
                     Most Popular
                   </span>
                 </div>
 
-                <div className="mb-6">
-                  <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-2 font-semibold">
-                    Package 02
-                  </p>
-                  <h2 className="font-display text-4xl text-[#F0ECE4] mb-1">{effect.name.toUpperCase()}</h2>
-                  <p className="text-[#666666] text-sm mb-4">{effect.tagline}</p>
-                  <p className="font-display text-5xl text-[#C0392B]">
+                <div className="mb-5 pt-2">
+                  <h2 className="font-display text-4xl text-[#F0ECE4] mb-2">{effect.name.toUpperCase()}</h2>
+                  <p className="font-display text-5xl text-[#C0392B] leading-none mb-3">
                     {effect.price}
-                    <span className="text-[#666666] text-lg font-sans font-normal">{effect.period}</span>
+                    <span className="text-[#666666] text-xl font-sans font-normal"> / month</span>
                   </p>
+                  <p className="text-[#666666] text-sm leading-relaxed">{effect.tagline}</p>
                 </div>
 
-                <p className="text-[#F0ECE4]/70 text-sm leading-relaxed mb-7">
-                  {effect.description}
-                </p>
+                <div className="w-full h-px bg-[#2a2a2a] mb-6" />
 
-                <div className="mb-7">
-                  <p className="text-[#666666] text-[10px] uppercase tracking-[0.18em] mb-4 font-semibold">
-                    What You Get
-                  </p>
-                  <ul className="space-y-3">
-                    {effect.includes.map((item) => (
-                      <li key={item} className="flex items-start gap-3 text-sm">
-                        <Check size={15} className="text-[#C0392B] mt-0.5 shrink-0" />
-                        <span className="text-[#F0ECE4]/80 leading-snug">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <ul className="space-y-4 mb-8 flex-1">
+                  {effect.includes.map((item) => (
+                    <li key={item.main} className="flex items-start gap-3">
+                      <Check size={15} className="text-[#C0392B] mt-0.5 shrink-0" />
+                      <span>
+                        <span className="text-[#F0ECE4]/90 text-sm leading-snug block">{item.main}</span>
+                        {item.sub && (
+                          <span className="text-[#666666] text-xs leading-snug block mt-0.5">{item.sub}</span>
+                        )}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
 
-                <div className="mt-auto">
-                  <Link
-                    href="/book"
-                    className="block w-full text-center bg-[#C0392B] text-white font-bold text-sm py-4 tracking-wide hover:bg-[#C0392B]/90 transition-all hover:scale-105 min-h-[52px] flex items-center justify-center"
-                  >
-                    Start with The Effect
-                  </Link>
-                </div>
+                <Link
+                  href="/book"
+                  className="block w-full text-center bg-[#C0392B] text-white font-bold text-sm py-4 tracking-wide hover:bg-[#C0392B]/90 transition-all hover:scale-105 min-h-[52px] flex items-center justify-center"
+                >
+                  Start with The Effect
+                </Link>
               </div>
             </FadeIn>
           </div>
@@ -156,7 +141,6 @@ export default function CoachingPage() {
           </FadeIn>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Foundation topics */}
             <FadeIn delay={0.05}>
               <div className="bg-[#111111] border border-[#2a2a2a] rounded-sm p-7">
                 <p className="font-display text-2xl text-[#F0ECE4] mb-1">The Foundation</p>
@@ -172,7 +156,6 @@ export default function CoachingPage() {
               </div>
             </FadeIn>
 
-            {/* Effect topics */}
             <FadeIn delay={0.1}>
               <div className="bg-[#0a0a0a] border border-[#C0392B]/50 rounded-sm p-7">
                 <p className="font-display text-2xl text-[#F0ECE4] mb-1">The Effect</p>
@@ -193,7 +176,7 @@ export default function CoachingPage() {
 
       {/* ─── ADD-ONS ─── */}
       <section className="bg-[#1a1a1a] py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <FadeIn className="mb-12">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Add-Ons
@@ -206,23 +189,30 @@ export default function CoachingPage() {
             </p>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {addOns.map((addon, i) => (
               <FadeIn key={addon.id} delay={i * 0.07}>
-                <div className="bg-[#111111] border border-[#2a2a2a] rounded-sm p-6 flex flex-col h-full hover:border-[#C0392B]/40 transition-colors">
-                  <div className="flex items-start justify-between gap-3 mb-1">
-                    <h3 className="font-display text-xl text-[#F0ECE4] leading-tight">{addon.title}</h3>
+                <div className="bg-[#111111] border border-[#2a2a2a] rounded-sm p-7 flex flex-col h-full hover:border-[#C0392B]/40 transition-colors">
+                  <div className="mb-4">
+                    <h3 className="font-display text-2xl text-[#F0ECE4] leading-tight mb-1">{addon.title}</h3>
+                    <p className="text-[#C0392B] font-bold text-base">{addon.price}</p>
+                    {addon.availability !== 'Both packages' && (
+                      <p className="text-[#666666] text-[10px] uppercase tracking-[0.12em] mt-1 font-semibold">
+                        {addon.availability}
+                      </p>
+                    )}
                   </div>
-                  <p className="text-[#C0392B] font-bold text-sm mb-1">{addon.price}</p>
-                  {addon.availability !== 'Both packages' && (
-                    <p className="text-[#666666] text-[10px] uppercase tracking-[0.12em] mb-3 font-semibold">
-                      {addon.availability}
-                    </p>
-                  )}
-                  <p className="text-[#666666] text-sm leading-relaxed flex-1 mt-3">{addon.description}</p>
+                  <ul className="space-y-2 flex-1">
+                    {addon.bullets.map((bullet) => (
+                      <li key={bullet} className="flex items-start gap-2.5 text-sm">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#C0392B] shrink-0 mt-1.5" />
+                        <span className="text-[#666666] leading-snug">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
                   <Link
                     href="/book"
-                    className="mt-5 text-[#C0392B] text-sm font-semibold hover:underline block"
+                    className="mt-6 text-[#C0392B] text-sm font-semibold hover:underline block"
                   >
                     Add to your package
                   </Link>

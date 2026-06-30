@@ -164,12 +164,17 @@ export default function HomePage() {
                       <span className="text-[#666666] text-base font-sans font-normal">{pkg.period}</span>
                     </p>
                   </div>
-                  <p className="text-[#F0ECE4]/65 text-sm leading-relaxed mb-5">{pkg.description}</p>
-                  <ul className="space-y-2.5 mb-6">
+                  <p className="text-[#666666] text-sm leading-relaxed mb-5">{pkg.tagline}</p>
+                  <ul className="space-y-3 mb-6">
                     {pkg.includes.map((item) => (
-                      <li key={item} className="flex items-start gap-2.5 text-sm">
+                      <li key={item.main} className="flex items-start gap-2.5 text-sm">
                         <Check size={14} className="text-[#C0392B] mt-0.5 shrink-0" />
-                        <span className="text-[#F0ECE4]/80 leading-snug">{item}</span>
+                        <span>
+                          <span className="text-[#F0ECE4]/80 leading-snug block">{item.main}</span>
+                          {item.sub && (
+                            <span className="text-[#666666] text-xs leading-snug block mt-0.5">{item.sub}</span>
+                          )}
+                        </span>
                       </li>
                     ))}
                   </ul>

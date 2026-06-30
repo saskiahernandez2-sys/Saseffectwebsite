@@ -12,13 +12,11 @@ export const packages = [
     name: 'The Foundation',
     price: '$197',
     period: '/month',
-    tagline: 'Build the base. Stay consistent.',
-    description:
-      'Two calls a month. Every week I send a check-in text with one focused topic to work on. Plus weekly mental homework to keep the work going between sessions. Simple and it works.',
+    tagline: 'Core mental performance coaching with one focused topic per week.',
     includes: [
-      '2 one-on-one calls per month',
-      'Weekly check-in text with one focused topic',
-      'Weekly mental homework',
+      { main: '2 one on one calls per month' },
+      { main: 'Weekly check in text from me', sub: 'One focused topic or challenge per week' },
+      { main: 'Weekly mental homework' },
     ],
     topics: [
       'Confidence',
@@ -39,13 +37,11 @@ export const packages = [
     name: 'The Effect',
     price: '$397',
     period: '/month',
-    tagline: 'Full access. Every week. All in.',
-    description:
-      'We meet every week. Four calls a month plus unlimited text support so they can reach out whenever something comes up. Weekly mental homework with full accountability check-ins so nothing slips.',
+    tagline: 'More touchpoints, deeper work, and full accountability every week.',
     includes: [
-      '4 one-on-one calls per month',
-      'Unlimited text support',
-      'Weekly mental homework with full accountability check-ins',
+      { main: '4 one on one calls per month', sub: 'Every week we meet' },
+      { main: 'Unlimited text support', sub: 'Reach out anytime for help with a mental challenge' },
+      { main: 'Weekly mental homework + accountability' },
     ],
     topics: [
       'Everything in The Foundation',
@@ -66,39 +62,51 @@ export const packages = [
 export const addOns = [
   {
     id: 'recruiting',
-    title: 'Recruiting Strategy + Mock Calls',
-    price: '$197/month',
+    title: 'Recruiting strategy + mock calls',
+    price: '$197 per month',
     type: 'monthly',
     availability: 'Both packages',
-    description:
-      'We build your recruiting profile together. You learn how to reach out to college coaches the right way. Then we run mock recruiting calls so when a real coach calls you are ready.',
+    bullets: [
+      'Recruiting profile buildout',
+      'How to reach out to college coaches',
+      'Mock recruiting calls so you are ready when it counts',
+    ],
   },
   {
     id: 'nutrition',
-    title: 'Nutrition Guidance',
-    price: '$97/month',
+    title: 'Nutrition guidance',
+    price: '$97 per month',
     type: 'monthly',
     availability: 'Both packages',
-    description:
-      'Performance nutrition built around your sport and your schedule. What to eat. When to eat it. How to fuel for competition day and recover after.',
+    bullets: [
+      'Performance nutrition for your sport and schedule',
+      'What to eat and when',
+      'How to fuel for competition day and recovery',
+    ],
   },
   {
     id: 'academic',
-    title: 'Academic and Schedule Mapping',
+    title: 'Academic + schedule mapping session',
     price: '$97 one time',
     type: 'one-time',
     availability: 'Both packages',
-    description:
-      'One call where we build out your full Google Calendar together. School. Games. Practices. Life. All organized in one place so nothing falls through the cracks.',
+    bullets: [
+      'One dedicated session together',
+      'Full Google Calendar buildout',
+      'School, games, practices, and life all organized in one place',
+    ],
   },
   {
     id: 'textsupport',
-    title: 'Unlimited Text Support',
-    price: '$47/month',
+    title: 'Unlimited text support',
+    price: '$47 per month',
     type: 'monthly',
     availability: 'Foundation only',
-    description:
-      'Reach out anytime between sessions when a mental challenge comes up. For Foundation clients only. The Effect already includes unlimited text support.',
+    bullets: [
+      'Foundation clients only',
+      'Text anytime you need a reset or help with a mental challenge',
+      'Response within 24 hours',
+    ],
   },
 ]
 

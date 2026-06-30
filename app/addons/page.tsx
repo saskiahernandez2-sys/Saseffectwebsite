@@ -48,7 +48,7 @@ export default function AddOnsPage() {
 
       {/* ─── MONTHLY ADD-ONS ─── */}
       <section className="bg-[#1a1a1a] py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <FadeIn className="mb-10">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
               Monthly Add-Ons
@@ -61,7 +61,7 @@ export default function AddOnsPage() {
             </p>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {monthlyAddOns.map((addon, i) => (
               <FadeIn key={addon.id} delay={i * 0.08}>
                 <div className="bg-[#111111] border border-[#2a2a2a] rounded-sm p-7 flex flex-col h-full hover:border-[#C0392B]/40 transition-colors">
@@ -74,7 +74,14 @@ export default function AddOnsPage() {
                       </p>
                     )}
                   </div>
-                  <p className="text-[#666666] text-sm leading-relaxed flex-1">{addon.description}</p>
+                  <ul className="space-y-2 flex-1">
+                    {addon.bullets.map((bullet) => (
+                      <li key={bullet} className="flex items-start gap-2.5 text-sm">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#C0392B] shrink-0 mt-1.5" />
+                        <span className="text-[#666666] leading-snug">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
                   <Link href="/book" className="mt-6 text-[#C0392B] text-sm font-semibold hover:underline block">
                     Add to your package
                   </Link>
@@ -87,7 +94,7 @@ export default function AddOnsPage() {
 
       {/* ─── ONE-TIME ADD-ONS ─── */}
       <section className="bg-[#0a0a0a] py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <FadeIn className="mb-10">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
               One-Time Sessions
@@ -100,7 +107,7 @@ export default function AddOnsPage() {
             </p>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {oneTimeAddOns.map((addon, i) => (
               <FadeIn key={addon.id} delay={i * 0.08}>
                 <div className="bg-[#111111] border border-[#2a2a2a] rounded-sm p-7 flex flex-col h-full hover:border-[#C0392B]/40 transition-colors">
@@ -108,7 +115,14 @@ export default function AddOnsPage() {
                     <h3 className="font-display text-2xl text-[#F0ECE4] leading-tight mb-1">{addon.title}</h3>
                     <p className="text-[#C0392B] font-bold text-base">{addon.price}</p>
                   </div>
-                  <p className="text-[#666666] text-sm leading-relaxed flex-1">{addon.description}</p>
+                  <ul className="space-y-2 flex-1">
+                    {addon.bullets.map((bullet) => (
+                      <li key={bullet} className="flex items-start gap-2.5 text-sm">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#C0392B] shrink-0 mt-1.5" />
+                        <span className="text-[#666666] leading-snug">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
                   <Link href="/book" className="mt-6 text-[#C0392B] text-sm font-semibold hover:underline block">
                     Book this session
                   </Link>
@@ -119,40 +133,8 @@ export default function AddOnsPage() {
         </div>
       </section>
 
-      {/* ─── HOW IT WORKS ─── */}
-      <section className="bg-[#1a1a1a] py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <FadeIn className="mb-10">
-            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
-              How It Works
-            </p>
-            <h2 className="font-display text-4xl sm:text-5xl text-[#F0ECE4] leading-none mb-4">
-              START WITH THE PACKAGE. LAYER IN WHAT YOU NEED.
-            </h2>
-            <p className="text-[#666666] text-base max-w-xl">
-              Add-ons work best when there is a clear need. Not sure if an add-on makes sense for your athlete right now? Book a free call. I will tell you honestly.
-            </p>
-          </FadeIn>
-
-          <FadeIn delay={0.08}>
-            <div className="space-y-4">
-              {[
-                { n: '01', text: 'Pick The Foundation or The Effect as your coaching base.' },
-                { n: '02', text: 'Identify the specific gap. Recruiting? Nutrition? Schedule chaos? Something else?' },
-                { n: '03', text: 'Add what fits right now. Remove it when you do not need it anymore.' },
-              ].map((item) => (
-                <div key={item.n} className="flex items-start gap-4 bg-[#111111] border border-[#2a2a2a] p-5 rounded-sm">
-                  <span className="font-display text-3xl text-[#C0392B] leading-none shrink-0">{item.n}</span>
-                  <p className="text-[#F0ECE4]/75 text-sm leading-relaxed pt-1">{item.text}</p>
-                </div>
-              ))}
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* ─── CTA ─── */}
-      <section className="bg-[#0a0a0a] border-t border-[#2a2a2a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#1a1a1a] border-t border-[#2a2a2a] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-6">
