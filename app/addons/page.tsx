@@ -1,43 +1,44 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeIn from '@/components/FadeIn'
-import AddOnCard from '@/components/AddOnCard'
-import { monthlyAddOns, sessionAddOns } from '@/lib/constants'
+import { addOns } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Add-On Services | Nutrition, Conditioning, Recruiting & More',
+  title: 'Add-Ons | Recruiting, Nutrition, Schedule Mapping and More',
   description:
-    'Optional add-ons that bolt onto Mental Performance Coaching — nutrition plan (+$100/mo), conditioning program (+$100/mo), recruiting support (+$150/mo), mock recruiting calls, game film review, and pre-season intensive.',
+    'Optional add-ons for Foundation and Effect clients. Recruiting strategy plus mock calls at $197 per month. Nutrition guidance at $97 per month. Academic schedule mapping at $97 one time. Unlimited text support at $47 per month for Foundation clients.',
   openGraph: {
-    title: 'Add-On Services | The Sas Effect',
+    title: 'Add-Ons | The Sas Effect',
     description:
-      'Start with the mental performance foundation. Add nutrition, conditioning, recruiting support, and more based on what your athlete needs.',
+      'Add recruiting strategy, nutrition guidance, schedule mapping, or extra text support to either package.',
   },
 }
 
 export default function AddOnsPage() {
+  const monthlyAddOns = addOns.filter((a) => a.type === 'monthly')
+  const oneTimeAddOns = addOns.filter((a) => a.type === 'one-time')
+
   return (
     <>
       {/* ─── HERO ─── */}
       <section className="relative bg-[#0a0a0a] pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#C0392B]/4 to-transparent pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
-              Add-On Services
+              Add-Ons
             </p>
             <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-[#F0ECE4] leading-none mb-6">
-              TARGETED SUPPORT<br />FOR SPECIFIC NEEDS.
+              ADD WHAT YOUR ATHLETE ACTUALLY NEEDS.
             </h1>
-            <p className="text-[#F0ECE4]/70 text-base sm:text-lg max-w-2xl mx-auto mb-4">
-              Add-ons bolt onto your Mental Performance Coaching package. Start with the core
-              offer, then customize based on what your athlete needs.
+            <p className="text-[#F0ECE4]/70 text-base sm:text-lg max-w-xl mx-auto mb-6">
+              Every add-on works on top of either package. Add them when you need them. Remove them when you do not.
             </p>
             <div className="inline-block bg-[#111111] border border-[#2a2a2a] px-5 py-3 rounded-sm">
               <p className="text-[#666666] text-sm">
-                Core offer required:{' '}
+                Requires an active coaching package.{' '}
                 <Link href="/coaching" className="text-[#C0392B] hover:underline font-semibold">
-                  Mental Performance Coaching — $250/month
+                  See The Foundation and The Effect
                 </Link>
               </p>
             </div>
@@ -56,39 +57,62 @@ export default function AddOnsPage() {
               ONGOING MONTHLY SUPPORT
             </h2>
             <p className="text-[#666666] text-sm">
-              Added to your monthly coaching bill. Can be added or removed each month.
+              Billed monthly alongside your coaching package. Add or remove at any time.
             </p>
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {monthlyAddOns.map((addon, i) => (
-              <FadeIn key={addon.title} delay={i * 0.08}>
-                <AddOnCard title={addon.title} price={addon.price} description={addon.description} />
+              <FadeIn key={addon.id} delay={i * 0.08}>
+                <div className="bg-[#111111] border border-[#2a2a2a] rounded-sm p-7 flex flex-col h-full hover:border-[#C0392B]/40 transition-colors">
+                  <div className="mb-4">
+                    <h3 className="font-display text-2xl text-[#F0ECE4] leading-tight mb-1">{addon.title}</h3>
+                    <p className="text-[#C0392B] font-bold text-base">{addon.price}</p>
+                    {addon.availability !== 'Both packages' && (
+                      <p className="text-[#666666] text-[10px] uppercase tracking-[0.12em] mt-1 font-semibold">
+                        {addon.availability}
+                      </p>
+                    )}
+                  </div>
+                  <p className="text-[#666666] text-sm leading-relaxed flex-1">{addon.description}</p>
+                  <Link href="/book" className="mt-6 text-[#C0392B] text-sm font-semibold hover:underline block">
+                    Add to your package
+                  </Link>
+                </div>
               </FadeIn>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ─── PER-SESSION ADD-ONS ─── */}
+      {/* ─── ONE-TIME ADD-ONS ─── */}
       <section className="bg-[#0a0a0a] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <FadeIn className="mb-10">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
-              Per-Session &amp; One-Time
+              One-Time Sessions
             </p>
             <h2 className="font-display text-3xl sm:text-4xl text-[#F0ECE4] leading-none mb-2">
-              TARGETED ONE-OFF SESSIONS
+              ONE AND DONE
             </h2>
             <p className="text-[#666666] text-sm">
-              Book when you need them. No ongoing commitment.
+              Pay once. No subscription. No recurring charge.
             </p>
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {sessionAddOns.map((addon, i) => (
-              <FadeIn key={addon.title} delay={i * 0.08}>
-                <AddOnCard title={addon.title} price={addon.price} description={addon.description} />
+            {oneTimeAddOns.map((addon, i) => (
+              <FadeIn key={addon.id} delay={i * 0.08}>
+                <div className="bg-[#111111] border border-[#2a2a2a] rounded-sm p-7 flex flex-col h-full hover:border-[#C0392B]/40 transition-colors">
+                  <div className="mb-4">
+                    <h3 className="font-display text-2xl text-[#F0ECE4] leading-tight mb-1">{addon.title}</h3>
+                    <p className="text-[#C0392B] font-bold text-base">{addon.price}</p>
+                  </div>
+                  <p className="text-[#666666] text-sm leading-relaxed flex-1">{addon.description}</p>
+                  <Link href="/book" className="mt-6 text-[#C0392B] text-sm font-semibold hover:underline block">
+                    Book this session
+                  </Link>
+                </div>
               </FadeIn>
             ))}
           </div>
@@ -97,41 +121,33 @@ export default function AddOnsPage() {
 
       {/* ─── HOW IT WORKS ─── */}
       <section className="bg-[#1a1a1a] py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <FadeIn>
-              <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
-                How It Works
-              </p>
-              <h2 className="font-display text-4xl sm:text-5xl text-[#F0ECE4] leading-none mb-6">
-                BUILD WHAT YOUR ATHLETE NEEDS.
-              </h2>
-              <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-4">
-                Every athlete starts with the Mental Performance Coaching core offer.
-                Add-ons layer on top — monthly add-ons run alongside your coaching, and
-                per-session add-ons are booked when you need them.
-              </p>
-              <p className="text-[#F0ECE4]/70 text-base leading-relaxed">
-                Not sure which add-on fits right now? Book a discovery call and I&apos;ll
-                tell you exactly what makes sense for your athlete&apos;s situation.
-              </p>
-            </FadeIn>
+        <div className="max-w-4xl mx-auto">
+          <FadeIn className="mb-10">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+              How It Works
+            </p>
+            <h2 className="font-display text-4xl sm:text-5xl text-[#F0ECE4] leading-none mb-4">
+              START WITH THE PACKAGE. LAYER IN WHAT YOU NEED.
+            </h2>
+            <p className="text-[#666666] text-base max-w-xl">
+              Add-ons work best when there is a clear need. Not sure if an add-on makes sense for your athlete right now? Book a free call. I will tell you honestly.
+            </p>
+          </FadeIn>
 
-            <FadeIn delay={0.1}>
-              <div className="space-y-4">
-                {[
-                  { step: '01', text: 'Start with the core offer — Mental Performance Coaching at $250/mo.' },
-                  { step: '02', text: 'Identify the gaps — recruiting prep, nutrition, conditioning, or specific sessions.' },
-                  { step: '03', text: 'Add what you need. Adjust month to month as your athlete progresses.' },
-                ].map((item) => (
-                  <div key={item.step} className="flex items-start gap-4 bg-[#111111] border border-[#2a2a2a] p-5 rounded-sm">
-                    <span className="font-display text-3xl text-[#C0392B] leading-none shrink-0">{item.step}</span>
-                    <p className="text-[#F0ECE4]/75 text-sm leading-relaxed pt-1">{item.text}</p>
-                  </div>
-                ))}
-              </div>
-            </FadeIn>
-          </div>
+          <FadeIn delay={0.08}>
+            <div className="space-y-4">
+              {[
+                { n: '01', text: 'Pick The Foundation or The Effect as your coaching base.' },
+                { n: '02', text: 'Identify the specific gap. Recruiting? Nutrition? Schedule chaos? Something else?' },
+                { n: '03', text: 'Add what fits right now. Remove it when you do not need it anymore.' },
+              ].map((item) => (
+                <div key={item.n} className="flex items-start gap-4 bg-[#111111] border border-[#2a2a2a] p-5 rounded-sm">
+                  <span className="font-display text-3xl text-[#C0392B] leading-none shrink-0">{item.n}</span>
+                  <p className="text-[#F0ECE4]/75 text-sm leading-relaxed pt-1">{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -140,11 +156,10 @@ export default function AddOnsPage() {
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-6">
-              READY TO BUILD YOUR PLAN?
+              NOT SURE WHAT YOU NEED?
             </h2>
             <p className="text-[#666666] text-base mb-10">
-              Book a free discovery call and we&apos;ll figure out the right starting point — core offer,
-              add-ons, and all.
+              Book a free call and I will tell you exactly what makes sense for your athlete right now.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -157,7 +172,7 @@ export default function AddOnsPage() {
                 href="/coaching"
                 className="border border-[#F0ECE4]/30 text-[#F0ECE4] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all inline-block min-h-[52px] flex items-center justify-center"
               >
-                See Core Offer &amp; Pricing
+                See Both Packages
               </Link>
             </div>
           </FadeIn>

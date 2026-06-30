@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Brain, Apple, Dumbbell, BookOpen, GraduationCap, ChevronRight, Check } from 'lucide-react'
+import { Brain, Apple, BookOpen, GraduationCap, ChevronRight, Check } from 'lucide-react'
 import HeroSection from '@/components/HeroSection'
 import CredibilityBar from '@/components/CredibilityBar'
 import FadeIn from '@/components/FadeIn'
 import TestimonialCard from '@/components/TestimonialCard'
-import { coreOffer, monthlyAddOns, sessionAddOns, testimonials, pillars } from '@/lib/constants'
+import { packages, addOns, testimonials, pillars } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'The Sas Effect | Mental Performance Coaching for High School Athletes',
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 const pillarIconMap: Record<string, React.ReactNode> = {
   Brain:         <Brain size={28} />,
   Apple:         <Apple size={28} />,
-  Dumbbell:      <Dumbbell size={28} />,
   BookOpen:      <BookOpen size={28} />,
   GraduationCap: <GraduationCap size={28} />,
 }
@@ -55,14 +54,14 @@ export default function HomePage() {
                 COACHED BY SOMEONE WHO&apos;S BEEN EXACTLY WHERE YOU ARE.
               </h2>
               <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-6">
-                I&apos;m Saskia — an active D1 beach volleyball athlete at Texas A&amp;M–Corpus Christi.
+                I&apos;m Saskia. An active D1 beach volleyball athlete at Texas A&amp;M–Corpus Christi.
                 I&apos;m All-Conference, carry a 4.0 GPA, and I&apos;ve been a student-athlete my entire
                 life. I know what it&apos;s like to have the skill but lose it under pressure. To balance
                 classes, practice, recruiting, and the weight of expectations.
               </p>
               <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-8">
                 I built The Sas Effect because I wanted to give high school athletes the mental tools
-                I had to figure out on my own — the hard way.
+                I had to figure out on my own. The hard way.
               </p>
               <Link
                 href="/about"
@@ -131,7 +130,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── SECTION 6: CORE OFFER + ADD-ONS ─── */}
+      {/* ─── SECTION 6: PACKAGES PREVIEW ─── */}
       <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <FadeIn className="text-center mb-12">
@@ -139,85 +138,77 @@ export default function HomePage() {
               Coaching
             </p>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-4">
-              ONE CORE OFFER.<br />CUSTOMIZE FROM THERE.
+              TWO PACKAGES.<br />ONE FOCUS.
             </h2>
             <p className="text-[#666666] text-sm max-w-lg mx-auto">
-              Start with the mental performance foundation. Add what your athlete needs.
+              Pick the level that fits right now. Add on from there.
             </p>
           </FadeIn>
 
-          {/* Core offer card */}
-          <FadeIn delay={0.05}>
-            <div className="bg-[#0a0a0a] border-2 border-[#C0392B] rounded-sm p-8 lg:p-10 mb-8 shadow-[0_0_40px_rgba(192,57,43,0.10)]">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-                {/* Left */}
-                <div>
-                  <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-2 font-semibold">
-                    The Core Offer
-                  </p>
-                  <p className="font-display text-5xl lg:text-6xl text-[#C0392B] mb-1">{coreOffer.price}</p>
-                  <p className="text-[#666666] text-xs uppercase tracking-[0.15em] mb-6">{coreOffer.priceNote}</p>
-                  <p className="text-[#F0ECE4]/80 text-sm leading-relaxed mb-6">{coreOffer.plainDescription}</p>
-                  <div className="border-l-2 border-[#C0392B] pl-4">
-                    <p className="text-[#666666] text-xs uppercase tracking-[0.15em] mb-1.5 font-semibold">This is for you if…</p>
-                    <p className="text-[#F0ECE4]/70 text-sm leading-relaxed">{coreOffer.forWho}</p>
+          {/* Two package cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-8">
+            {packages.map((pkg, i) => (
+              <FadeIn key={pkg.id} delay={i * 0.08}>
+                <div className={`rounded-sm p-7 flex flex-col h-full ${
+                  pkg.highlight
+                    ? 'bg-[#0a0a0a] border-2 border-[#C0392B] shadow-[0_0_40px_rgba(192,57,43,0.10)]'
+                    : 'bg-[#111111] border border-[#2a2a2a]'
+                }`}>
+                  <div className="mb-4">
+                    <p className={`text-[10px] uppercase tracking-[0.22em] mb-1 font-semibold ${pkg.highlight ? 'text-[#C0392B]' : 'text-[#666666]'}`}>
+                      {pkg.highlight ? 'Most Popular' : 'Get Started'}
+                    </p>
+                    <p className="font-display text-3xl text-[#F0ECE4] mb-1">{pkg.name}</p>
+                    <p className={`font-display text-4xl ${pkg.highlight ? 'text-[#C0392B]' : 'text-[#F0ECE4]'}`}>
+                      {pkg.price}
+                      <span className="text-[#666666] text-base font-sans font-normal">{pkg.period}</span>
+                    </p>
                   </div>
-                </div>
-                {/* Right */}
-                <div>
-                  <p className="text-[#666666] text-xs uppercase tracking-[0.18em] mb-4 font-semibold">
-                    What&apos;s Included
-                  </p>
-                  <ul className="space-y-3 mb-8">
-                    {coreOffer.features.map((f) => (
-                      <li key={f} className="flex items-start gap-2.5 text-sm">
-                        <Check size={15} className="text-[#C0392B] mt-0.5 shrink-0" />
-                        <span className="text-[#F0ECE4]/80 leading-snug">{f}</span>
+                  <p className="text-[#F0ECE4]/65 text-sm leading-relaxed mb-5">{pkg.description}</p>
+                  <ul className="space-y-2.5 mb-6">
+                    {pkg.includes.map((item) => (
+                      <li key={item} className="flex items-start gap-2.5 text-sm">
+                        <Check size={14} className="text-[#C0392B] mt-0.5 shrink-0" />
+                        <span className="text-[#F0ECE4]/80 leading-snug">{item}</span>
                       </li>
                     ))}
                   </ul>
                   <Link
                     href="/book"
-                    className="block w-full text-center bg-[#C0392B] text-white font-bold text-sm py-4 tracking-wide hover:bg-[#C0392B]/90 transition-all hover:scale-105 min-h-[52px] flex items-center justify-center"
+                    className={`mt-auto block text-center font-bold text-sm py-3.5 tracking-wide transition-all min-h-[48px] flex items-center justify-center ${
+                      pkg.highlight
+                        ? 'bg-[#C0392B] text-white hover:bg-[#C0392B]/90 hover:scale-105'
+                        : 'border border-[#C0392B] text-[#C0392B] hover:bg-[#C0392B] hover:text-white'
+                    }`}
                   >
-                    Book a Free Discovery Call
+                    Start with {pkg.name}
                   </Link>
                 </div>
-              </div>
-            </div>
-          </FadeIn>
+              </FadeIn>
+            ))}
+          </div>
 
-          {/* Customize with add-ons */}
-          <FadeIn delay={0.1}>
-            <p className="text-[#666666] text-[10px] uppercase tracking-[0.22em] mb-5 font-semibold text-center">
-              Customize with Add-Ons
+          {/* Add-ons teaser */}
+          <FadeIn delay={0.15}>
+            <p className="text-[#666666] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold text-center">
+              Available Add-Ons
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
-              {monthlyAddOns.map((addon) => (
-                <div key={addon.title} className="bg-[#111111] border border-[#2a2a2a] p-4 rounded-sm flex items-start justify-between gap-3 hover:border-[#C0392B]/30 transition-colors">
-                  <p className="text-[#F0ECE4]/85 text-sm font-medium">{addon.title}</p>
-                  <span className="text-[#C0392B] text-xs font-bold whitespace-nowrap shrink-0">{addon.price}</span>
-                </div>
-              ))}
-              {sessionAddOns.map((addon) => (
-                <div key={addon.title} className="bg-[#111111] border border-[#2a2a2a] p-4 rounded-sm flex items-start justify-between gap-3 hover:border-[#C0392B]/30 transition-colors">
-                  <p className="text-[#F0ECE4]/85 text-sm font-medium">{addon.title}</p>
-                  <span className="text-[#C0392B] text-xs font-bold whitespace-nowrap shrink-0">{addon.price}</span>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+              {addOns.map((addon) => (
+                <div key={addon.id} className="bg-[#111111] border border-[#2a2a2a] p-3.5 rounded-sm hover:border-[#C0392B]/30 transition-colors">
+                  <p className="text-[#F0ECE4]/80 text-xs font-medium leading-snug mb-1">{addon.title}</p>
+                  <p className="text-[#C0392B] text-xs font-bold">{addon.price}</p>
                 </div>
               ))}
             </div>
-          </FadeIn>
-
-          <FadeIn delay={0.15} className="text-center">
-            <p className="text-[#666666] text-sm mb-6">
-              Pay monthly or save 10% when you pay 3 months in full.
-            </p>
-            <Link
-              href="/coaching"
-              className="inline-flex items-center gap-2 text-[#C0392B] font-semibold text-sm hover:gap-3 transition-all"
-            >
-              See full pricing details <ChevronRight size={16} />
-            </Link>
+            <div className="text-center">
+              <Link
+                href="/coaching"
+                className="inline-flex items-center gap-2 text-[#C0392B] font-semibold text-sm hover:gap-3 transition-all"
+              >
+                See full pricing details <ChevronRight size={16} />
+              </Link>
+            </div>
           </FadeIn>
         </div>
       </section>
@@ -253,7 +244,7 @@ export default function HomePage() {
               How It Works
             </p>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none">
-              HOW IT WORKS — SIMPLE AND CLEAR.
+              HOW IT WORKS.
             </h2>
           </FadeIn>
 
@@ -270,12 +261,12 @@ export default function HomePage() {
               {
                 num: '02',
                 title: 'Build Your Plan',
-                body: "We start with the mental performance foundation, then figure out which add-ons — if any — fit your athlete's situation right now.",
+                body: "We pick the right package and figure out if any add-ons make sense for your athlete right now.",
               },
               {
                 num: '03',
                 title: 'Start Building Your Mental Game',
-                body: 'Weekly calls, text support, and a plan built specifically for you. This is where the work — and the results — begin.',
+                body: 'Weekly calls, check-in texts, and homework built specifically for your athlete. This is where the real work starts.',
               },
             ].map((step, i) => (
               <FadeIn key={step.num} delay={i * 0.15}>
@@ -351,7 +342,7 @@ export default function HomePage() {
               READY TO TRAIN THE PART OF YOUR GAME NOBODY ELSE IS COACHING?
             </h2>
             <p className="text-[#666666] text-base mb-10 max-w-xl mx-auto">
-              Book your free 20-minute discovery call. No commitment — just a conversation about your goals.
+              Book your free 20-minute discovery call. No commitment. Just a conversation about your athlete and what they need.
             </p>
             <Link
               href="/book"

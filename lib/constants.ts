@@ -6,74 +6,100 @@ export const navLinks = [
   { href: '/book', label: 'Book a Call' },
 ]
 
-export const coreOffer = {
-  name: 'Mental Performance Coaching',
-  price: '$250/month',
-  priceNote: 'Launch price · 3-month minimum · Pay monthly or save 10% paying in full',
-  plainDescription:
-    "Every week your athlete gets on a 1-on-1 call with me. We work on their mindset, their focus, and how to handle pressure — plus how to balance school and sport so neither one suffers. Between calls I'm available by text Monday through Friday, so if something comes up before a big game or a hard week, I'm there. At the end of each month I send you a progress report so you always know exactly how your athlete is developing.",
-  features: [
-    'Weekly 1-on-1 coaching call — the main coaching time together',
-    'Mental performance coaching — confidence, focus, pressure management, mistake recovery, pregame routines',
-    'Academic balance + time management coaching',
-    'Text support Monday through Friday between calls',
-    'Custom journal prompts tailored to their challenges',
-    'Monthly progress report sent to parents',
-  ],
-  forWho:
-    "Your athlete has the talent but loses it under pressure, gets stuck in their own head, or struggles to bounce back from mistakes. This is the foundation — the mental game that separates good athletes from elite ones.",
-  href: '/book',
-}
-
-export const monthlyAddOns = [
+export const packages = [
   {
-    title: 'Nutrition Plan',
-    price: '+$100/month',
+    id: 'foundation',
+    name: 'The Foundation',
+    price: '$197',
+    period: '/month',
+    tagline: 'Build the base. Stay consistent.',
     description:
-      'Custom sport-specific fueling plan, built for performance and recovery. Created once and adjusted as your athlete progresses.',
+      'Two calls a month. Every week I send a check-in text with one focused topic to work on. Plus weekly mental homework to keep the work going between sessions. Simple and it works.',
+    includes: [
+      '2 one-on-one calls per month',
+      'Weekly check-in text with one focused topic',
+      'Weekly mental homework',
+    ],
+    topics: [
+      'Confidence',
+      'Self talk',
+      'Handling pressure',
+      'Dealing with mistakes',
+      'Focus and concentration',
+      'Pregame mindset',
+      'Bouncing back from a loss',
+    ],
+    topicsNote:
+      'We rotate through these week to week based on what your athlete is working through right now.',
+    highlight: false,
+    href: '/book',
   },
   {
-    title: 'Conditioning Program',
-    price: '+$100/month',
+    id: 'effect',
+    name: 'The Effect',
+    price: '$397',
+    period: '/month',
+    tagline: 'Full access. Every week. All in.',
     description:
-      "A training program built around your athlete's sport, schedule, and goals — not a generic plan.",
-  },
-  {
-    title: 'Recruiting Support',
-    price: '+$150/month',
-    description:
-      'Recruiting timeline, school list strategy, coach outreach guidance, and a clear understanding of what college coaches actually look for.',
-  },
-]
-
-export const sessionAddOns = [
-  {
-    title: 'Mock Recruiting Call',
-    price: '$125/session',
-    description:
-      'A full simulation of a college coach recruiting call. I play the coach, ask the real questions, and record it so you can review after. Includes a written debrief and a cheat sheet of the top 20 questions coaches ask.',
-  },
-  {
-    title: 'Game Film Review',
-    price: '$75/session',
-    description:
-      "A mental and tactical breakdown of one game or match, delivered with written notes you can reference in practice. Focus on decision-making under pressure, body language, and mental momentum.",
-  },
-  {
-    title: 'Pre-Season Intensive',
-    price: '$250/package',
-    description:
-      'A focused 2-week program to get your athlete mentally and physically locked in before their season — mental reset, game-week routine, and goal setting.',
+      'We meet every week. Four calls a month plus unlimited text support so they can reach out whenever something comes up. Weekly mental homework with full accountability check-ins so nothing slips.',
+    includes: [
+      '4 one-on-one calls per month',
+      'Unlimited text support',
+      'Weekly mental homework with full accountability check-ins',
+    ],
+    topics: [
+      'Everything in The Foundation',
+      'Identity as an athlete',
+      'Performing in big moments',
+      'Managing expectations from coaches and parents',
+      'Leadership on and off the field',
+      'Visualization and mental reps',
+      'A competitive mindset that carries into life',
+    ],
+    topicsNote:
+      'We go deeper. Everything from The Foundation plus the advanced work that separates good athletes from great ones.',
+    highlight: true,
+    href: '/book',
   },
 ]
 
-export const addOns = [...monthlyAddOns, ...sessionAddOns]
-
-export const pricingExamples = [
-  { label: 'Mindset only',                         price: '$250/mo' },
-  { label: 'Mindset + Nutrition',                  price: '$350/mo' },
-  { label: 'Mindset + Nutrition + Conditioning',   price: '$450/mo' },
-  { label: 'Full package + Recruiting',            price: '$600/mo' },
+export const addOns = [
+  {
+    id: 'recruiting',
+    title: 'Recruiting Strategy + Mock Calls',
+    price: '$197/month',
+    type: 'monthly',
+    availability: 'Both packages',
+    description:
+      'We build your recruiting profile together. You learn how to reach out to college coaches the right way. Then we run mock recruiting calls so when a real coach calls you are ready.',
+  },
+  {
+    id: 'nutrition',
+    title: 'Nutrition Guidance',
+    price: '$97/month',
+    type: 'monthly',
+    availability: 'Both packages',
+    description:
+      'Performance nutrition built around your sport and your schedule. What to eat. When to eat it. How to fuel for competition day and recover after.',
+  },
+  {
+    id: 'academic',
+    title: 'Academic and Schedule Mapping',
+    price: '$97 one time',
+    type: 'one-time',
+    availability: 'Both packages',
+    description:
+      'One call where we build out your full Google Calendar together. School. Games. Practices. Life. All organized in one place so nothing falls through the cracks.',
+  },
+  {
+    id: 'textsupport',
+    title: 'Unlimited Text Support',
+    price: '$47/month',
+    type: 'monthly',
+    availability: 'Foundation only',
+    description:
+      'Reach out anytime between sessions when a mental challenge comes up. For Foundation clients only. The Effect already includes unlimited text support.',
+  },
 ]
 
 export const testimonials = [
@@ -102,7 +128,7 @@ export const pillars = [
     icon: 'Brain',
     title: 'Mental Performance',
     description:
-      'Confidence, focus, pressure management, mistake recovery, pregame routines. The mental game that separates good athletes from elite ones.',
+      'Confidence. Self talk. Handling pressure. Bouncing back from mistakes. The mental game that separates good athletes from great ones.',
     tag: 'Included',
     isCore: true,
   },
@@ -110,31 +136,23 @@ export const pillars = [
     icon: 'Apple',
     title: 'Nutrition',
     description:
-      'Fueling your body the right way for performance and recovery. Sport-specific, simple, and built into your routine.',
-    tag: 'Add-on',
-    isCore: false,
-  },
-  {
-    icon: 'Dumbbell',
-    title: 'Conditioning',
-    description:
-      'A training program built around your sport, your schedule, and your goals — not a generic plan.',
+      'Performance fueling built around your sport and your schedule. What to eat, when to eat it, and how to show up ready on game day.',
     tag: 'Add-on',
     isCore: false,
   },
   {
     icon: 'BookOpen',
-    title: 'Academic Balance',
+    title: 'Schedule Mapping',
     description:
-      'GPA matters for recruiting. Learn how to manage your time, stay focused in class, and perform in both worlds.',
-    tag: 'Included',
-    isCore: true,
+      'One session where we build your full calendar together. School, games, practices, and life organized so nothing gets dropped.',
+    tag: 'Add-on',
+    isCore: false,
   },
   {
     icon: 'GraduationCap',
     title: 'Recruiting Prep',
     description:
-      'Understand what coaches actually look for, how to reach out the right way, and how to show up ready when it matters.',
+      'Build your profile, learn how to reach out to coaches, and run mock calls so you are completely ready when it matters.',
     tag: 'Add-on',
     isCore: false,
   },
