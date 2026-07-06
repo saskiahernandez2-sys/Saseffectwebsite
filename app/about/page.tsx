@@ -5,17 +5,17 @@ import FadeIn from '@/components/FadeIn'
 export const metadata: Metadata = {
   title: 'About Saskia | D1 Athlete & Mental Performance Coach',
   description:
-    'Saskia is an active D1 beach volleyball athlete at Texas A&M–Corpus Christi — All-Conference, 4.0 GPA, NIL athlete — and the founder of The Sas Effect.',
+    'Saskia is an active D1 beach volleyball athlete at Texas A&M Corpus Christi. All Conference. 4.0 GPA. NIL athlete. Founder of The Sas Effect.',
   openGraph: {
     title: 'About Saskia | D1 Athlete & Mental Performance Coach | The Sas Effect',
-    description: 'The story behind The Sas Effect — built by a D1 athlete who has lived every part of it.',
+    description: 'The story behind The Sas Effect. Built by a D1 athlete who has lived every part of it.',
   },
 }
 
 const credentials = [
   { label: 'Sport',            value: 'D1 Beach Volleyball' },
-  { label: 'School',           value: 'Texas A&M–Corpus Christi' },
-  { label: 'Achievement',      value: 'First Team All-Conference' },
+  { label: 'School',           value: 'Texas A&M Corpus Christi' },
+  { label: 'Achievement',      value: 'First Team All Conference' },
   { label: 'Academic',         value: '4.0 GPA' },
   { label: 'Status',           value: 'Active NIL Athlete' },
   { label: 'Previous schools', value: 'NC State · University of Virginia · Florida International University' },
@@ -25,15 +25,15 @@ const credentials = [
 const philosophy = [
   {
     bold: '"The mind comes first."',
-    body: 'Physical talent only gets you so far. The mental game is where athletes separate — and it can be trained like any other skill.',
+    body: 'Physical talent only gets you so far. The mental game is where athletes separate. And it can be trained like any other skill.',
   },
   {
     bold: '"Every athlete is different."',
-    body: "Cookie-cutter programs don't work. Everything I build is specific to you — your sport, your goals, your mental patterns, your schedule.",
+    body: "Cookie cutter programs don't work. Everything I build is specific to you. Your sport, your goals, your mental patterns, your schedule.",
   },
   {
     bold: '"Results come from consistency, not intensity."',
-    body: "One big session doesn't change anything. Small, consistent mental reps over months — that's what builds a championship mindset.",
+    body: "One big session doesn't change anything. Small, consistent mental reps over months. That's what builds a championship mindset.",
   },
 ]
 
@@ -56,7 +56,7 @@ export default function AboutPage() {
                   BUILT BY AN ATHLETE WHO&apos;S LIVED EVERY PART OF IT.
                 </h1>
                 <p className="text-[#666666] text-base leading-relaxed">
-                  D1 athlete. All-Conference. 4.0 GPA. NIL athlete. And someone who figured
+                  D1 athlete. All Conference. 4.0 GPA. NIL athlete. And someone who figured
                   out the hard way what it actually takes to compete at your highest level.
                 </p>
               </FadeIn>
@@ -90,7 +90,7 @@ export default function AboutPage() {
             <FadeIn delay={0.05}>
               <p>
                 I&apos;ve been a student-athlete my entire life. I know what it&apos;s like to work harder
-                than everyone around you and still feel like something is missing — like you&apos;re
+                than everyone around you and still feel like something is missing. Like you&apos;re
                 leaving performance on the table that you can&apos;t explain.
               </p>
             </FadeIn>
@@ -98,9 +98,9 @@ export default function AboutPage() {
               <p>
                 I played volleyball at NC State, transferred to University of Virginia, then
                 Florida International University, and finally found my home at Texas
-                A&amp;M–Corpus Christi, where I became a First Team All-Conference athlete and
-                carry a 4.0 GPA as a NIL athlete. That journey — the transfers, the pressure,
-                the mental battles, the recruiting process all over again — taught me more
+                A&amp;M Corpus Christi, where I became a First Team All Conference athlete and
+                carry a 4.0 GPA as a NIL athlete. That journey, the transfers, the pressure,
+                the mental battles, the recruiting process all over again, taught me more
                 about the mental game than any practice ever could.
               </p>
             </FadeIn>
@@ -188,7 +188,7 @@ export default function AboutPage() {
               READY TO WORK TOGETHER?
             </h2>
             <p className="text-[#666666] text-base mb-10">
-              Book a free 20-minute discovery call. No pressure — just a conversation about
+              Book a free 20 minute discovery call. No pressure. Just a conversation about
               your goals and what we&apos;d work on together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

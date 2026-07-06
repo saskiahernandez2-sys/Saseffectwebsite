@@ -6,11 +6,11 @@ import ContactForm from '@/components/ContactForm'
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Reach out to Saskia at The Sas Effect. Questions about coaching, packages, or just want to say hi — I respond to every message personally.',
+    'Reach out to Saskia at The Sas Effect. Questions about coaching, packages, or just want to say hi. I respond to every message personally.',
   openGraph: {
     title: 'Contact | The Sas Effect',
     description:
-      'Whether you have questions about coaching, want to learn more before booking, or just want to say hi — reach out.',
+      'Whether you have questions about coaching, want to learn more before booking, or just want to say hi. Reach out.',
   },
 }
 
@@ -57,7 +57,7 @@ export default function ContactPage() {
             </h1>
             <p className="text-[#F0ECE4]/70 text-base sm:text-lg px-4 sm:px-6 lg:px-8">
               Whether you have questions about coaching, want to learn more before booking,
-              or just want to say hi — reach out. I respond to every message personally.
+              or just want to say hi. Reach out. I respond to every message personally.
             </p>
           </FadeIn>
         </div>

@@ -10,7 +10,7 @@ import { packages, addOns, testimonials, pillars } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'The Sas Effect | Mental Performance Coaching for High School Athletes',
   description:
-    "Mental performance & athlete development coaching for high school athletes — built by a D1 athlete who's lived every part of the journey.",
+    "Mental performance and athlete development coaching for high school athletes. Built by a D1 athlete who has lived every part of the journey.",
 }
 
 const pillarIconMap: Record<string, React.ReactNode> = {
@@ -54,8 +54,8 @@ export default function HomePage() {
                 COACHED BY SOMEONE WHO&apos;S BEEN EXACTLY WHERE YOU ARE.
               </h2>
               <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-6">
-                I&apos;m Saskia. An active D1 beach volleyball athlete at Texas A&amp;M–Corpus Christi.
-                I&apos;m All-Conference, carry a 4.0 GPA, and I&apos;ve been a student-athlete my entire
+                I&apos;m Saskia. An active D1 beach volleyball athlete at Texas A&amp;M Corpus Christi.
+                I&apos;m All Conference, carry a 4.0 GPA, and I&apos;ve been a student athlete my entire
                 life. I know what it&apos;s like to have the skill but lose it under pressure. To balance
                 classes, practice, recruiting, and the weight of expectations.
               </p>
@@ -196,7 +196,7 @@ export default function HomePage() {
           {/* Add-ons teaser */}
           <FadeIn delay={0.15}>
             <p className="text-[#666666] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold text-center">
-              Available Add-Ons
+              Available Add Ons
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
               {addOns.map((addon) => (
@@ -266,12 +266,12 @@ export default function HomePage() {
               {
                 num: '02',
                 title: 'Build Your Plan',
-                body: "We pick the right package and figure out if any add-ons make sense for your athlete right now.",
+                body: "We pick the right package and figure out if any add ons make sense for your athlete right now.",
               },
               {
                 num: '03',
                 title: 'Start Building Your Mental Game',
-                body: 'Weekly calls, check-in texts, and homework built specifically for your athlete. This is where the real work starts.',
+                body: 'Weekly calls, check in texts, and homework built specifically for your athlete. This is where the real work starts.',
               },
             ].map((step, i) => (
               <FadeIn key={step.num} delay={i * 0.15}>
@@ -347,7 +347,7 @@ export default function HomePage() {
               READY TO TRAIN THE PART OF YOUR GAME NOBODY ELSE IS COACHING?
             </h2>
             <p className="text-[#666666] text-base mb-10 max-w-xl mx-auto">
-              Book your free 20-minute discovery call. No commitment. Just a conversation about your athlete and what they need.
+              Book your free 20 minute discovery call. No commitment. Just a conversation about your athlete and what they need.
             </p>
             <Link
               href="/book"

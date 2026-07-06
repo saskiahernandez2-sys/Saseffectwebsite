@@ -179,13 +179,13 @@ export default function CoachingPage() {
         <div className="max-w-5xl mx-auto">
           <FadeIn className="mb-12">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
-              Add-Ons
+              Add Ons
             </p>
             <h2 className="font-display text-4xl sm:text-5xl text-[#F0ECE4] leading-none mb-4">
               ADD WHAT YOUR ATHLETE NEEDS.
             </h2>
             <p className="text-[#666666] text-base max-w-xl">
-              Available on top of either package. Add or remove monthly. No long-term commitment on add-ons.
+              Available on top of either package. Add or remove monthly. No long term commitment on add ons.
             </p>
           </FadeIn>
 
@@ -245,7 +245,7 @@ export default function CoachingPage() {
             <FadeIn delay={0.08}>
               <div className="space-y-4">
                 {[
-                  { n: '01', text: 'Book a free 20-minute discovery call.' },
+                  { n: '01', text: 'Book a free 20 minute discovery call.' },
                   { n: '02', text: 'We talk about your athlete. Their sport, their struggles, where they want to go.' },
                   { n: '03', text: 'I tell you exactly which package fits and we get started.' },
                 ].map((item) => (

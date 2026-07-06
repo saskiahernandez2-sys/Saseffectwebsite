@@ -4,11 +4,11 @@ import FadeIn from '@/components/FadeIn'
 import { addOns } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Add-Ons | Recruiting, Nutrition, Schedule Mapping and More',
+  title: 'Add Ons | Recruiting, Nutrition, Schedule Mapping and More',
   description:
-    'Optional add-ons for Foundation and Effect clients. Recruiting strategy plus mock calls at $197 per month. Nutrition guidance at $97 per month. Academic schedule mapping at $97 one time. Unlimited text support at $47 per month for Foundation clients.',
+    'Optional add ons for Foundation and Effect clients. Recruiting strategy plus mock calls at $197 per month. Nutrition guidance at $97 per month. Academic schedule mapping at $97 one time. Unlimited text support at $47 per month for Foundation clients.',
   openGraph: {
-    title: 'Add-Ons | The Sas Effect',
+    title: 'Add Ons | The Sas Effect',
     description:
       'Add recruiting strategy, nutrition guidance, schedule mapping, or extra text support to either package.',
   },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function AddOnsPage() {
   const monthlyAddOns = addOns.filter((a) => a.type === 'monthly')
-  const oneTimeAddOns = addOns.filter((a) => a.type === 'one-time')
+  const oneTimeAddOns = addOns.filter((a) => a.type === 'one time')
 
   return (
     <>
@@ -26,7 +26,7 @@ export default function AddOnsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
-              Add-Ons
+              Add Ons
             </p>
             <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-[#F0ECE4] leading-none mb-6">
               ADD WHAT YOUR ATHLETE ACTUALLY NEEDS.
@@ -51,7 +51,7 @@ export default function AddOnsPage() {
         <div className="max-w-5xl mx-auto">
           <FadeIn className="mb-10">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
-              Monthly Add-Ons
+              Monthly Add Ons
             </p>
             <h2 className="font-display text-3xl sm:text-4xl text-[#F0ECE4] leading-none mb-2">
               ONGOING MONTHLY SUPPORT
@@ -97,7 +97,7 @@ export default function AddOnsPage() {
         <div className="max-w-5xl mx-auto">
           <FadeIn className="mb-10">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
-              One-Time Sessions
+              One Time Sessions
             </p>
             <h2 className="font-display text-3xl sm:text-4xl text-[#F0ECE4] leading-none mb-2">
               ONE AND DONE

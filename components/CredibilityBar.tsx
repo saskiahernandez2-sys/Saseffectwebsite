@@ -3,10 +3,10 @@ import { motion } from 'framer-motion'
 
 const credentials = [
   'D1 Athlete',
-  'All-Conference',
+  'All Conference',
   '4.0 GPA',
   'NIL Athlete',
-  'Texas A&M–CC',
+  'Texas A&M CC',
   'High School Athlete Specialist',
 ]
 

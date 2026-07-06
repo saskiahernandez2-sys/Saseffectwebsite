@@ -56,7 +56,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.25, ease: 'easeOut' }}
             className="text-[#F0ECE4]/70 text-lg sm:text-xl mb-8 max-w-lg leading-relaxed"
           >
-            Mental performance &amp; athlete development coaching for high school athletes — built by a D1 athlete who&apos;s lived every part of the journey.
+            Mental performance and athlete development coaching for high school athletes. Built by a D1 athlete who&apos;s lived every part of the journey.
           </motion.p>
 
           <motion.div
@@ -85,7 +85,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.55 }}
             className="text-[#666666] text-[10px] sm:text-xs tracking-[0.18em] uppercase"
           >
-            D1 Beach Volleyball · Texas A&amp;M–Corpus Christi · All-Conference · 4.0 GPA · NIL Athlete
+            D1 Beach Volleyball · Texas A&amp;M Corpus Christi · All Conference · 4.0 GPA · NIL Athlete
           </motion.p>
         </div>
       </div>

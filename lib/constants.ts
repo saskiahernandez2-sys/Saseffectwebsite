@@ -2,7 +2,7 @@ export const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/coaching', label: 'Coaching' },
-  { href: '/addons', label: 'Add-Ons' },
+  { href: '/addons', label: 'Add Ons' },
   { href: '/book', label: 'Book a Call' },
 ]
 
@@ -89,7 +89,7 @@ export const addOns = [
     id: 'academic',
     title: 'Academic + schedule mapping session',
     price: '$97 one time',
-    type: 'one-time',
+    type: 'one time',
     availability: 'Both packages',
     bullets: [
       'One dedicated session together',
@@ -146,7 +146,7 @@ export const pillars = [
     title: 'Nutrition',
     description:
       'Performance fueling built around your sport and your schedule. What to eat, when to eat it, and how to show up ready on game day.',
-    tag: 'Add-on',
+    tag: 'Add on',
     isCore: false,
   },
   {
@@ -154,7 +154,7 @@ export const pillars = [
     title: 'Schedule Mapping',
     description:
       'One session where we build your full calendar together. School, games, practices, and life organized so nothing gets dropped.',
-    tag: 'Add-on',
+    tag: 'Add on',
     isCore: false,
   },
   {
@@ -162,7 +162,7 @@ export const pillars = [
     title: 'Recruiting Prep',
     description:
       'Build your profile, learn how to reach out to coaches, and run mock calls so you are completely ready when it matters.',
-    tag: 'Add-on',
+    tag: 'Add on',
     isCore: false,
   },
 ]

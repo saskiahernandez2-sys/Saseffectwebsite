@@ -1,12 +1,7 @@
 'use client'
 import { useEffect } from 'react'
 
-// TODO: Replace CALENDLY_URL with Saskia's actual Calendly link
-// When react-calendly is installed you can swap to:
-//   import { InlineWidget } from 'react-calendly'
-//   return <InlineWidget url="YOUR_CALENDLY_URL" styles={{ height: '700px' }} />
-
-const CALENDLY_URL = 'https://calendly.com/thesaseffect/discovery-call'
+const CALENDLY_URL = 'https://calendly.com/saskiamariehernandez/30min'
 
 export default function CalendlyEmbed() {
   useEffect(() => {
@@ -29,7 +24,7 @@ export default function CalendlyEmbed() {
     <div
       className="calendly-inline-widget w-full rounded-sm overflow-hidden bg-[#111111] border border-[#2a2a2a]"
       data-url={CALENDLY_URL}
-      style={{ minHeight: '700px' }}
+      style={{ minHeight: '750px' }}
     />
   )
 }
