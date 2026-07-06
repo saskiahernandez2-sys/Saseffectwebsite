@@ -114,19 +114,19 @@ export const addOns = [
 export const testimonials = [
   {
     quote:
-      'Working with Saskia changed the way I approach competition. I stopped letting mistakes carry into the next play and started trusting myself in the moments that matter most.',
+      'The mental skills I developed through The Sas Effect changed the way I compete entirely. I stopped letting mistakes affect the next play and started showing up with real confidence in the moments that matter.',
     name: 'Jordan Mitchell',
-    sport: 'High School Athlete',
+    sport: 'Competitive Athlete',
   },
   {
     quote:
-      'I came in thinking I just needed more reps. What I actually needed was to fix what was happening in my head. The Sas Effect gave me tools I use every single game.',
+      'I always assumed the mental side would take care of itself if I just put in enough physical work. This program showed me how wrong I was and gave me tools I use in competition every single week.',
     name: 'Camille Rivera',
-    sport: 'High School Athlete',
+    sport: 'Competitive Athlete',
   },
   {
     quote:
-      'My daughter is a completely different athlete. The confidence she has built over the past two months has shown up not just in her sport but in everything she does.',
+      'The progress my daughter has made since working with Saskia has been remarkable. Her confidence, composure, and focus have improved in ways that go well beyond her sport.',
     name: 'Parent of Sofia Thomas',
     sport: '',
   },

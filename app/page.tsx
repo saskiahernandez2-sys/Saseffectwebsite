@@ -10,7 +10,7 @@ import { packages, addOns, testimonials, pillars } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'The Sas Effect | Mental Performance Coaching for High School Athletes',
   description:
-    "Mental performance and athlete development coaching for high school athletes. Built by a D1 athlete who has lived every part of the journey.",
+    "Mental performance and athlete development coaching for competitive athletes at every level. Built by a D1 athlete who has lived every part of the journey.",
 }
 
 const pillarIconMap: Record<string, React.ReactNode> = {
@@ -60,7 +60,7 @@ export default function HomePage() {
                 classes, practice, recruiting, and the weight of expectations.
               </p>
               <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-8">
-                I built The Sas Effect because I wanted to give high school athletes the mental tools
+                I built The Sas Effect because I wanted to give competitive athletes the mental tools
                 I had to figure out on my own. The hard way.
               </p>
               <Link

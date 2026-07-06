@@ -32,7 +32,7 @@ export default function AddOnsPage() {
               ADD WHAT YOUR ATHLETE ACTUALLY NEEDS.
             </h1>
             <p className="text-[#F0ECE4]/70 text-base sm:text-lg max-w-xl mx-auto mb-6">
-              Every add-on works on top of either package. Add them when you need them. Remove them when you do not.
+              Every add on works on top of either package. Add them when you need them. Remove them when you do not.
             </p>
             <div className="inline-block bg-[#111111] border border-[#2a2a2a] px-5 py-3 rounded-sm">
               <p className="text-[#666666] text-sm">

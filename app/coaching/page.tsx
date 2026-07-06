@@ -7,11 +7,11 @@ import { packages, addOns } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Coaching | The Foundation and The Effect',
   description:
-    'Two packages built for high school athletes. The Foundation at $197 per month. The Effect at $397 per month. Pick the level that fits where your athlete is right now.',
+    'Two packages built for competitive athletes. The Foundation at $197 per month. The Effect at $397 per month. Pick the level that fits where you are right now.',
   openGraph: {
     title: 'Coaching Packages | The Sas Effect',
     description:
-      'The Foundation at $197/month or The Effect at $397/month. Mental performance coaching for high school athletes.',
+      'The Foundation at $197/month or The Effect at $397/month. Mental performance coaching for competitive athletes.',
   },
 }
 
@@ -235,7 +235,7 @@ export default function CoachingPage() {
                 BOOK A FREE CALL FIRST.
               </h2>
               <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-2">
-                Twenty minutes. No commitment. Tell me about your athlete and I will tell you exactly which package makes sense and whether any add-ons are worth it right now.
+                Twenty minutes. No commitment. Tell me about your athlete and I will tell you exactly which package makes sense and whether any add ons are worth it right now.
               </p>
               <p className="text-[#F0ECE4]/70 text-base leading-relaxed">
                 Most people leave that call knowing exactly what to do next.

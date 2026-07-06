@@ -19,7 +19,7 @@ const credentials = [
   { label: 'Academic',         value: '4.0 GPA' },
   { label: 'Status',           value: 'Active NIL Athlete' },
   { label: 'Previous schools', value: 'NC State · University of Virginia · Florida International University' },
-  { label: 'Coaching focus',   value: 'Mental performance + full athlete development for high school athletes' },
+  { label: 'Coaching focus',   value: 'Mental performance and full athlete development for competitive athletes' },
 ]
 
 const philosophy = [
@@ -89,7 +89,7 @@ export default function AboutPage() {
           <div className="space-y-6 text-[#F0ECE4]/75 text-base lg:text-lg leading-relaxed">
             <FadeIn delay={0.05}>
               <p>
-                I&apos;ve been a student-athlete my entire life. I know what it&apos;s like to work harder
+                I&apos;ve been a student athlete my entire life. I know what it&apos;s like to work harder
                 than everyone around you and still feel like something is missing. Like you&apos;re
                 leaving performance on the table that you can&apos;t explain.
               </p>
@@ -123,7 +123,7 @@ export default function AboutPage() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-[#F0ECE4] font-medium">
-                I built The Sas Effect because I wanted to give high school athletes what I
+                I built The Sas Effect because I wanted to give competitive athletes what I
                 had to figure out the hard way. A mentor. A plan. A mental framework that
                 actually works when the pressure is on.
               </p>

@@ -56,7 +56,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.25, ease: 'easeOut' }}
             className="text-[#F0ECE4]/70 text-lg sm:text-xl mb-8 max-w-lg leading-relaxed"
           >
-            Mental performance and athlete development coaching for high school athletes. Built by a D1 athlete who&apos;s lived every part of the journey.
+            Mental performance and athlete development coaching for competitive athletes at every level. Built by a D1 athlete who has lived every part of the journey.
           </motion.p>
 
           <motion.div

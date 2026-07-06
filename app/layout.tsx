@@ -19,17 +19,17 @@ const bebasNeue = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: {
-    default: 'The Sas Effect | Mental Performance Coaching for High School Athletes',
+    default: 'The Sas Effect | Mental Performance Coaching for Competitive Athletes',
     template: '%s | The Sas Effect',
   },
   description:
-    "Mental performance & athlete development coaching for high school athletes — built by a D1 athlete who's lived every part of the journey.",
+    "Mental performance and athlete development coaching for competitive athletes. Built by a D1 athlete who has lived every part of the journey.",
   openGraph: {
     type: 'website',
     siteName: 'The Sas Effect',
-    title: 'The Sas Effect | Mental Performance Coaching for High School Athletes',
+    title: 'The Sas Effect | Mental Performance Coaching for Competitive Athletes',
     description:
-      "Mental performance & athlete development coaching for high school athletes — built by a D1 athlete.",
+      "Mental performance and athlete development coaching for competitive athletes. Built by a D1 athlete.",
   },
   // TODO: Add favicon using The Sas Effect branding
   // TODO: Add Google Analytics or Vercel Analytics
