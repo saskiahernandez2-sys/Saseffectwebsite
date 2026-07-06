@@ -97,12 +97,21 @@ export default function AboutPage() {
             <FadeIn delay={0.1}>
               <p>
                 I played volleyball at NC State, transferred to University of Virginia, then
-                Florida International University, and finally found my home at Texas
-                A&amp;M Corpus Christi, where I became a First Team All Conference athlete and
-                carry a 4.0 GPA as a NIL athlete. That journey, the transfers, the pressure,
-                the mental battles, the recruiting process all over again, taught me more
-                about the mental game than any practice ever could.
+                Florida International University, and finally found my home at Texas A&amp;M
+                Corpus Christi. That journey, the transfers, the pressure, the mental battles,
+                the recruiting process all over again, taught me more about the mental game
+                than any practice ever could.
               </p>
+            </FadeIn>
+            <FadeIn delay={0.13}>
+              <div className="border-l-4 border-[#C0392B] pl-6 py-1">
+                <p className="text-[#F0ECE4] font-semibold text-base lg:text-lg leading-relaxed">
+                  Named to the All Conference team while maintaining a 4.0 GPA and competing
+                  as a Division I beach volleyball athlete across four programs. I have lived
+                  every mental challenge that comes with performing at the highest level of
+                  collegiate sport.
+                </p>
+              </div>
             </FadeIn>
             <FadeIn delay={0.15}>
               <p>

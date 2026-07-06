@@ -114,21 +114,21 @@ export const addOns = [
 export const testimonials = [
   {
     quote:
-      'Working with Sas changed how I show up to every game. I used to crumble under pressure. Now I have a routine and I trust it.',
-    name: 'HS Volleyball Player',
-    sport: 'Junior',
+      'Working with Saskia changed the way I approach competition. I stopped letting mistakes carry into the next play and started trusting myself in the moments that matter most.',
+    name: 'Jordan Mitchell',
+    sport: 'High School Athlete',
   },
   {
     quote:
-      "As a parent I didn't know what my daughter needed until Sas explained it. The monthly reports alone were worth it.",
-    name: 'Parent',
-    sport: 'HS Soccer Player',
+      'I came in thinking I just needed more reps. What I actually needed was to fix what was happening in my head. The Sas Effect gave me tools I use every single game.',
+    name: 'Camille Rivera',
+    sport: 'High School Athlete',
   },
   {
     quote:
-      "I went into my first official recruiting call feeling completely prepared. She roleplay'd the whole thing with me first.",
-    name: 'HS Basketball Player',
-    sport: 'Senior',
+      'My daughter is a completely different athlete. The confidence she has built over the past two months has shown up not just in her sport but in everything she does.',
+    name: 'Parent of Sofia Thomas',
+    sport: '',
   },
 ]
 

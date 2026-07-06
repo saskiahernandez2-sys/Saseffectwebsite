@@ -1,7 +1,8 @@
 'use client'
 import { useEffect } from 'react'
 
-const CALENDLY_URL = 'https://calendly.com/saskiamariehernandez/30min'
+const CALENDLY_URL =
+  'https://calendly.com/saskiamariehernandez/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=ff2d00'
 
 export default function CalendlyEmbed() {
   useEffect(() => {
@@ -22,9 +23,9 @@ export default function CalendlyEmbed() {
 
   return (
     <div
-      className="calendly-inline-widget w-full rounded-sm overflow-hidden bg-[#111111] border border-[#2a2a2a]"
+      className="calendly-inline-widget w-full"
       data-url={CALENDLY_URL}
-      style={{ minHeight: '750px' }}
+      style={{ minWidth: '320px', height: '700px' }}
     />
   )
 }

@@ -230,10 +230,9 @@ export default function HomePage() {
             </h2>
           </FadeIn>
 
-          {/* TODO: Replace with real client testimonials */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
             {testimonials.map((t, i) => (
-              <FadeIn key={i} delay={i * 0.1}>
+              <FadeIn key={i} delay={i * 0.1} className="h-full">
                 <TestimonialCard quote={t.quote} name={t.name} sport={t.sport} />
               </FadeIn>
             ))}
