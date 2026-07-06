@@ -39,9 +39,10 @@ export const packages = [
     period: '/month',
     tagline: 'More touchpoints, deeper work, and full accountability every week.',
     includes: [
-      { main: '4 one on one calls per month', sub: 'Every week we meet' },
-      { main: 'Unlimited text support', sub: 'Reach out anytime for help with a mental challenge' },
-      { main: 'Weekly mental homework + accountability' },
+      { main: '4 one on one calls per month' },
+      { main: 'Weekly mental homework and accountability check ins' },
+      { main: 'Priority scheduling with first access to my calendar' },
+      { main: 'Postgame check in text after every game' },
     ],
     topics: [
       'Everything in The Foundation',
