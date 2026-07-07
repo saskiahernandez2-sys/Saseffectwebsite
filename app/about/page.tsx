@@ -44,35 +44,18 @@ export default function AboutPage() {
       <section className="relative bg-[#0a0a0a] pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#C0392B]/4 to-transparent pointer-events-none" />
         <div className="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full bg-[#C0392B]/5 blur-[100px] pointer-events-none" />
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* Text */}
-            <div>
-              <FadeIn>
-                <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
-                  The Story
-                </p>
-                <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-[#F0ECE4] leading-none mb-6">
-                  BUILT BY AN ATHLETE WHO&apos;S LIVED EVERY PART OF IT.
-                </h1>
-                <p className="text-[#666666] text-base leading-relaxed">
-                  A Division I athlete, All Conference honoree, 4.0 GPA student, and NIL athlete who learned the hard way what it actually takes to compete at your highest level.
-                </p>
-              </FadeIn>
-            </div>
-
-            {/* Photo */}
-            <FadeIn delay={0.1}>
-              {/* TODO: Replace with Saskia's professional photo */}
-              <div className="aspect-[4/5] bg-[#111111] border border-[#2a2a2a] rounded-sm flex items-center justify-center max-w-md mx-auto lg:ml-auto lg:mr-0">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-3">📸</div>
-                  <p className="text-[#666666] text-sm">Saskia&apos;s professional photo</p>
-                  <p className="text-[#666666] text-xs mt-1 opacity-60">public/images/saskia-hero.jpg</p>
-                </div>
-              </div>
-            </FadeIn>
-          </div>
+        <div className="max-w-4xl mx-auto">
+          <FadeIn>
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+              The Story
+            </p>
+            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-[#F0ECE4] leading-none mb-6">
+              BUILT BY AN ATHLETE WHO&apos;S LIVED EVERY PART OF IT.
+            </h1>
+            <p className="text-[#666666] text-base leading-relaxed">
+              A Division I athlete, All Conference honoree, 4.0 GPA student, and NIL athlete who learned the hard way what it actually takes to compete at your highest level.
+            </p>
+          </FadeIn>
         </div>
       </section>
 

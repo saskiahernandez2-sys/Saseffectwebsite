@@ -12,22 +12,9 @@ export default function HeroSection() {
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#C0392B]/5 blur-[120px] pointer-events-none" />
       <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-[#C0392B]/3 blur-[100px] pointer-events-none" />
 
-      {/* Photo placeholder — right panel, desktop only */}
-      {/* TODO: Replace with Saskia's professional action photo */}
-      <div className="absolute right-0 top-0 bottom-0 w-[46%] hidden lg:block overflow-hidden">
-        <div className="h-full w-full bg-[#1a1a1a] relative flex items-center justify-center">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent z-10" />
-          <div className="text-[#2a2a2a] text-center z-0 p-8">
-            <div className="text-7xl mb-4">📸</div>
-            <p className="text-[#666666] text-sm font-medium">Saskia&apos;s photo goes here</p>
-            <p className="text-[#666666] text-xs mt-1 opacity-60">public/images/hero-photo.jpg</p>
-          </div>
-        </div>
-      </div>
-
       {/* Main content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 w-full">
-        <div className="max-w-xl lg:max-w-2xl">
+        <div className="max-w-xl lg:max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}

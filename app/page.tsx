@@ -40,10 +40,10 @@ export default function HomePage() {
               COACHED BY SOMEONE WHO&apos;S BEEN EXACTLY WHERE YOU ARE.
             </h2>
             <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-6">
-              A Division I beach volleyball athlete at Texas A&amp;M Corpus Christi, All Conference honoree, NIL athlete, and 4.0 GPA student, Saskia Hernandez founded The Sas Effect to address what is consistently the most overlooked aspect of athletic development: the mental game.
+              As a Division I beach volleyball athlete at Texas A&amp;M Corpus Christi, All Conference honoree, NIL athlete, and 4.0 GPA student, I founded The Sas Effect to address the most overlooked part of athletic development: the mental game.
             </p>
             <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-8">
-              Having competed across four Division I programs, she has navigated every mental challenge that comes with performing at the highest level of collegiate sport. The Sas Effect exists to give competitive athletes the tools, structure, and support to perform at their best when it matters most.
+              I have competed across four Division I programs and have navigated every mental challenge that comes with performing at the highest level of collegiate sport. I built this program because I know what it takes to perform under pressure, and I know what happens when the mental side is left untrained. The Sas Effect exists to give competitive athletes the tools, structure, and support to perform at their best when it matters most.
             </p>
             <Link
               href="/about"
