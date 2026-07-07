@@ -34,7 +34,7 @@ export default function CoachingPage() {
               <span className="text-[#C0392B]">WHERE YOU ARE NOW.</span>
             </h1>
             <p className="text-[#F0ECE4]/70 text-base sm:text-lg max-w-xl mx-auto">
-              Two packages. Both focused on building the mental game. Pick what fits your athlete right now and add on from there.
+              Both packages are focused on building the mental game. Pick the level that fits right now and add on from there.
             </p>
           </FadeIn>
         </div>
@@ -235,7 +235,7 @@ export default function CoachingPage() {
                 BOOK A FREE CALL FIRST.
               </h2>
               <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-2">
-                Twenty minutes. No commitment. Tell me about your athlete and I will tell you exactly which package makes sense and whether any add ons are worth it right now.
+                In twenty minutes, I will help you figure out exactly which package makes sense for your athlete and whether any add ons are worth it right now. There is no commitment required.
               </p>
               <p className="text-[#F0ECE4]/70 text-base leading-relaxed">
                 Most people leave that call knowing exactly what to do next.
@@ -246,7 +246,7 @@ export default function CoachingPage() {
               <div className="space-y-4">
                 {[
                   { n: '01', text: 'Book a free 20 minute discovery call.' },
-                  { n: '02', text: 'We talk about your athlete. Their sport, their struggles, where they want to go.' },
+                  { n: '02', text: 'We talk about your athlete, their sport, their struggles, and where they want to go.' },
                   { n: '03', text: 'I tell you exactly which package fits and we get started.' },
                 ].map((item) => (
                   <div key={item.n} className="flex items-start gap-4 bg-[#111111] border border-[#2a2a2a] p-5 rounded-sm">
@@ -275,7 +275,7 @@ export default function CoachingPage() {
               READY TO GET STARTED?
             </h2>
             <p className="text-[#666666] text-base mb-10">
-              Book a free discovery call. No commitment. Just a conversation about your athlete and what they need.
+              Book a free discovery call. There is no commitment required. This is simply a conversation about your athlete and what they need most.
             </p>
             <Link
               href="/book"

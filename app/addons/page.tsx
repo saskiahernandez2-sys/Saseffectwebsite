@@ -6,7 +6,7 @@ import { addOns } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Add Ons | Recruiting, Nutrition, Schedule Mapping and More',
   description:
-    'Optional add ons for Foundation and Effect clients. Recruiting strategy plus mock calls at $197 per month. Nutrition guidance at $97 per month. Academic schedule mapping at $97 one time. Unlimited text support at $47 per month for Foundation clients.',
+    'Optional add ons for Foundation and Effect clients. Recruiting strategy plus mock calls at $197 per month. Nutrition guidance at $97 per month. Academic schedule mapping at $97 one time. Extra text support at $47 per month for Foundation clients.',
   openGraph: {
     title: 'Add Ons | The Sas Effect',
     description:

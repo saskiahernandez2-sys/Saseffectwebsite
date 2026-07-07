@@ -42,7 +42,7 @@ export const packages = [
       { main: '4 one on one calls per month' },
       { main: 'Weekly mental homework and accountability check ins' },
       { main: 'Priority scheduling with first access to my calendar' },
-      { main: 'Postgame check in text after every game' },
+      { main: 'Weekly text check in support with ongoing guidance between sessions.' },
     ],
     topics: [
       'Everything in The Foundation',
@@ -99,7 +99,7 @@ export const addOns = [
   },
   {
     id: 'textsupport',
-    title: 'Unlimited text support',
+    title: 'Extra text support',
     price: '$47 per month',
     type: 'monthly',
     availability: 'Foundation only',

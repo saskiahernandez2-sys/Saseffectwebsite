@@ -8,7 +8,7 @@ import TestimonialCard from '@/components/TestimonialCard'
 import { packages, addOns, testimonials, pillars } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'The Sas Effect | Mental Performance Coaching for High School Athletes',
+  title: 'The Sas Effect | Mental Performance Coaching for Competitive Athletes',
   description:
     "Mental performance and athlete development coaching for competitive athletes at every level. Built by a D1 athlete who has lived every part of the journey.",
 }
@@ -31,46 +31,27 @@ export default function HomePage() {
 
       {/* ─── SECTION 3: ABOUT SASKIA (BRIEF) ─── */}
       <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* Photo placeholder */}
-            <FadeIn direction="left">
-              {/* TODO: Replace with Saskia's action/competition photo */}
-              <div className="aspect-[4/5] bg-[#111111] border border-[#2a2a2a] rounded-sm flex items-center justify-center max-w-md mx-auto lg:mx-0">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-3">📸</div>
-                  <p className="text-[#666666] text-sm">Saskia action photo</p>
-                  <p className="text-[#666666] text-xs mt-1 opacity-60">public/images/saskia-action.jpg</p>
-                </div>
-              </div>
-            </FadeIn>
-
-            {/* Text */}
-            <FadeIn delay={0.1}>
-              <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
-                About Saskia
-              </p>
-              <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-6">
-                COACHED BY SOMEONE WHO&apos;S BEEN EXACTLY WHERE YOU ARE.
-              </h2>
-              <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-6">
-                I&apos;m Saskia. An active D1 beach volleyball athlete at Texas A&amp;M Corpus Christi.
-                I&apos;m All Conference, carry a 4.0 GPA, and I&apos;ve been a student athlete my entire
-                life. I know what it&apos;s like to have the skill but lose it under pressure. To balance
-                classes, practice, recruiting, and the weight of expectations.
-              </p>
-              <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-8">
-                I built The Sas Effect because I wanted to give competitive athletes the mental tools
-                I had to figure out on my own. The hard way.
-              </p>
-              <Link
-                href="/about"
-                className="inline-flex items-center gap-2 text-[#C0392B] font-semibold text-sm hover:gap-3 transition-all"
-              >
-                My full story <ChevronRight size={16} />
-              </Link>
-            </FadeIn>
-          </div>
+        <div className="max-w-4xl mx-auto">
+          <FadeIn>
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+              About Saskia
+            </p>
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-6">
+              COACHED BY SOMEONE WHO&apos;S BEEN EXACTLY WHERE YOU ARE.
+            </h2>
+            <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-6">
+              A Division I beach volleyball athlete at Texas A&amp;M Corpus Christi, All Conference honoree, NIL athlete, and 4.0 GPA student, Saskia Hernandez founded The Sas Effect to address what is consistently the most overlooked aspect of athletic development: the mental game.
+            </p>
+            <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-8">
+              Having competed across four Division I programs, she has navigated every mental challenge that comes with performing at the highest level of collegiate sport. The Sas Effect exists to give competitive athletes the tools, structure, and support to perform at their best when it matters most.
+            </p>
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 text-[#C0392B] font-semibold text-sm hover:gap-3 transition-all"
+            >
+              Full story <ChevronRight size={16} />
+            </Link>
+          </FadeIn>
         </div>
       </section>
 
@@ -260,7 +241,7 @@ export default function HomePage() {
               {
                 num: '01',
                 title: 'Book a Free Discovery Call',
-                body: '20 minutes. We talk about your sport, your goals, and what\'s been holding you back. No pressure, no commitment.',
+                body: 'In a free 20 minute call, we talk about your sport, your goals, and what has been holding you back. There is no pressure and no commitment required.',
               },
               {
                 num: '02',
@@ -270,7 +251,7 @@ export default function HomePage() {
               {
                 num: '03',
                 title: 'Start Building Your Mental Game',
-                body: 'Weekly calls, check in texts, and homework built specifically for your athlete. This is where the real work starts.',
+                body: 'You receive weekly calls, check in texts, and mental homework built specifically for your situation. This is where the real work begins.',
               },
             ].map((step, i) => (
               <FadeIn key={step.num} delay={i * 0.15}>
@@ -346,7 +327,7 @@ export default function HomePage() {
               READY TO TRAIN THE PART OF YOUR GAME NOBODY ELSE IS COACHING?
             </h2>
             <p className="text-[#666666] text-base mb-10 max-w-xl mx-auto">
-              Book your free 20 minute discovery call. No commitment. Just a conversation about your athlete and what they need.
+              Book your free 20 minute discovery call. There is no commitment required. This is simply a conversation about your athlete and what they need most.
             </p>
             <Link
               href="/book"
