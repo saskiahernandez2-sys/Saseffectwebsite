@@ -18,17 +18,17 @@ export default function BookPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative bg-[#0a0a0a] pt-32 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-[#FAF9F6] pt-32 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#C0392B]/4 to-transparent pointer-events-none" />
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Free Intro Call
             </p>
-            <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-[#F0ECE4] leading-none mb-6">
+            <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-[#111111] leading-none mb-6">
               BOOK YOUR FREE<br />INTRO CALL.
             </h1>
-            <p className="text-[#F0ECE4]/70 text-base sm:text-lg max-w-2xl mx-auto">
+            <p className="text-[#111111]/70 text-base sm:text-lg max-w-2xl mx-auto">
               Ready to get started? Book your free 20 minute intro call below and let&apos;s talk about
               where your mental game is and where it needs to go.
             </p>
@@ -37,7 +37,7 @@ export default function BookPage() {
       </section>
 
       {/* ─── CALENDLY EMBED ─── */}
-      <section className="bg-[#1a1a1a] py-12 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F0EDE6] py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <FadeIn>
             <CalendlyEmbed />
@@ -46,11 +46,11 @@ export default function BookPage() {
       </section>
 
       {/* ─── PRICING REMINDER ─── */}
-      <section className="bg-[#0a0a0a] border-t border-[#2a2a2a] py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#FAF9F6] border-t border-[#DDD8D0] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn className="mb-8">
-            <p className="text-[#666666] text-sm mb-2">Not sure where to start?</p>
-            <h2 className="font-display text-3xl sm:text-4xl text-[#F0ECE4]">
+            <p className="text-[#6B6560] text-sm mb-2">Not sure where to start?</p>
+            <h2 className="font-display text-3xl sm:text-4xl text-[#111111]">
               REVIEW PRICING FIRST.
             </h2>
           </FadeIn>
@@ -65,7 +65,7 @@ export default function BookPage() {
               </Link>
               <Link
                 href="/addons"
-                className="border border-[#F0ECE4]/30 text-[#F0ECE4] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all inline-block min-h-[52px] flex items-center justify-center"
+                className="border border-[#111111]/30 text-[#111111] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all inline-block min-h-[52px] flex items-center justify-center"
               >
                 Browse Add Ons
               </Link>

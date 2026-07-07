@@ -41,7 +41,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative bg-[#0a0a0a] pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-[#FAF9F6] pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#C0392B]/4 to-transparent pointer-events-none" />
         <div className="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full bg-[#C0392B]/5 blur-[100px] pointer-events-none" />
         <div className="max-w-4xl mx-auto">
@@ -49,10 +49,10 @@ export default function AboutPage() {
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               The Story
             </p>
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-[#F0ECE4] leading-none mb-6">
+            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-[#111111] leading-none mb-6">
               BUILT BY AN ATHLETE WHO&apos;S LIVED EVERY PART OF IT.
             </h1>
-            <p className="text-[#666666] text-base leading-relaxed">
+            <p className="text-[#6B6560] text-base leading-relaxed">
               A Division I athlete, All Conference honoree, 4.0 GPA student, and NIL athlete who learned the hard way what it actually takes to compete at your highest level.
             </p>
           </FadeIn>
@@ -60,7 +60,7 @@ export default function AboutPage() {
       </section>
 
       {/* ─── HER STORY ─── */}
-      <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F0EDE6] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <FadeIn>
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-8 font-semibold">
@@ -68,7 +68,7 @@ export default function AboutPage() {
             </p>
           </FadeIn>
 
-          <div className="space-y-6 text-[#F0ECE4]/75 text-base lg:text-lg leading-relaxed">
+          <div className="space-y-6 text-[#111111]/75 text-base lg:text-lg leading-relaxed">
             <FadeIn delay={0.05}>
               <p>
                 I have been a student athlete my entire life. I know what it is like to work harder than everyone around you and still feel like something is missing, as if you are leaving performance on the table that you cannot explain.
@@ -85,7 +85,7 @@ export default function AboutPage() {
             </FadeIn>
             <FadeIn delay={0.13}>
               <div className="border-l-4 border-[#C0392B] pl-6 py-1">
-                <p className="text-[#F0ECE4] font-semibold text-base lg:text-lg leading-relaxed">
+                <p className="text-[#111111] font-semibold text-base lg:text-lg leading-relaxed">
                   Named to the All Conference team while maintaining a 4.0 GPA and competing
                   as a Division I beach volleyball athlete across four programs. I have lived
                   every mental challenge that comes with performing at the highest level of
@@ -99,7 +99,7 @@ export default function AboutPage() {
               </p>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <p className="text-[#F0ECE4] font-medium">
+              <p className="text-[#111111] font-medium">
                 I built The Sas Effect to give competitive athletes what I had to figure out the hard way: a mentor, a plan, and a mental framework that actually works when the pressure is on.
               </p>
             </FadeIn>
@@ -108,25 +108,25 @@ export default function AboutPage() {
       </section>
 
       {/* ─── CREDENTIALS ─── */}
-      <section className="bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#FAF9F6] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <FadeIn className="mb-12">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Credentials
             </p>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none">
               THE NUMBERS THAT MATTER.
             </h2>
           </FadeIn>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#2a2a2a] border border-[#2a2a2a] rounded-sm overflow-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#DDD8D0] border border-[#DDD8D0] rounded-sm overflow-hidden">
             {credentials.map((cred, i) => (
               <FadeIn key={cred.label} delay={i * 0.06}>
-                <div className="bg-[#111111] p-6 lg:p-8">
-                  <p className="text-[#666666] text-[10px] uppercase tracking-[0.2em] mb-2 font-semibold">
+                <div className="bg-white p-6 lg:p-8">
+                  <p className="text-[#6B6560] text-[10px] uppercase tracking-[0.2em] mb-2 font-semibold">
                     {cred.label}
                   </p>
-                  <p className="text-[#F0ECE4] font-display text-xl lg:text-2xl tracking-wide">
+                  <p className="text-[#111111] font-display text-xl lg:text-2xl tracking-wide">
                     {cred.value}
                   </p>
                 </div>
@@ -137,13 +137,13 @@ export default function AboutPage() {
       </section>
 
       {/* ─── COACHING PHILOSOPHY ─── */}
-      <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F0EDE6] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <FadeIn className="mb-14">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Philosophy
             </p>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none">
               WHAT I BELIEVE ABOUT<br />ATHLETE DEVELOPMENT.
             </h2>
           </FadeIn>
@@ -151,12 +151,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {philosophy.map((p, i) => (
               <FadeIn key={i} delay={i * 0.1}>
-                <div className="bg-[#111111] border border-[#2a2a2a] p-8 rounded-sm h-full hover:border-[#C0392B]/40 transition-colors">
+                <div className="bg-white border border-[#DDD8D0] p-8 rounded-sm h-full hover:border-[#C0392B]/40 transition-colors">
                   <div className="w-8 h-1 bg-[#C0392B] mb-6" />
-                  <p className="text-[#F0ECE4] font-display text-xl lg:text-2xl mb-4 leading-tight">
+                  <p className="text-[#111111] font-display text-xl lg:text-2xl mb-4 leading-tight">
                     {p.bold}
                   </p>
-                  <p className="text-[#666666] text-sm leading-relaxed">{p.body}</p>
+                  <p className="text-[#6B6560] text-sm leading-relaxed">{p.body}</p>
                 </div>
               </FadeIn>
             ))}
@@ -165,13 +165,13 @@ export default function AboutPage() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="bg-[#0a0a0a] border-t border-[#2a2a2a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#FAF9F6] border-t border-[#DDD8D0] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-6">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none mb-6">
               READY TO WORK TOGETHER?
             </h2>
-            <p className="text-[#666666] text-base mb-10">
+            <p className="text-[#6B6560] text-base mb-10">
               Book a free 20 minute discovery call. There is no pressure and no commitment. This is simply a conversation about your goals and what we would work on together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -183,7 +183,7 @@ export default function AboutPage() {
               </Link>
               <Link
                 href="/coaching"
-                className="border border-[#F0ECE4]/30 text-[#F0ECE4] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all inline-block min-h-[52px] flex items-center justify-center"
+                className="border border-[#111111]/30 text-[#111111] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all inline-block min-h-[52px] flex items-center justify-center"
               >
                 See Coaching Packages
               </Link>

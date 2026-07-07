@@ -21,21 +21,21 @@ export default function AddOnsPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative bg-[#0a0a0a] pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-[#FAF9F6] pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#C0392B]/4 to-transparent pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Add Ons
             </p>
-            <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-[#F0ECE4] leading-none mb-6">
+            <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-[#111111] leading-none mb-6">
               ADD WHAT YOUR ATHLETE ACTUALLY NEEDS.
             </h1>
-            <p className="text-[#F0ECE4]/70 text-base sm:text-lg max-w-xl mx-auto mb-6">
+            <p className="text-[#111111]/70 text-base sm:text-lg max-w-xl mx-auto mb-6">
               Every add on works on top of either package. Add them when you need them. Remove them when you do not.
             </p>
-            <div className="inline-block bg-[#111111] border border-[#2a2a2a] px-5 py-3 rounded-sm">
-              <p className="text-[#666666] text-sm">
+            <div className="inline-block bg-white border border-[#DDD8D0] px-5 py-3 rounded-sm">
+              <p className="text-[#6B6560] text-sm">
                 Requires an active coaching package.{' '}
                 <Link href="/coaching" className="text-[#C0392B] hover:underline font-semibold">
                   See The Foundation and The Effect
@@ -47,16 +47,16 @@ export default function AddOnsPage() {
       </section>
 
       {/* ─── MONTHLY ADD-ONS ─── */}
-      <section className="bg-[#1a1a1a] py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F0EDE6] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <FadeIn className="mb-10">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
               Monthly Add Ons
             </p>
-            <h2 className="font-display text-3xl sm:text-4xl text-[#F0ECE4] leading-none mb-2">
+            <h2 className="font-display text-3xl sm:text-4xl text-[#111111] leading-none mb-2">
               ONGOING MONTHLY SUPPORT
             </h2>
-            <p className="text-[#666666] text-sm">
+            <p className="text-[#6B6560] text-sm">
               Billed monthly alongside your coaching package. Add or remove at any time.
             </p>
           </FadeIn>
@@ -64,12 +64,12 @@ export default function AddOnsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {monthlyAddOns.map((addon, i) => (
               <FadeIn key={addon.id} delay={i * 0.08}>
-                <div className="bg-[#111111] border border-[#2a2a2a] rounded-sm p-7 flex flex-col h-full hover:border-[#C0392B]/40 transition-colors">
+                <div className="bg-white border border-[#DDD8D0] rounded-sm p-7 flex flex-col h-full hover:border-[#C0392B]/40 transition-colors">
                   <div className="mb-4">
-                    <h3 className="font-display text-2xl text-[#F0ECE4] leading-tight mb-1">{addon.title}</h3>
+                    <h3 className="font-display text-2xl text-[#111111] leading-tight mb-1">{addon.title}</h3>
                     <p className="text-[#C0392B] font-bold text-base">{addon.price}</p>
                     {addon.availability !== 'Both packages' && (
-                      <p className="text-[#666666] text-[10px] uppercase tracking-[0.12em] mt-1 font-semibold">
+                      <p className="text-[#6B6560] text-[10px] uppercase tracking-[0.12em] mt-1 font-semibold">
                         {addon.availability}
                       </p>
                     )}
@@ -78,7 +78,7 @@ export default function AddOnsPage() {
                     {addon.bullets.map((bullet) => (
                       <li key={bullet} className="flex items-start gap-2.5 text-sm">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#C0392B] shrink-0 mt-1.5" />
-                        <span className="text-[#666666] leading-snug">{bullet}</span>
+                        <span className="text-[#6B6560] leading-snug">{bullet}</span>
                       </li>
                     ))}
                   </ul>
@@ -93,16 +93,16 @@ export default function AddOnsPage() {
       </section>
 
       {/* ─── ONE-TIME ADD-ONS ─── */}
-      <section className="bg-[#0a0a0a] py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#FAF9F6] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <FadeIn className="mb-10">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
               One Time Sessions
             </p>
-            <h2 className="font-display text-3xl sm:text-4xl text-[#F0ECE4] leading-none mb-2">
+            <h2 className="font-display text-3xl sm:text-4xl text-[#111111] leading-none mb-2">
               ONE AND DONE
             </h2>
-            <p className="text-[#666666] text-sm">
+            <p className="text-[#6B6560] text-sm">
               Pay once. No subscription. No recurring charge.
             </p>
           </FadeIn>
@@ -110,16 +110,16 @@ export default function AddOnsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {oneTimeAddOns.map((addon, i) => (
               <FadeIn key={addon.id} delay={i * 0.08}>
-                <div className="bg-[#111111] border border-[#2a2a2a] rounded-sm p-7 flex flex-col h-full hover:border-[#C0392B]/40 transition-colors">
+                <div className="bg-white border border-[#DDD8D0] rounded-sm p-7 flex flex-col h-full hover:border-[#C0392B]/40 transition-colors">
                   <div className="mb-4">
-                    <h3 className="font-display text-2xl text-[#F0ECE4] leading-tight mb-1">{addon.title}</h3>
+                    <h3 className="font-display text-2xl text-[#111111] leading-tight mb-1">{addon.title}</h3>
                     <p className="text-[#C0392B] font-bold text-base">{addon.price}</p>
                   </div>
                   <ul className="space-y-2 flex-1">
                     {addon.bullets.map((bullet) => (
                       <li key={bullet} className="flex items-start gap-2.5 text-sm">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#C0392B] shrink-0 mt-1.5" />
-                        <span className="text-[#666666] leading-snug">{bullet}</span>
+                        <span className="text-[#6B6560] leading-snug">{bullet}</span>
                       </li>
                     ))}
                   </ul>
@@ -134,13 +134,13 @@ export default function AddOnsPage() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="bg-[#1a1a1a] border-t border-[#2a2a2a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F0EDE6] border-t border-[#DDD8D0] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-6">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none mb-6">
               NOT SURE WHAT YOU NEED?
             </h2>
-            <p className="text-[#666666] text-base mb-10">
+            <p className="text-[#6B6560] text-base mb-10">
               Book a free call and I will tell you exactly what makes sense for your athlete right now.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -152,7 +152,7 @@ export default function AddOnsPage() {
               </Link>
               <Link
                 href="/coaching"
-                className="border border-[#F0ECE4]/30 text-[#F0ECE4] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all inline-block min-h-[52px] flex items-center justify-center"
+                className="border border-[#111111]/30 text-[#111111] font-bold text-sm px-10 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all inline-block min-h-[52px] flex items-center justify-center"
               >
                 See Both Packages
               </Link>

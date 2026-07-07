@@ -30,19 +30,19 @@ export default function HomePage() {
       <CredibilityBar />
 
       {/* ─── SECTION 3: ABOUT SASKIA (BRIEF) ─── */}
-      <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F0EDE6] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <FadeIn>
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               About Saskia
             </p>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-6">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none mb-6">
               COACHED BY SOMEONE WHO&apos;S BEEN EXACTLY WHERE YOU ARE.
             </h2>
-            <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-6">
+            <p className="text-[#111111]/70 text-base leading-relaxed mb-6">
               As a Division I beach volleyball athlete at Texas A&amp;M Corpus Christi, All Conference honoree, NIL athlete, and 4.0 GPA student, I founded The Sas Effect to address the most overlooked part of athletic development: the mental game.
             </p>
-            <p className="text-[#F0ECE4]/70 text-base leading-relaxed mb-8">
+            <p className="text-[#111111]/70 text-base leading-relaxed mb-8">
               I have competed across four Division I programs and have navigated every mental challenge that comes with performing at the highest level of collegiate sport. I built this program because I know what it takes to perform under pressure, and I know what happens when the mental side is left untrained. The Sas Effect exists to give competitive athletes the tools, structure, and support to perform at their best when it matters most.
             </p>
             <Link
@@ -56,13 +56,13 @@ export default function HomePage() {
       </section>
 
       {/* ─── SECTION 5: WHAT WE WORK ON (PILLARS) ─── */}
-      <section className="bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#FAF9F6] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <FadeIn className="text-center mb-14">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               What We Work On
             </p>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none">
               EVERYTHING AN ATHLETE NEEDS TO COMPETE<br className="hidden lg:block" /> AT THEIR HIGHEST LEVEL.
             </h2>
           </FadeIn>
@@ -72,20 +72,20 @@ export default function HomePage() {
               <FadeIn key={pillar.title} delay={i * 0.08}>
                 <div className={`border p-7 rounded-sm transition-colors group h-full ${
                   pillar.isCore
-                    ? 'bg-[#111111] border-[#C0392B]/30 hover:border-[#C0392B]'
-                    : 'bg-[#111111] border-[#2a2a2a] hover:border-[#2a2a2a]'
+                    ? 'bg-white border-[#C0392B]/30 hover:border-[#C0392B]'
+                    : 'bg-white border-[#DDD8D0] hover:border-[#DDD8D0]'
                 }`}>
-                  <div className={`mb-4 ${pillar.isCore ? 'text-[#C0392B]' : 'text-[#666666]'}`}>
+                  <div className={`mb-4 ${pillar.isCore ? 'text-[#C0392B]' : 'text-[#6B6560]'}`}>
                     {pillarIconMap[pillar.icon]}
                   </div>
-                  <h3 className="font-display text-2xl text-[#F0ECE4] mb-2 group-hover:text-[#C0392B] transition-colors">
+                  <h3 className="font-display text-2xl text-[#111111] mb-2 group-hover:text-[#C0392B] transition-colors">
                     {pillar.title}
                   </h3>
-                  <p className="text-[#666666] text-sm leading-relaxed mb-3">{pillar.description}</p>
+                  <p className="text-[#6B6560] text-sm leading-relaxed mb-3">{pillar.description}</p>
                   <span className={`text-[10px] uppercase tracking-[0.15em] font-semibold px-2 py-0.5 rounded-sm ${
                     pillar.isCore
                       ? 'bg-[#C0392B]/15 text-[#C0392B]'
-                      : 'bg-[#2a2a2a] text-[#666666]'
+                      : 'bg-[#DDD8D0] text-[#6B6560]'
                   }`}>
                     {pillar.tag}
                   </span>
@@ -96,7 +96,7 @@ export default function HomePage() {
             {/* CTA card */}
             <FadeIn delay={pillars.length * 0.08}>
               <div className="bg-[#C0392B]/8 border border-[#C0392B]/30 p-7 rounded-sm flex flex-col justify-between h-full">
-                <p className="font-display text-2xl text-[#F0ECE4] leading-tight mb-4">
+                <p className="font-display text-2xl text-[#111111] leading-tight mb-4">
                   READY TO BUILD YOUR MENTAL GAME?
                 </p>
                 <Link
@@ -112,16 +112,16 @@ export default function HomePage() {
       </section>
 
       {/* ─── SECTION 6: PACKAGES PREVIEW ─── */}
-      <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F0EDE6] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <FadeIn className="text-center mb-12">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Coaching
             </p>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none mb-4">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none mb-4">
               TWO PACKAGES.<br />ONE FOCUS.
             </h2>
-            <p className="text-[#666666] text-sm max-w-lg mx-auto">
+            <p className="text-[#6B6560] text-sm max-w-lg mx-auto">
               Pick the level that fits right now. Add on from there.
             </p>
           </FadeIn>
@@ -132,28 +132,28 @@ export default function HomePage() {
               <FadeIn key={pkg.id} delay={i * 0.08}>
                 <div className={`rounded-sm p-7 flex flex-col h-full ${
                   pkg.highlight
-                    ? 'bg-[#0a0a0a] border-2 border-[#C0392B] shadow-[0_0_40px_rgba(192,57,43,0.10)]'
-                    : 'bg-[#111111] border border-[#2a2a2a]'
+                    ? 'bg-white border-2 border-[#C0392B] shadow-[0_0_40px_rgba(192,57,43,0.10)]'
+                    : 'bg-white border border-[#DDD8D0]'
                 }`}>
                   <div className="mb-4">
-                    <p className={`text-[10px] uppercase tracking-[0.22em] mb-1 font-semibold ${pkg.highlight ? 'text-[#C0392B]' : 'text-[#666666]'}`}>
+                    <p className={`text-[10px] uppercase tracking-[0.22em] mb-1 font-semibold ${pkg.highlight ? 'text-[#C0392B]' : 'text-[#6B6560]'}`}>
                       {pkg.highlight ? 'Most Popular' : 'Get Started'}
                     </p>
-                    <p className="font-display text-3xl text-[#F0ECE4] mb-1">{pkg.name}</p>
-                    <p className={`font-display text-4xl ${pkg.highlight ? 'text-[#C0392B]' : 'text-[#F0ECE4]'}`}>
+                    <p className="font-display text-3xl text-[#111111] mb-1">{pkg.name}</p>
+                    <p className={`font-display text-4xl ${pkg.highlight ? 'text-[#C0392B]' : 'text-[#111111]'}`}>
                       {pkg.price}
-                      <span className="text-[#666666] text-base font-sans font-normal">{pkg.period}</span>
+                      <span className="text-[#6B6560] text-base font-sans font-normal">{pkg.period}</span>
                     </p>
                   </div>
-                  <p className="text-[#666666] text-sm leading-relaxed mb-5">{pkg.tagline}</p>
+                  <p className="text-[#6B6560] text-sm leading-relaxed mb-5">{pkg.tagline}</p>
                   <ul className="space-y-3 mb-6">
                     {pkg.includes.map((item) => (
                       <li key={item.main} className="flex items-start gap-2.5 text-sm">
                         <Check size={14} className="text-[#C0392B] mt-0.5 shrink-0" />
                         <span>
-                          <span className="text-[#F0ECE4]/80 leading-snug block">{item.main}</span>
+                          <span className="text-[#111111]/80 leading-snug block">{item.main}</span>
                           {item.sub && (
-                            <span className="text-[#666666] text-xs leading-snug block mt-0.5">{item.sub}</span>
+                            <span className="text-[#6B6560] text-xs leading-snug block mt-0.5">{item.sub}</span>
                           )}
                         </span>
                       </li>
@@ -176,13 +176,13 @@ export default function HomePage() {
 
           {/* Add-ons teaser */}
           <FadeIn delay={0.15}>
-            <p className="text-[#666666] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold text-center">
+            <p className="text-[#6B6560] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold text-center">
               Available Add Ons
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
               {addOns.map((addon) => (
-                <div key={addon.id} className="bg-[#111111] border border-[#2a2a2a] p-3.5 rounded-sm hover:border-[#C0392B]/30 transition-colors">
-                  <p className="text-[#F0ECE4]/80 text-xs font-medium leading-snug mb-1">{addon.title}</p>
+                <div key={addon.id} className="bg-white border border-[#DDD8D0] p-3.5 rounded-sm hover:border-[#C0392B]/30 transition-colors">
+                  <p className="text-[#111111]/80 text-xs font-medium leading-snug mb-1">{addon.title}</p>
                   <p className="text-[#C0392B] text-xs font-bold">{addon.price}</p>
                 </div>
               ))}
@@ -200,13 +200,13 @@ export default function HomePage() {
       </section>
 
       {/* ─── SECTION 7: TESTIMONIALS ─── */}
-      <section className="bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#FAF9F6] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <FadeIn className="text-center mb-14">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Results
             </p>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none">
               WHAT ATHLETES AND PARENTS ARE SAYING.
             </h2>
           </FadeIn>
@@ -222,13 +222,13 @@ export default function HomePage() {
       </section>
 
       {/* ─── SECTION 8: THE PROCESS ─── */}
-      <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F0EDE6] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <FadeIn className="text-center mb-16">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               How It Works
             </p>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#F0ECE4] leading-none">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none">
               HOW IT WORKS.
             </h2>
           </FadeIn>
@@ -259,8 +259,8 @@ export default function HomePage() {
                   <div className="w-20 h-20 rounded-full bg-[#C0392B] text-white font-display text-3xl flex items-center justify-center mb-6 shrink-0">
                     {step.num}
                   </div>
-                  <h3 className="font-display text-2xl text-[#F0ECE4] mb-3 leading-tight">{step.title}</h3>
-                  <p className="text-[#666666] text-sm leading-relaxed">{step.body}</p>
+                  <h3 className="font-display text-2xl text-[#111111] mb-3 leading-tight">{step.title}</h3>
+                  <p className="text-[#6B6560] text-sm leading-relaxed">{step.body}</p>
                 </div>
               </FadeIn>
             ))}
@@ -278,10 +278,10 @@ export default function HomePage() {
       </section>
 
       {/* ─── SECTION 9: INSTAGRAM FEED TEASER ─── */}
-      <section className="bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#FAF9F6] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <FadeIn className="text-center mb-10">
-            <h2 className="font-display text-4xl sm:text-5xl text-[#F0ECE4] leading-none mb-2">
+            <h2 className="font-display text-4xl sm:text-5xl text-[#111111] leading-none mb-2">
               FOLLOW THE JOURNEY
             </h2>
             <a
@@ -299,9 +299,9 @@ export default function HomePage() {
             {Array.from({ length: 6 }).map((_, i) => (
               <div
                 key={i}
-                className="aspect-square bg-[#111111] border border-[#2a2a2a] rounded-sm flex items-center justify-center hover:border-[#C0392B]/40 transition-colors cursor-pointer"
+                className="aspect-square bg-white border border-[#DDD8D0] rounded-sm flex items-center justify-center hover:border-[#C0392B]/40 transition-colors cursor-pointer"
               >
-                <span className="text-[#666666] text-2xl">📷</span>
+                <span className="text-[#6B6560] text-2xl">📷</span>
               </div>
             ))}
           </div>
@@ -311,7 +311,7 @@ export default function HomePage() {
               href="https://instagram.com/thesaseffect"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-[#2a2a2a] text-[#F0ECE4]/70 text-sm px-6 py-3 hover:border-[#C0392B] hover:text-[#C0392B] transition-all"
+              className="inline-flex items-center gap-2 border border-[#DDD8D0] text-[#111111]/70 text-sm px-6 py-3 hover:border-[#C0392B] hover:text-[#C0392B] transition-all"
             >
               Follow on Instagram <ChevronRight size={14} />
             </a>
@@ -320,13 +320,13 @@ export default function HomePage() {
       </section>
 
       {/* ─── SECTION 10: FOOTER CTA ─── */}
-      <section className="bg-[#1a1a1a] border-t border-[#2a2a2a] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F0EDE6] border-t border-[#DDD8D0] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-[#F0ECE4] leading-none mb-6">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-[#111111] leading-none mb-6">
               READY TO TRAIN THE PART OF YOUR GAME NOBODY ELSE IS COACHING?
             </h2>
-            <p className="text-[#666666] text-base mb-10 max-w-xl mx-auto">
+            <p className="text-[#6B6560] text-base mb-10 max-w-xl mx-auto">
               Book your free 20 minute discovery call. There is no commitment required. This is simply a conversation about your athlete and what they need most.
             </p>
             <Link

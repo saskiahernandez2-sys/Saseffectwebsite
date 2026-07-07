@@ -5,9 +5,9 @@ import { ChevronDown } from 'lucide-react'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center bg-[#0a0a0a] overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-[#FAF9F6] overflow-hidden">
       {/* Background gradient layers */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#0a0a0a] to-[#1a1a1a]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#FAF9F6] via-[#FAF9F6] to-[#F0EDE6]" />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#C0392B]/4 to-transparent pointer-events-none" />
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#C0392B]/5 blur-[120px] pointer-events-none" />
       <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-[#C0392B]/3 blur-[100px] pointer-events-none" />
@@ -30,7 +30,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display text-[80px] sm:text-[96px] lg:text-[108px] xl:text-[120px] text-[#F0ECE4] leading-none mb-6"
+            className="font-display text-[80px] sm:text-[96px] lg:text-[108px] xl:text-[120px] text-[#111111] leading-none mb-6"
           >
             TRAIN THE<br />
             <span className="text-[#C0392B]">MIND</span><br />
@@ -41,7 +41,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25, ease: 'easeOut' }}
-            className="text-[#F0ECE4]/70 text-lg sm:text-xl mb-8 max-w-lg leading-relaxed"
+            className="text-[#111111]/70 text-lg sm:text-xl mb-8 max-w-lg leading-relaxed"
           >
             Mental performance and athlete development coaching for competitive athletes at every level. Built by a D1 athlete who has lived every part of the journey.
           </motion.p>
@@ -60,7 +60,7 @@ export default function HeroSection() {
             </Link>
             <Link
               href="/coaching"
-              className="border-2 border-[#F0ECE4]/40 text-[#F0ECE4] font-bold text-sm px-8 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all text-center min-h-[52px] flex items-center justify-center"
+              className="border-2 border-[#111111]/40 text-[#111111] font-bold text-sm px-8 py-4 tracking-wide hover:border-[#C0392B] hover:text-[#C0392B] transition-all text-center min-h-[52px] flex items-center justify-center"
             >
               See Pricing
             </Link>
@@ -70,7 +70,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.55 }}
-            className="text-[#666666] text-[10px] sm:text-xs tracking-[0.18em] uppercase"
+            className="text-[#6B6560] text-[10px] sm:text-xs tracking-[0.18em] uppercase"
           >
             D1 Beach Volleyball · Texas A&amp;M Corpus Christi · All Conference · 4.0 GPA · NIL Athlete
           </motion.p>
@@ -88,7 +88,7 @@ export default function HeroSection() {
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
         >
-          <ChevronDown className="text-[#666666]" size={22} />
+          <ChevronDown className="text-[#6B6560]" size={22} />
         </motion.div>
       </motion.div>
     </section>
