@@ -174,7 +174,7 @@ export default function AboutPage() {
               READY TO WORK TOGETHER?
             </h2>
             <p className="text-[#6B6560] text-base mb-10">
-              Book a free 20 minute discovery call. There is no pressure and no commitment. This is simply a conversation about your goals and what we would work on together.
+              Book a free 15 minute discovery call. There is no pressure and no commitment. This is simply a conversation about your goals and what we would work on together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

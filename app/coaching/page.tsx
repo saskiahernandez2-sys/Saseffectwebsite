@@ -295,7 +295,7 @@ export default function CoachingPage() {
             <FadeIn delay={0.08}>
               <div className="space-y-4">
                 {[
-                  { n: '01', text: 'Book a free 20 minute discovery call.' },
+                  { n: '01', text: 'Book a free 15 minute discovery call.' },
                   { n: '02', text: 'We talk about your goals, your sport, your struggles, and where you want to go.' },
                   { n: '03', text: 'I tell you exactly which program fits and we get started.' },
                 ].map((item) => (

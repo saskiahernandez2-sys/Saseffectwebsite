@@ -260,7 +260,7 @@ export default function HomePage() {
               {
                 num: '01',
                 title: 'Book a Free Discovery Call',
-                body: 'In a free 20 minute call, we talk about your sport, your goals, and what has been holding you back. There is no pressure and no commitment required.',
+                body: 'In a free 15 minute call, we talk about your sport, your goals, and what has been holding you back. There is no pressure and no commitment required.',
               },
               {
                 num: '02',
@@ -337,7 +337,7 @@ export default function HomePage() {
               READY TO TRAIN THE PART OF YOUR GAME NOBODY ELSE IS COACHING?
             </h2>
             <p className="text-[#6B6560] text-base mb-10 max-w-xl mx-auto">
-              Book your free 20 minute discovery call. There is no commitment required. This is simply a conversation about your athlete and what they need most.
+              Book your free 15 minute discovery call. There is no commitment required. This is simply a conversation about your athlete and what they need most.
             </p>
             <Link
               href="/book"

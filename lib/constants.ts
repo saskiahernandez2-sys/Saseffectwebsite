@@ -29,7 +29,7 @@ export const packages: Array<{
     tagline: 'Core mental performance coaching with one focused topic per week.',
     includes: [
       { main: '2 one on one calls per month' },
-      { main: 'Weekly check in text from me', sub: 'One focused topic or challenge per week' },
+      { main: 'Weekly check in text', sub: 'One focused topic or challenge per week' },
       { main: 'Weekly mental homework' },
     ],
     topics: [
@@ -83,7 +83,6 @@ export const packages: Array<{
       { main: '1 group call per week' },
       { main: 'Weekly rotating mental performance topic' },
       { main: 'Private group chat for support between sessions' },
-      { main: '3 month commitment available at a discounted rate' },
     ],
     topics: [
       'Confidence',

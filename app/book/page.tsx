@@ -6,11 +6,11 @@ import CalendlyEmbed from '@/components/CalendlyEmbed'
 export const metadata: Metadata = {
   title: 'Book a Free Intro Call',
   description:
-    '20 minutes. Book your free intro call and let\'s talk about where your mental game is and where it needs to go.',
+    '15 minutes. Book your free intro call and let\'s talk about where your mental game is and where it needs to go.',
   openGraph: {
     title: 'Book a Free Intro Call | The Sas Effect',
     description:
-      '20 minutes. No pressure. Let\'s talk about where your mental game is and where it needs to go.',
+      '15 minutes. No pressure. Let\'s talk about where your mental game is and where it needs to go.',
   },
 }
 
@@ -29,7 +29,7 @@ export default function BookPage() {
               BOOK YOUR FREE<br />INTRO CALL.
             </h1>
             <p className="text-[#111111]/70 text-base sm:text-lg max-w-2xl mx-auto">
-              Ready to get started? Book your free 20 minute intro call below and let&apos;s talk about
+              Ready to get started? Book your free 15 minute intro call below and let&apos;s talk about
               where your mental game is and where it needs to go.
             </p>
           </FadeIn>
