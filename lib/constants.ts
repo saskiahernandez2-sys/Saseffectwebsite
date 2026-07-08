@@ -6,7 +6,21 @@ export const navLinks = [
   { href: '/book', label: 'Book a Call' },
 ]
 
-export const packages = [
+type PackageInclude = { main: string; sub?: string }
+
+export const packages: Array<{
+  id: string
+  name: string
+  price: string
+  period: string
+  groupNote?: string
+  tagline: string
+  includes: PackageInclude[]
+  topics: string[]
+  topicsNote: string
+  highlight: boolean
+  href: string
+}> = [
   {
     id: 'foundation',
     name: 'The Foundation',
