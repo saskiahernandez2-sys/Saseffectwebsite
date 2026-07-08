@@ -165,13 +165,13 @@ export const testimonials = [
     quote:
       'The mental skills I developed through The Sas Effect changed the way I compete entirely. I stopped letting mistakes affect the next play and started showing up with real confidence in the moments that matter.',
     name: 'Jordan Mitchell',
-    sport: 'High School Athlete',
+    sport: 'Competitive Athlete',
   },
   {
     quote:
       'I always assumed the mental side would take care of itself if I just put in enough physical work. This program showed me how wrong I was and gave me tools I use in competition every single week.',
     name: 'Camille Rivera',
-    sport: 'High School Athlete',
+    sport: 'Competitive Athlete',
   },
   {
     quote:

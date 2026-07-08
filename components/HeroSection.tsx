@@ -43,7 +43,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.25, ease: 'easeOut' }}
             className="text-[#111111]/70 text-lg sm:text-xl mb-8 max-w-lg leading-relaxed"
           >
-            Whether you are a freshman finding your footing, a sophomore building your game, a junior preparing for the next level, or a senior finishing strong, the mental side of sport is what separates good athletes from great ones.
+            Mental performance coaching for competitive athletes at any level. Whether you are a high school freshman just getting started or a college athlete competing for a starting spot, the mental side of sport is what separates good athletes from great ones.
           </motion.p>
 
           <motion.div

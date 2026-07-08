@@ -19,7 +19,7 @@ const credentials = [
   { label: 'Academic',         value: '4.0 GPA' },
   { label: 'Status',           value: 'Active NIL Athlete' },
   { label: 'Previous schools', value: 'NC State · University of Virginia · Florida International University' },
-  { label: 'Coaching focus',   value: 'Mental performance coaching for high school athletes at every grade level' },
+  { label: 'Coaching focus',   value: 'Mental performance coaching for competitive athletes at any level' },
 ]
 
 const philosophy = [
@@ -100,7 +100,7 @@ export default function AboutPage() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-[#111111] font-medium">
-                I built The Sas Effect to give high school athletes what I had to figure out the hard way: a mentor, a plan, and a mental framework that actually works when the pressure is on.
+                I built The Sas Effect to give competitive athletes what I had to figure out the hard way: a mentor, a plan, and a mental framework that actually works when the pressure is on.
               </p>
             </FadeIn>
           </div>

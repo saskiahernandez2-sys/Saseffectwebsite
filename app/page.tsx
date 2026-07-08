@@ -9,9 +9,9 @@ import { packages, addOns, testimonials, pillars } from '@/lib/constants'
 import StatCounter from '@/components/StatCounter'
 
 export const metadata: Metadata = {
-  title: 'The Sas Effect | Mental Performance Coaching for High School Athletes',
+  title: 'The Sas Effect | Mental Performance Coaching for Competitive Athletes',
   description:
-    "Mental performance coaching for high school athletes at every grade level. Whether you are a freshman, sophomore, junior, or senior, train your mental game with a D1 athlete who has lived it.",
+    "Mental performance coaching for competitive athletes at any level. Whether you are a high school freshman, a club athlete pushing for the next level, or a college competitor, train your mental game with a D1 athlete who has lived it.",
 }
 
 const pillarIconMap: Record<string, React.ReactNode> = {
@@ -44,7 +44,7 @@ export default function HomePage() {
               As a Division I beach volleyball athlete at Texas A&amp;M Corpus Christi, All Conference honoree, NIL athlete, and 4.0 GPA student, I founded The Sas Effect to address the most overlooked part of athletic development: the mental game.
             </p>
             <p className="text-[#111111]/70 text-base leading-relaxed mb-8">
-              I have competed across four Division I programs and have navigated every mental challenge that comes with performing at the highest level of collegiate sport. I built this program because I know what it takes to perform under pressure and I know what happens when the mental side is left untrained. Whether you are a freshman finding your footing, a sophomore building your game, a junior preparing for the next level, or a senior finishing strong, The Sas Effect gives you the tools and the mental framework to perform at your best when it matters most.
+              I have competed across four Division I programs and have navigated every mental challenge that comes with performing at the highest level of collegiate sport. I built this program because I know what it takes to perform under pressure and I know what happens when the mental side is left untrained. Whether you are a high school freshman finding your footing, a club athlete pushing for the next level, or a college competitor stepping into bigger moments, The Sas Effect gives you the tools and the mental framework to perform at your best when it matters most.
             </p>
             <Link
               href="/about"
