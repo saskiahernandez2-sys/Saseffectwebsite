@@ -57,6 +57,7 @@ export const packages: Array<{
       { main: 'Weekly mental homework and accountability check ins' },
       { main: 'Priority scheduling with first access to my calendar' },
       { main: 'Weekly text check in support with ongoing guidance between sessions.' },
+      { main: 'Vision and direction. We talk about where you want to go as an athlete and build the mental foundation to get there.' },
     ],
     topics: [
       'Everything in The Foundation',
