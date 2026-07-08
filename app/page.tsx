@@ -113,21 +113,21 @@ export default function HomePage() {
 
       {/* ─── SECTION 6: PACKAGES PREVIEW ─── */}
       <section className="bg-[#F0EDE6] py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <FadeIn className="text-center mb-12">
             <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
               Coaching
             </p>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none mb-4">
-              TWO PACKAGES.<br />ONE FOCUS.
+              THREE PACKAGES.<br />ONE FOCUS.
             </h2>
             <p className="text-[#6B6560] text-sm max-w-lg mx-auto">
-              Pick the level that fits right now. Add on from there.
+              Pick the program that fits right now. Build from there.
             </p>
           </FadeIn>
 
-          {/* Two package cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-8">
+          {/* Three package cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
             {packages.map((pkg, i) => (
               <FadeIn key={pkg.id} delay={i * 0.08}>
                 <div className={`rounded-sm p-7 flex flex-col h-full ${
@@ -137,16 +137,19 @@ export default function HomePage() {
                 }`}>
                   <div className="mb-4">
                     <p className={`text-[10px] uppercase tracking-[0.22em] mb-1 font-semibold ${pkg.highlight ? 'text-[#C0392B]' : 'text-[#6B6560]'}`}>
-                      {pkg.highlight ? 'Most Popular' : 'Get Started'}
+                      {pkg.highlight ? 'Most Popular' : pkg.id === 'groupeffect' ? 'Group Option' : 'Get Started'}
                     </p>
-                    <p className="font-display text-3xl text-[#111111] mb-1">{pkg.name}</p>
-                    <p className={`font-display text-4xl ${pkg.highlight ? 'text-[#C0392B]' : 'text-[#111111]'}`}>
+                    <p className="font-display text-2xl text-[#111111] mb-1">{pkg.name}</p>
+                    <p className={`font-display text-3xl ${pkg.highlight ? 'text-[#C0392B]' : 'text-[#111111]'}`}>
                       {pkg.price}
-                      <span className="text-[#6B6560] text-base font-sans font-normal">{pkg.period}</span>
+                      <span className="text-[#6B6560] text-sm font-sans font-normal"> {pkg.period}</span>
                     </p>
+                    {pkg.groupNote && (
+                      <p className="text-[#6B6560] text-xs mt-0.5">{pkg.groupNote}</p>
+                    )}
                   </div>
                   <p className="text-[#6B6560] text-sm leading-relaxed mb-5">{pkg.tagline}</p>
-                  <ul className="space-y-3 mb-6">
+                  <ul className="space-y-3 mb-6 flex-1">
                     {pkg.includes.map((item) => (
                       <li key={item.main} className="flex items-start gap-2.5 text-sm">
                         <Check size={14} className="text-[#C0392B] mt-0.5 shrink-0" />
@@ -167,17 +170,17 @@ export default function HomePage() {
                         : 'border border-[#C0392B] text-[#C0392B] hover:bg-[#C0392B] hover:text-white'
                     }`}
                   >
-                    Start with {pkg.name}
+                    {pkg.id === 'groupeffect' ? 'Join The Group Effect' : `Start with ${pkg.name}`}
                   </Link>
                 </div>
               </FadeIn>
             ))}
           </div>
 
-          {/* Add-ons teaser */}
+          {/* Build Your Program teaser */}
           <FadeIn delay={0.15}>
             <p className="text-[#6B6560] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold text-center">
-              Available Add Ons
+              Build Your Program
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
               {addOns.map((addon) => (

@@ -58,12 +58,41 @@ export const packages = [
     highlight: true,
     href: '/book',
   },
+  {
+    id: 'groupeffect',
+    name: 'The Group Effect',
+    price: '$97',
+    period: '/mo per person',
+    groupNote: 'Minimum 4 · Maximum 8',
+    tagline: 'One focused mental performance topic every week in a small group setting. Learn together, grow together.',
+    includes: [
+      { main: '1 group call per week' },
+      { main: 'Weekly rotating mental performance topic' },
+      { main: 'Private group chat for support between sessions' },
+      { main: '3 month commitment available at a discounted rate' },
+    ],
+    topics: [
+      'Confidence',
+      'Self talk',
+      'Handling pressure',
+      'Dealing with mistakes',
+      'Focus and concentration',
+      'Pregame mindset',
+      'Bouncing back from a loss',
+    ],
+    topicsNote:
+      'One mental performance topic per week, rotating based on what the group is working through together.',
+    highlight: false,
+    href: '/book',
+  },
 ]
 
 export const addOns = [
   {
     id: 'recruiting',
-    title: 'Recruiting strategy + mock calls',
+    title: 'Recruiting strategy and mock calls',
+    description:
+      'A personalized recruiting profile, college coach outreach strategy, and mock recruiting calls so you are ready when it counts.',
     price: '$197 per month',
     type: 'monthly',
     availability: 'Both packages',
@@ -76,6 +105,8 @@ export const addOns = [
   {
     id: 'nutrition',
     title: 'Nutrition guidance',
+    description:
+      'Performance nutrition tailored to your sport and schedule including what to eat, when to eat it, and how to fuel for competition day and recovery.',
     price: '$97 per month',
     type: 'monthly',
     availability: 'Both packages',
@@ -87,7 +118,9 @@ export const addOns = [
   },
   {
     id: 'academic',
-    title: 'Academic + schedule mapping session',
+    title: 'Academic and schedule mapping session',
+    description:
+      'One dedicated session where we build out your full Google Calendar covering school, sport, and life all organized in one place.',
     price: '$97 one time',
     type: 'one time',
     availability: 'Both packages',
@@ -100,11 +133,13 @@ export const addOns = [
   {
     id: 'textsupport',
     title: 'Extra text support',
+    description:
+      'Available to Foundation and Group Effect clients only. Text me anytime you need help with a mental challenge or just need a reset.',
     price: '$47 per month',
     type: 'monthly',
-    availability: 'Foundation only',
+    availability: 'Foundation and Group Effect',
     bullets: [
-      'Foundation clients only',
+      'Foundation and Group Effect clients only',
       'Text anytime you need a reset or help with a mental challenge',
       'Response within 24 hours',
     ],
