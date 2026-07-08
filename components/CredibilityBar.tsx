@@ -7,7 +7,7 @@ const credentials = [
   '4.0 GPA',
   'NIL Athlete',
   'Texas A&M CC',
-  'Competitive Athlete Specialist',
+  'High School Athlete Specialist',
 ]
 
 export default function CredibilityBar() {

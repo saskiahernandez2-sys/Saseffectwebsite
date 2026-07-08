@@ -7,11 +7,11 @@ import { packages, addOns } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Coaching | The Foundation, The Effect, and The Group Effect',
   description:
-    'Three programs built for competitive athletes. The Foundation at $197 per month. The Effect at $397 per month. The Group Effect at $97 per month per person. Pick the level that fits.',
+    'Three programs built for high school athletes at every grade level. The Foundation at $197 per month. The Effect at $397 per month. The Group Effect at $97 per month per person. Pick the level that fits.',
   openGraph: {
     title: 'Coaching Packages | The Sas Effect',
     description:
-      'Three mental performance programs for competitive athletes. Individual and group options available.',
+      'Three mental performance programs for high school athletes. Individual and group options available.',
   },
 }
 

@@ -43,7 +43,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.25, ease: 'easeOut' }}
             className="text-[#111111]/70 text-lg sm:text-xl mb-8 max-w-lg leading-relaxed"
           >
-            Mental performance and athlete development coaching for competitive athletes at every level. Built by a D1 athlete who has lived every part of the journey.
+            Whether you are a freshman finding your footing, a sophomore building your game, a junior preparing for the next level, or a senior finishing strong, the mental side of sport is what separates good athletes from great ones.
           </motion.p>
 
           <motion.div

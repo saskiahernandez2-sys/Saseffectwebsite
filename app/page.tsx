@@ -6,11 +6,12 @@ import CredibilityBar from '@/components/CredibilityBar'
 import FadeIn from '@/components/FadeIn'
 import TestimonialCard from '@/components/TestimonialCard'
 import { packages, addOns, testimonials, pillars } from '@/lib/constants'
+import StatCounter from '@/components/StatCounter'
 
 export const metadata: Metadata = {
-  title: 'The Sas Effect | Mental Performance Coaching for Competitive Athletes',
+  title: 'The Sas Effect | Mental Performance Coaching for High School Athletes',
   description:
-    "Mental performance and athlete development coaching for competitive athletes at every level. Built by a D1 athlete who has lived every part of the journey.",
+    "Mental performance coaching for high school athletes at every grade level. Whether you are a freshman, sophomore, junior, or senior, train your mental game with a D1 athlete who has lived it.",
 }
 
 const pillarIconMap: Record<string, React.ReactNode> = {
@@ -43,7 +44,7 @@ export default function HomePage() {
               As a Division I beach volleyball athlete at Texas A&amp;M Corpus Christi, All Conference honoree, NIL athlete, and 4.0 GPA student, I founded The Sas Effect to address the most overlooked part of athletic development: the mental game.
             </p>
             <p className="text-[#111111]/70 text-base leading-relaxed mb-8">
-              I have competed across four Division I programs and have navigated every mental challenge that comes with performing at the highest level of collegiate sport. I built this program because I know what it takes to perform under pressure, and I know what happens when the mental side is left untrained. The Sas Effect exists to give competitive athletes the tools, structure, and support to perform at their best when it matters most.
+              I have competed across four Division I programs and have navigated every mental challenge that comes with performing at the highest level of collegiate sport. I built this program because I know what it takes to perform under pressure and I know what happens when the mental side is left untrained. Whether you are a freshman finding your footing, a sophomore building your game, a junior preparing for the next level, or a senior finishing strong, The Sas Effect gives you the tools and the mental framework to perform at your best when it matters most.
             </p>
             <Link
               href="/about"
@@ -51,6 +52,21 @@ export default function HomePage() {
             >
               Full story <ChevronRight size={16} />
             </Link>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* ─── DARK MISSION STATEMENT ─── */}
+      <section className="bg-[#111111] py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <FadeIn>
+            <div className="w-12 h-[3px] bg-[#C0392B] mx-auto mb-8" />
+            <p className="font-display text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.05]">
+              BUILT BY AN ATHLETE WHO HAS BEEN THERE.
+            </p>
+            <p className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#C0392B] leading-[1.05] mt-3">
+              DESIGNED FOR ATHLETES READY TO GO FURTHER.
+            </p>
           </FadeIn>
         </div>
       </section>
@@ -280,43 +296,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── SECTION 9: INSTAGRAM FEED TEASER ─── */}
+      {/* ─── SECTION 9: BY THE NUMBERS ─── */}
       <section className="bg-[#FAF9F6] py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <FadeIn className="text-center mb-10">
-            <h2 className="font-display text-4xl sm:text-5xl text-[#111111] leading-none mb-2">
-              FOLLOW THE JOURNEY
+        <div className="max-w-5xl mx-auto">
+          <FadeIn className="text-center mb-16">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+              By The Numbers
+            </p>
+            <h2 className="font-display text-4xl sm:text-5xl text-[#111111] leading-none">
+              THE RESULTS SPEAK.
             </h2>
-            <a
-              href="https://instagram.com/thesaseffect"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#C0392B] text-sm font-semibold hover:underline"
-            >
-              @thesaseffect
-            </a>
           </FadeIn>
 
-          {/* TODO: Integrate Instagram feed API (or use Behold.so for easy embed) */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 mb-8">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <div
-                key={i}
-                className="aspect-square bg-white border border-[#DDD8D0] rounded-sm flex items-center justify-center hover:border-[#C0392B]/40 transition-colors cursor-pointer"
-              >
-                <span className="text-[#6B6560] text-2xl">📷</span>
-              </div>
-            ))}
-          </div>
+          <StatCounter
+            stats={[
+              { value: 4, label: 'Division I Programs' },
+              { value: 1, label: 'All Conference Title' },
+              { value: 100, suffix: '%', label: 'Committed to Your Mental Game' },
+            ]}
+          />
 
-          <div className="text-center">
+          <div className="text-center mt-16">
             <a
               href="https://instagram.com/thesaseffect"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-[#DDD8D0] text-[#111111]/70 text-sm px-6 py-3 hover:border-[#C0392B] hover:text-[#C0392B] transition-all"
+              className="inline-flex items-center gap-2 text-[#C0392B] text-sm font-semibold hover:underline"
             >
-              Follow on Instagram <ChevronRight size={14} />
+              Follow the journey @thesaseffect <ChevronRight size={14} />
             </a>
           </div>
         </div>

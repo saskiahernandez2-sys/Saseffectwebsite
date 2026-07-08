@@ -19,7 +19,7 @@ const credentials = [
   { label: 'Academic',         value: '4.0 GPA' },
   { label: 'Status',           value: 'Active NIL Athlete' },
   { label: 'Previous schools', value: 'NC State · University of Virginia · Florida International University' },
-  { label: 'Coaching focus',   value: 'Mental performance and full athlete development for competitive athletes' },
+  { label: 'Coaching focus',   value: 'Mental performance coaching for high school athletes at every grade level' },
 ]
 
 const philosophy = [
@@ -100,10 +100,24 @@ export default function AboutPage() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-[#111111] font-medium">
-                I built The Sas Effect to give competitive athletes what I had to figure out the hard way: a mentor, a plan, and a mental framework that actually works when the pressure is on.
+                I built The Sas Effect to give high school athletes what I had to figure out the hard way: a mentor, a plan, and a mental framework that actually works when the pressure is on.
               </p>
             </FadeIn>
           </div>
+        </div>
+      </section>
+
+      {/* ─── BOLD QUOTE BAND ─── */}
+      <section className="bg-[#111111] py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <FadeIn>
+            <p className="font-display text-4xl sm:text-5xl lg:text-6xl text-white leading-tight">
+              THE MENTAL GAME IS THE LAST THING MOST ATHLETES TRAIN.
+            </p>
+            <p className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#C0392B] mt-3 leading-tight">
+              IT SHOULD BE THE FIRST.
+            </p>
+          </FadeIn>
         </div>
       </section>
 
