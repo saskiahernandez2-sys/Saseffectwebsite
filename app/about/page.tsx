@@ -71,36 +71,24 @@ export default function AboutPage() {
           <div className="space-y-6 text-[#111111]/75 text-base lg:text-lg leading-relaxed">
             <FadeIn delay={0.05}>
               <p>
-                I have been a student athlete my entire life. I know what it is like to work harder than everyone around you and still feel like something is missing, as if you are leaving performance on the table that you cannot explain.
+                I began my collegiate volleyball career at NC State before transferring to the University of Virginia, where I earned my bachelor&apos;s degree. From there I transferred to Florida International University and ultimately found my home at Texas A&amp;M Corpus Christi.
               </p>
             </FadeIn>
             <FadeIn delay={0.1}>
               <p>
-                I played volleyball at NC State, transferred to University of Virginia, then
-                Florida International University, and finally found my home at Texas A&amp;M
-                Corpus Christi. That journey, the transfers, the pressure, the mental battles,
-                the recruiting process all over again, taught me more about the mental game
-                than any practice ever could.
+                That journey across four Division I programs, navigating the pressure, the mental battles, and the recruiting process all over again, taught me more about the mental game than any practice ever could.
               </p>
             </FadeIn>
             <FadeIn delay={0.13}>
               <div className="border-l-4 border-[#C0392B] pl-6 py-1">
                 <p className="text-[#111111] font-semibold text-base lg:text-lg leading-relaxed">
-                  Named to the All Conference team while maintaining a 4.0 GPA and competing
-                  as a Division I beach volleyball athlete across four programs. I have lived
-                  every mental challenge that comes with performing at the highest level of
-                  collegiate sport.
+                  I did not just study mental performance. I lived it.
                 </p>
               </div>
             </FadeIn>
-            <FadeIn delay={0.15}>
-              <p>
-                What I learned is that the difference between a good athlete and a great one is not talent. It is what happens between the ears. It is how you recover from a bad play, how you show up when the stakes are highest, and how you balance the weight of school, sport, recruiting, and being a human being all at once.
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.2}>
+            <FadeIn delay={0.18}>
               <p className="text-[#111111] font-medium">
-                I built The Sas Effect to give competitive athletes what I had to figure out the hard way: a mentor, a plan, and a mental framework that actually works when the pressure is on.
+                Every transfer, every new team, every moment of doubt and every breakthrough shaped the coach I am today and the program I built for athletes who are going through the same thing.
               </p>
             </FadeIn>
           </div>
