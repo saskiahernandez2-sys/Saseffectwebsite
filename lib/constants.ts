@@ -28,7 +28,7 @@ export const packages: Array<{
     price: '$197',
     period: '/month',
     tagline: 'Core mental performance coaching with one focused topic per week.',
-    commitment: 'Minimum 3 month commitment. Real change takes time and results show when the work is consistent.',
+    commitment: 'Minimum 3 month commitment. True change is not seen in just a month.',
     includes: [
       { main: '2 one on one calls per month' },
       { main: 'Weekly check in text', sub: 'One focused topic or challenge per week' },
@@ -54,7 +54,7 @@ export const packages: Array<{
     price: '$397',
     period: '/month',
     tagline: 'More touchpoints, deeper work, and full accountability every week.',
-    commitment: 'Minimum 3 month commitment. Real change takes time and results show when the work is consistent.',
+    commitment: 'Minimum 3 month commitment. True change is not seen in just a month.',
     includes: [
       { main: '4 one on one calls per month' },
       { main: 'Weekly mental homework and accountability check ins' },
