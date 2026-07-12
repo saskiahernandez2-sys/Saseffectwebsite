@@ -14,6 +14,7 @@ export const packages: Array<{
   price: string
   period: string
   groupNote?: string
+  commitment?: string
   tagline: string
   includes: PackageInclude[]
   topics: string[]
@@ -27,6 +28,7 @@ export const packages: Array<{
     price: '$197',
     period: '/month',
     tagline: 'Core mental performance coaching with one focused topic per week.',
+    commitment: 'Minimum 3 month commitment. Real change takes time and results show when the work is consistent.',
     includes: [
       { main: '2 one on one calls per month' },
       { main: 'Weekly check in text', sub: 'One focused topic or challenge per week' },
@@ -52,6 +54,7 @@ export const packages: Array<{
     price: '$397',
     period: '/month',
     tagline: 'More touchpoints, deeper work, and full accountability every week.',
+    commitment: 'Minimum 3 month commitment. Real change takes time and results show when the work is consistent.',
     includes: [
       { main: '4 one on one calls per month' },
       { main: 'Weekly mental homework and accountability check ins' },
@@ -156,6 +159,19 @@ export const addOns = [
       'Foundation and Group Effect clients only',
       'Text anytime you need a reset or help with a mental challenge',
       'Response within 24 hours',
+    ],
+  },
+  {
+    id: 'extrasession',
+    title: 'Extra session',
+    description:
+      'For athletes who want additional one on one time outside of their package.',
+    price: '$100 per session',
+    type: 'one time',
+    availability: 'Both packages',
+    bullets: [
+      'One additional one on one session',
+      'Available as needed outside of your package',
     ],
   },
 ]

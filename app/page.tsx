@@ -34,17 +34,20 @@ export default function HomePage() {
       <section className="bg-[#F0EDE6] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <FadeIn>
-            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-4 font-semibold">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-6 font-semibold">
               About Saskia
             </p>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none mb-6">
-              COACHED BY SOMEONE WHO&apos;S BEEN EXACTLY WHERE YOU ARE.
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none mb-2">
+              YOUR ATHLETE SPENDS COUNTLESS HOURS TRAINING THEIR BODY.
             </h2>
+            <p className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#C0392B] leading-none mb-8">
+              BUT WHAT ABOUT THEIR MIND?
+            </p>
             <p className="text-[#111111]/70 text-base leading-relaxed mb-6">
-              As a Division I beach volleyball athlete at Texas A&amp;M Corpus Christi, All Conference honoree, NIL athlete, and 4.0 GPA student, I founded The Sas Effect to address the most overlooked part of athletic development: the mental game.
+              We help athletes build confidence, manage pressure, overcome setbacks, and perform their best when it matters most. Whether they are trying to earn a varsity spot, compete at the college level, or simply enjoy their sport again, mental performance is the difference between potential and performance.
             </p>
             <p className="text-[#111111]/70 text-base leading-relaxed mb-8">
-              I have competed across four Division I programs and have navigated every mental challenge that comes with performing at the highest level of collegiate sport. I built this program because I know what it takes to perform under pressure and I know what happens when the mental side is left untrained. Whether you are a high school freshman finding your footing, a club athlete pushing for the next level, or a college competitor stepping into bigger moments, The Sas Effect gives you the tools and the mental framework to perform at your best when it matters most.
+              I am an active Division I beach volleyball athlete at Texas A&amp;M Corpus Christi, All Conference honoree, NIL athlete, and 4.0 GPA student. I began my collegiate career at NC State before transferring to the University of Virginia where I earned my bachelor&apos;s degree. From there I transferred to Florida International University and ultimately found my home at Texas A&amp;M Corpus Christi. That journey across four Division I programs taught me more about the mental game than any practice ever could. I did not just study mental performance. I lived it. Every transfer, every new team, every moment of doubt and every breakthrough shaped the coach I am today and the program I built for athletes who are going through the same thing.
             </p>
             <Link
               href="/about"
@@ -164,7 +167,12 @@ export default function HomePage() {
                       <p className="text-[#6B6560] text-xs mt-0.5">{pkg.groupNote}</p>
                     )}
                   </div>
-                  <p className="text-[#6B6560] text-sm leading-relaxed mb-5">{pkg.tagline}</p>
+                  <p className="text-[#6B6560] text-sm leading-relaxed mb-3">{pkg.tagline}</p>
+                  {pkg.commitment && (
+                    <div className="bg-[#C0392B]/8 border border-[#C0392B]/20 rounded-sm px-3 py-2.5 mb-5">
+                      <p className="text-[#C0392B] text-xs font-semibold leading-relaxed">{pkg.commitment}</p>
+                    </div>
+                  )}
                   <ul className="space-y-3 mb-6 flex-1">
                     {pkg.includes.map((item) => (
                       <li key={item.main} className="flex items-start gap-2.5 text-sm">

@@ -56,6 +56,11 @@ export default function CoachingPage() {
                     <span className="text-[#6B6560] text-lg font-sans font-normal"> / month</span>
                   </p>
                   <p className="text-[#6B6560] text-sm leading-relaxed mt-2">{foundation.tagline}</p>
+                  {foundation.commitment && (
+                    <div className="bg-[#C0392B]/8 border border-[#C0392B]/20 rounded-sm px-3 py-2.5 mt-3">
+                      <p className="text-[#C0392B] text-xs font-semibold leading-relaxed">{foundation.commitment}</p>
+                    </div>
+                  )}
                 </div>
 
                 <div className="w-full h-px bg-[#DDD8D0] mb-6" />
@@ -99,6 +104,11 @@ export default function CoachingPage() {
                     <span className="text-[#6B6560] text-lg font-sans font-normal"> / month</span>
                   </p>
                   <p className="text-[#6B6560] text-sm leading-relaxed mt-2">{effect.tagline}</p>
+                  {effect.commitment && (
+                    <div className="bg-[#C0392B]/8 border border-[#C0392B]/20 rounded-sm px-3 py-2.5 mt-3">
+                      <p className="text-[#C0392B] text-xs font-semibold leading-relaxed">{effect.commitment}</p>
+                    </div>
+                  )}
                 </div>
 
                 <div className="w-full h-px bg-[#DDD8D0] mb-6" />
