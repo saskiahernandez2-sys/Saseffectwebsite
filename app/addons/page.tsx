@@ -6,7 +6,7 @@ import { addOns } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Add Ons | Recruiting, Nutrition, Schedule Mapping and More',
   description:
-    'Optional add ons for Foundation and Effect clients. Recruiting strategy plus mock calls at $197 per month. Nutrition guidance at $97 per month. Academic schedule mapping at $97 one time. Extra text support at $47 per month for Foundation clients.',
+    'Optional add ons for Foundation and Effect clients. Recruiting strategy plus mock calls at $197 per month. Nutrition guidance at $397 per month. Academic schedule mapping at $97 one time. Extra text support at $47 per month for Foundation clients. In person and online volleyball coaching available.',
   openGraph: {
     title: 'Add Ons | The Sas Effect',
     description:
@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 export default function AddOnsPage() {
   const monthlyAddOns = addOns.filter((a) => a.type === 'monthly')
   const oneTimeAddOns = addOns.filter((a) => a.type === 'one time')
+  const volleyballAddOns = addOns.filter((a) => a.type === 'volleyball')
 
   return (
     <>
@@ -133,8 +134,52 @@ export default function AddOnsPage() {
         </div>
       </section>
 
+      {/* ─── VOLLEYBALL COACHING ─── */}
+      <section className="bg-[#F0EDE6] py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <FadeIn className="mb-10">
+            <p className="text-[#C0392B] text-[10px] uppercase tracking-[0.22em] mb-3 font-semibold">
+              Volleyball Coaching
+            </p>
+            <h2 className="font-display text-3xl sm:text-4xl text-[#111111] leading-none mb-2">
+              ON COURT AND VIRTUAL SKILL DEVELOPMENT
+            </h2>
+            <p className="text-[#6B6560] text-sm">
+              Private volleyball coaching focused on technique, skill development, and performance. Available in person and online.
+            </p>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {volleyballAddOns.map((addon, i) => (
+              <FadeIn key={addon.id} delay={i * 0.08}>
+                <div className="bg-white border border-[#DDD8D0] rounded-sm p-7 flex flex-col h-full hover:border-[#C0392B]/40 transition-colors">
+                  <div className="mb-4">
+                    <h3 className="font-display text-2xl text-[#111111] leading-tight mb-1">{addon.title}</h3>
+                    <p className="text-[#C0392B] font-bold text-base">{addon.price}</p>
+                  </div>
+                  <ul className="space-y-2 flex-1">
+                    {addon.bullets.map((bullet) => (
+                      <li key={bullet} className="flex items-start gap-2.5 text-sm">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#C0392B] shrink-0 mt-1.5" />
+                        <span className="text-[#6B6560] leading-snug">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href="/book"
+                    className="mt-6 text-[#C0392B] text-sm font-semibold hover:underline block"
+                  >
+                    {addon.price.toLowerCase().startsWith('contact') ? 'Contact me to schedule' : 'Book a session'}
+                  </Link>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── CTA ─── */}
-      <section className="bg-[#F0EDE6] border-t border-[#DDD8D0] py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#FAF9F6] border-t border-[#DDD8D0] py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-none mb-6">

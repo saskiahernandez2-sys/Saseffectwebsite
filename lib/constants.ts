@@ -124,7 +124,7 @@ export const addOns = [
     title: 'Nutrition guidance',
     description:
       'Performance nutrition tailored to your sport and schedule including what to eat, when to eat it, and how to fuel for competition day and recovery.',
-    price: '$97 per month',
+    price: '$397 per month',
     type: 'monthly',
     availability: 'Both packages',
     bullets: [
@@ -172,6 +172,35 @@ export const addOns = [
     bullets: [
       'One additional one on one session',
       'Available as needed outside of your package',
+    ],
+  },
+  {
+    id: 'inperson',
+    title: 'In person private lessons',
+    description:
+      'Available for local athletes in the Corpus Christi area. Private one on one volleyball training sessions focused on skill development, technique, and performance. Contact me directly to schedule.',
+    price: 'Contact for pricing',
+    type: 'volleyball',
+    availability: 'Both packages',
+    bullets: [
+      'Available for local athletes in the Corpus Christi area',
+      'Private one on one volleyball training sessions',
+      'Skill development, technique, and performance focus',
+      'Contact me directly to schedule',
+    ],
+  },
+  {
+    id: 'onlinevb',
+    title: 'Online volleyball coaching',
+    description:
+      'One on one virtual volleyball coaching sessions focused on skill development, film review, and performance improvement. Available to athletes anywhere.',
+    price: '$100 per session',
+    type: 'volleyball',
+    availability: 'Both packages',
+    bullets: [
+      'One on one virtual volleyball coaching sessions',
+      'Skill development, film review, and performance improvement',
+      'Available to athletes anywhere',
     ],
   },
 ]
